@@ -1,0 +1,119 @@
+nav {
+  animation: slideFromLeft 0s 0s ease-out;
+}
+
+#mynav{
+  z-index: -1;
+}
+
+.screen{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  z-index: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loadingScreen {
+  text-align: center;
+  width: 300px;
+  height: 70px;
+  line-height: 70px;
+  letter-spacing: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #0fffc1;
+  font-family: 'Brush Script MT', cursive;
+  transform: translate(0%,0%) rotate(0deg);
+  animation: textColor 10s infinite alternate ease;
+}
+
+.loadingScreen::before, .loadingScreen::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 25px;
+    background: #0fffc1;
+  }
+
+.loadingScreen::before {
+    top: 0px;
+    left: 0px;
+    animation: load3 4s infinite alternate ease-in-out, backColor 10s infinite alternate ease;
+  }
+
+.loadingScreen::after {
+    bottom: 0px;
+    left: 280px;
+    animation: load4 4s infinite alternate ease-in-out, backColor 10s infinite alternate ease;
+  }
+
+@keyframes load{
+  0% { left: 0px; top: 0px;}
+  25% { left: 280px; top: 0px;}
+  50% {left: 280px; top: 50px;}
+  75% {left: 0px; top: 50px;}
+  100% {left: 0px; top: 0px;}
+}
+
+@keyframes load2{
+  0% { left: 280px; bottom: 0px;}
+  25% { left: 0px; bottom: 0px;}
+  50% {left: 0px; bottom: 50px;}
+  75% { left: 280px; bottom: 50px;}
+  100% {left: 280px; bottom: 0px;}
+}
+
+@keyframes load3{
+  0% { left: 0px; top: 0px;}
+  12.5% { left: 280px; top: 0px;}
+  25% {left: 280px; top: 50px;}
+  37.5% {left: 0px; top: 50px;}
+  50% {left: 0px; top: -50px;}
+  62.5% { left: 280px; top: -50px;}
+  75% {left: 280px; top: 100px;}
+  87.5% {left: 0px; top: 100px;}
+  100% {left: 0px; top: 0px;}
+}
+
+@keyframes load4{
+  0% { left: 280px; bottom: 0px;}
+  12.5% { left: 0px; bottom: 0px;}
+  25% {left: 0px; bottom: 50px;}
+  37.5% { left: 280px; bottom: 50px;}
+  50% {left: 280px; bottom: -50px;}
+  62.5% { left: 0px; bottom: -50px;}
+  75% {left: 0px; bottom: 100px;}
+  87.5% { left: 280px; bottom: 100px;}
+  100% {left: 280px; bottom: 0px;}
+}
+
+@keyframes textColor {
+  0% {
+    color: #0fffc1;
+    transform: translate(0%,0%) rotate(10deg);
+    }
+  50% {
+    transform: translate(0%,0%) rotate(-10deg);
+  }
+  100% {
+    color: #7e0fff;
+    transform: translate(0%,0%) rotate(10deg);
+  }
+}
+
+@keyframes backColor {
+  0% {
+    background-color: #0fffc1;
+  }
+  100% {
+    background-color: #7e0fff;
+  }
+}

@@ -1,0 +1,238 @@
+html{
+  background: url("../Images/clouds.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  scroll-behavior: smooth;
+}
+
+body{
+  background: transparent;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+h1{
+  font-family: "Lobster";
+  font-size: 55px;
+}
+
+.center{
+  text-align: center;
+}
+
+#back{
+  margin: 30px;
+  padding: 50px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+  border: 3px solid black;
+  width: 75%;
+  margin: auto;
+  text-align: left;
+  margin-bottom: 20px;
+  /*background: rgba(10, 10, 10, 0.5);*/
+  min-height: 550px;
+}
+
+#front{
+  margin: 0px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  border: 3px solid black;
+  width: 100%;
+  margin: auto;
+  text-align: left;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  background: linear-gradient(45deg, rgba(204, 255, 255, 0.5), rgba(255, 204, 204, 0.5));
+}
+
+label, p{
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 10px;
+  color: black;
+}
+
+label[for="input"]{
+  color: black;
+}
+
+input[type = "text"]{
+  margin-left: 30px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  border-radius: 25px;
+  height: 45px;
+  border: 3px solid black;
+}
+
+#search{
+  width: 50px;
+  height: 50px;
+  margin-left: -50px;
+  margin-top: -3px;
+}
+
+#search:hover{
+opacity: 0.95;
+}
+
+.icon_border p{
+display: inline;
+}
+
+.icon_border img{
+  width: 50px;
+  height: 50px;
+}
+
+#day1, #day2, #day3{
+  border-radius: 25px;
+  width: 80%;
+  justify-self: center;
+}
+
+#day1{
+  grid-area: first;
+}
+
+#day2{
+  grid-area: first;
+}
+
+#day3{
+  grid-area: first;
+}
+
+#grid{
+  display: grid;
+  grid-template-columns: repeat(3, 100%);
+  grid-template-areas:
+    'first second third';
+  grid-gap: 10px;
+  overflow: hidden;
+}
+
+.hov{
+  border: 3px solid transparent;
+  border-bottom: 3px solid black;
+  margin-top: 5px;
+  transition: background-color 0.6s ease, border-radius 0.6s ease;
+}
+
+.hov:hover, .hov:hover, .hov:hover{
+  border-radius: 10px;
+  background-color: rgba(0,0,0,0.2);
+  border: 3px solid black;
+}
+
+#info p, #grid p.change{
+margin: 0px;
+margin-left: 5px;
+display: inline;
+color: darkred;
+font-size: 18px;
+}
+
+#space{
+  margin-bottom: 20px;
+}
+
+.right{
+  text-align: right;
+  margin-left: 70%;
+  cursor: pointer;
+  color: black;
+  user-select: none;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.right:hover{
+  color: black;
+}
+
+#buttons{
+  text-align: center;
+  position: absolute;
+  margin-left: 54%;
+  margin-top: 30px;
+}
+
+.dotColor {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin: 0px 2px 0px 2px;
+  background-color: grey;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dotActive, .dotColor:hover {
+  background-color: black;
+}
+
+.expand{
+  height: 150px;
+  border: 3px solid black;
+  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px;
+  background-color: rgba(0,0,0,0.2);
+  transition: all 2s ease;
+}
+
+.hidden{
+  visibility: hidden;
+  height: 0px;
+}
+
+.vis{
+  visibility: visible;
+  height: auto;
+}
+
+.current{
+  background-color: rgba(255,255,255,0.8);
+  margin: 0px 10% 0px 10%;
+  border-radius: 25px;
+}
+
+.shrink{
+  margin-left: 5%;
+  width: 90%;
+}
+
+.left{
+  text-align: left;
+}
+
+@media (max-width: 1200px) {
+  #back {
+      width: 95%;
+      text-align: center;
+  }
+  .right{
+    margin-left: 50%;
+  }
+   label, p{
+    font-size: 18px;
+}
+}
+
+@media (max-width: 850px) {
+  .expand{
+    height: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  label, p{
+    font-size: 15px;
+  }
+}

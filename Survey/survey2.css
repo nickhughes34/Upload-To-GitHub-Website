@@ -1,0 +1,139 @@
+html{
+  /*background: linear-gradient(45deg, rgba(204, 255, 255, 1), rgba(255, 204, 204, 1));*/
+  background: url(../Images/technology-background.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  scroll-behavior: smooth;
+}
+
+body{
+  background: transparent;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+}
+
+main{
+  text-align: center;
+}
+
+h1{
+  font-family: "Lobster";
+  font-size: 55px;
+}
+
+#back{
+  margin: 30px;
+  padding: 50px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+  border: 3px solid white;
+  width: 75%;
+  margin: auto;
+  text-align: left;
+  margin-bottom: 20px;
+  background: rgba(10, 10, 10, 0.9);
+}
+
+#back:hover{
+  background: rgba(10, 10, 10, 1);
+}
+
+label, p{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#space{
+  padding: 20px;
+}
+
+#button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button{
+  width: 25%;
+  height: 25%;
+  font-size: 15px;
+  margin: 10px 0px 10px 0px;
+  border-radius: 15px;
+  border: 3px solid white;
+  padding-left: 10px;
+  color: blue;
+}
+
+button:hover{
+  /*background: rgba(10, 10, 10, 0.2);*/
+  font-weight: bold;
+}
+
+
+#name, #email, #age, #dropdown, #comment, #fruit{
+  width: 100%;
+  border-radius: 25px;
+  padding-left: 10px;
+  border: 3px solid white;
+}
+
+#name:focus, #email:focus, #age:focus, #dropdown:focus, #comment:focus, #fruit:focus{
+box-shadow: 0px 10px 10px rgba(0, 0, 255, 0.5), 0px -10px 10px rgba(0, 0, 255, 0.5),
+10px 0px 10px rgba(0, 0, 255, 0.5), -10px 0px 10px rgba(0, 0, 255, 0.5);
+}
+
+#check label{
+  margin-left: 10px;
+  margin-bottom: 0px;
+}
+
+#check p{
+  margin-bottom: 0px;
+}
+
+#other{
+  visibility: hidden;
+  height: 0px;
+}
+
+.errorListBack{
+  margin-top: 30px;
+  visibility: hidden;
+  height: 0px;
+}
+
+.errorListBack ul {
+  list-style: none;
+}
+
+.errorListBack ul li:before {
+  content: "•";
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+  width: 20px;
+  margin-left: -20px;
+  background-color: rgba(255, 0, 0, 0.8);
+}
+
+.errorListBack li{
+  background-color: rgba(255, 0, 0, 0.6);
+  font-size: 16px;
+}
+
+@media (max-width: 1000px) {
+  #back {
+      width: 95%;
+  }
+    main p{
+      text-align: center;
+    }
+  main label, p, button, #name, #email, #age, #dropdown, #comment, #fruit{
+    font-size: 40px;
+  }
+}

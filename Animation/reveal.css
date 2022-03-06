@@ -1,0 +1,111 @@
+:root{
+	--pramary: blue;
+	--secondary: black;
+}
+
+.reveal{
+	position: relative;
+}
+
+.reveal p, .reveal h1, .reveal a, .reveal img{
+	opacity: 0;
+}
+
+.waitingReveal p, .waitingReveal h1, .waitingReveal a, .waitingReveal img{
+	opacity: 0;
+}
+
+.reveal.go p, .reveal.go h1, .reveal.go a, .reveal.go img{
+	/* forwards uses end animation style*/
+	animation: reveal 1.7s 1.5s forwards;
+}
+
+.waitingReveal.go p, .waitingReveal.go h1, .waitingReveal.go a, .waitingReveal.go img{
+	animation: reveal 1.7s 1.5s forwards;
+}
+
+.reveal.go::before, .reveal.go::after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	z-index: 1;
+}
+
+.reveal.go.down::before {
+	bottom: 0px;
+	background-color: var(--pramary);
+	animation: revealDown 2.6s ease;
+}
+
+.reveal.go.down::after {
+	bottom: 0px;
+	background-color: var(--secondary);
+	animation: revealDown 1.4s 0.9s ease;
+}
+
+ .reveal.go.up::before {
+	top: 0px;
+	background-color: var(--pramary);
+	animation: revealUp 2.6s ease;
+}
+
+ .reveal.go.up::after {
+	top: 0px;
+	background-color: var(--secondary);
+	animation: revealUp 1.4s 0.9s ease;
+}
+
+.reveal.go.left::before, .reveal.go.left::after, .reveal.go.right::before, .reveal.go.right::after{
+	width: 0%;
+	height: 100%;
+	bottom: 0px;
+}
+
+.reveal.go.left::before {
+	background-color: var(--pramary);
+	animation: revealLeft 2.6s ease;
+}
+
+.reveal.go.left::after {
+	background-color: var(--secondary);
+	animation: revealLeft 1.4s 0.9s ease;
+}
+
+ .reveal.go.right::before {
+	background-color: var(--pramary);
+	animation: revealRight 2.6s ease;
+}
+
+ .reveal.go.right::after {
+	background-color: var(--secondary);
+	animation: revealRight 1.4s 0.9s ease;
+}
+
+@keyframes revealUp{
+	0% { height: 0%; top: 0%; }
+ 70% { height: 100%; top: 0%; }
+	100% { height: 0%; top: 100%; }
+}
+
+@keyframes revealDown {
+	0% { height: 0%; bottom: 0%; }
+	70% { height: 100%; bottom: 0%; }
+	100% { height: 0%; bottom: 100%; }
+}
+
+@keyframes reveal {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@keyframes revealLeft{
+	0% { width: 0%; left: 0%; }
+ 70% { width: 100%; left: 0%; }
+	100% { width: 0%; left: 100%; }
+}
+
+@keyframes revealRight{
+	0% { width: 0%; right: 0%; }
+	70% { width: 100%; right: 0%; }
+	100% { width: 0%; right: 100%; }
+}

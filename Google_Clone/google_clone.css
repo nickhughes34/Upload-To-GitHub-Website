@@ -1,0 +1,148 @@
+main{
+  min-height: calc(68vh - 70px);
+}
+
+.top{
+  padding-top: 20px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.bottom{
+background-color: #dadce0;
+height: 100px;
+padding-top: 2px;
+padding-left: 20px;
+}
+
+.right{
+position: absolute;
+right: 0px;
+}
+
+.left{
+position: absolute;
+left: 20px;
+}
+
+.middle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type ="submit"]{
+  margin: 0px 5px 0px 5px;
+}
+
+a, p{
+  margin: 10px;
+  color: black;
+  font-size: 14px;
+  font-family: arial,sans-serif;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+    color: black;
+}
+
+#french:link {
+  color: blue;
+}
+
+#french:hover {
+  text-decoration: underline;
+    color: blue;
+}
+
+#signIn{
+  background: #1a73e8;
+  border: 1px solid transparent;
+  margin-left: 8px;
+ color: white;
+ font-family: Google Sans, Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+font-weight: 510;
+font-size: 15px;
+margin: 0px 10px 0px 10px;
+padding: 6px 20px;
+border-radius: 4px;
+width: 100px;
+}
+
+#signIn:hover{
+    background: #2b7de9;
+    box-shadow: 0 2px 5px 0 rgba(66,133,244,0.3), 0 2px 5px 0 rgba(66,133,244,0.20);
+}
+
+.pos{
+  position: relative;
+  margin-bottom: 20px;
+}
+
+#mic, #search{
+  position: absolute;
+  top: 45px;
+}
+
+#search{
+  left: -5px;
+}
+
+#mic{
+  right: 20px;
+}
+
+#searchBar{
+  width: 600px;
+  padding:  10px 0px 10px 50px;
+  margin: 35px 0px 35px 0px;
+  border: 1px solid lightgrey;
+  border-radius: 30px;
+}
+
+#searchBar:hover, #searchBar:focus{
+  box-shadow: 0px 0px 1px 1px rgba(211,211,211,1);
+}
+
+#results{
+  height: 600px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+#middle{
+  margin: 250px 0px 0px 0px;
+}
+
+#push{
+  margin-bottom: 180px;
+}
+
+.bottom .left a, .bottom .right a, .bottom p{
+  color: #70757a;
+}
+
+#buttons input{
+  background-color: #f8f9fa;
+  border: 2px solid #f8f9fa;
+  border-radius: 5px;
+  padding: 4px 16px 4px 16px;
+  margin: 5px;
+}
+
+#buttons input:hover{
+  box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.1);
+  background-color: #f8f9fa;
+  border: 2px solid #dadce0;
+}
+
+#box{
+  width: 84px;
+  background-color: white;
+}
