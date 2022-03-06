@@ -27,6 +27,15 @@ html {
   background: #212529;
 }
 
+.linkRemove {
+  text-decoration: none;
+  color: black;
+}
+
+.linkRemove:hover {
+  text-decoration: underline;
+}
+
 .tp{
   background-color: transparent;
   font-family: "Times New Roman", Times, serif;
