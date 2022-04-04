@@ -1,0 +1,153 @@
+body{
+  overflow-x: hidden;
+  //background: linear-gradient(90deg, #0BB5D8, #e5e5e5, #0BB5D8);
+  background: linear-gradient(90deg, white, #e5e5e5, white);
+  font-family: "Times New Roman";
+}
+
+h1, .customFont{
+ font-family: "Acme", "Times New Roman";
+}
+
+img {
+    width:  100px;
+    height: 300px;
+    object-fit: fill;
+}
+
+.color{
+  color: #A8976F;
+}
+
+.navbar .navbar-nav .nav-item a, footer a{
+  font-family: "Lobster", "Times New Roman";
+  font-size: 15px;
+}
+
+.navbar .move .navbar-brand{
+  font-family: "Acme", "Times New Roman";
+  font-size: 20px;
+}
+
+footer p, .customPFont {
+  font-family: "Times New Roman";
+  font-size: 13px;
+}
+
+.backHeight{
+  height: 500px;
+}
+
+.frame{
+  height: 100%;
+}
+
+.imageFrame{
+  height: 70%;
+  width: 100%;
+}
+
+.background{
+  position: relative;
+}
+
+.image-text{
+  position: absolute;
+  top: 30%;
+}
+
+.img1{
+  border: 0px solid black;
+  border-radius: 75px;
+  animation: fadeInLeft 3s forwards;
+}
+
+.img2{
+  opacity: 0.3;
+}
+
+.img3{
+  animation: none;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.border1{
+  border-left: 5px solid black;
+}
+
+.border2{
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+
+@media (min-width: 992px) {
+  .move{
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+    .navbar .navbar-collapse #second{
+        position: absolute;
+        right: 0px;
+    }
+
+    .navbar .navbar-nav .nav-item a, footer a{
+      font-size: 20px;
+    }
+
+    .navbar .move .navbar-brand{
+      font-size: 30px;
+    }
+
+    footer p, .customPFont {
+      font-size: 18px;
+    }
+
+    .imageFrame{
+      height: 100%;
+      width: 100%;
+    }
+}
+
+.fadeInO{
+  animation: fadeInO 3s forwards;
+}
+
+@keyframes fadeInO {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@keyframes fadeIn {
+  0% {opacity:0; transform: translate(0%, 0%)}
+  100% {opacity:1; transform: translate(-50%, -50%)}
+}
+
+.fadeInLeft{
+  animation: fadeInLeft 3s forwards;
+}
+
+@keyframes fadeInLeft {
+  0% {opacity:0; transform: translateX(-20%);}
+  100% {opacity:1; transform: translateX(0%);}
+}
+
+.fadeInRight{
+  animation: fadeInRight 3s forwards;
+}
+
+@keyframes fadeInRight {
+  0% {opacity:0; transform: translateX(20%);}
+  100% {opacity:1; transform: translateX(0%);}
+}
+
+.fadeInUp{
+  animation: fadeInUp 3s forwards;
+}
+
+@keyframes fadeInUp {
+  0% {opacity:0; transform: translateY(50%);}
+  100% {opacity:1; transform: translateY(0%);}
+}
