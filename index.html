@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Website's Google Font, Bootstrap, Css, Js files -->
+
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Src/index.css">
+
+    <!-- Website's Title and Icon -->
+    <title>Portforlio - Nicholas Hughes</title>
+    <link rel="icon" href="Src/hockey-puck-solid.svg">
+    <meta charset="utf-8">
+  </head>
+
+  <body ng-app = "MainPage">
+
+   <!-- Main Workspace -->
+   <main>
+
+    <!-- Introduction -->
+    <section id = "cover" class="mb-0">
+        <div class="background-image"></div>
+          <div class="dot"></div>
+          <div class="dot dot2"></div>
+          <div class="dot dot3"></div>
+          <div class="dot dot4"></div>
+    <div class="MainText">
+      <h1 class="border3">Nicholas Hughes</h1>
+      <p>I aspire to be a Frontend Web developer</p>
+      <p>Check out my Github page and Projects below</p>
+
+      <div class="SocialMedia mb-5">
+        <a class="text-white" href="http://www.linkedin.com/in/nh-8a46491a3" target="_blank">
+          <i class="fab fa-linkedin"></i></a>
+
+        <a class="text-white" href="https://github.com/nickhughes34/nickhughes34.github.io" target="_blank">
+          <i class="fab fa-github"></i></a>
+          </div>
+
+          <p class="mt-5 border2">Scroll down</p>
+          </div>
+        </section>
+        <!-- Introduction -->
+
+        <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+          <!-- Navbar brand -->
+          <a class="navbar-brand text-white" href="#">Portforlio</a>
+          <!-- Toggle button -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars text-white"></i>
+          </button>
+          <!-- Collapsible wrapper -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul id = "firstUl" class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!-- Link -->
+              <li class="nav-item"><a class="nav-link" href="#">Top</a></li>
+              <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+              <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
+            </ul>
+            <!-- Icons -->
+            <ul class="navbar-nav d-flex flex-row me-1">
+              <li class="nav-item me-3 me-lg-0">
+                <a class="nav-link" href="http://www.linkedin.com/in/nh-8a46491a3" target="_blank"><i class="fab fa-linkedin"></i></a>
+              </li>
+              <li class="nav-item me-3 me-lg-0">
+                <a class="nav-link" href="https://github.com/nickhughes34/nickhughes34.github.io" target="_blank"><i class="fab fa-github"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Container wrapper -->
+      </nav>
+      <!-- Navbar -->
+
+    <!-- About Me -->
+    <section id = "first" class = "mt-5">
+      <span class="anchor" id = "about"></span>
+    <div class = "text-center mb-5">
+      <h2 class="fs-2">About Me</h2>
+    </div>
+
+  <div class="container mb-5">
+    <div class="row g-4 box d-flex justify-content-center align-items-center">
+
+        <div class="col-sm-12 col-md-3 text-center">
+          <div>
+          <h5 class="border-custom4 p-2">Proficient In</h5>
+
+                <div class="my-4" ng-controller = "MainController">
+                      <div class="border-custom3 p-2"><p class="p-3 typewriter delay my-0 py-0 waiting" ng-repeat = "item in proficient">{{item}}</p></div>
+                </div>
+        </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 text-center">
+          <div>
+          <h5 class="border-custom4 p-2">Description</h5>
+                <div class="my-4" ng-controller = "MainController">
+                      <div class="border-custom3 p-2">
+                        <p class="p-3 typewriter delay my-0 py-0 waiting mb-4">{{description1}}</p>
+                        <p class="p-3 typewriter delay my-0 py-0 waiting">{{description2}}</p>
+                      </div>
+                </div>
+        </div>
+        </div>
+
+        <div class="col-sm-12 col-md-3 text-center">
+          <div>
+          <h5 class="border-custom4 p-2">Hobbies</h5>
+
+                <div class="my-4" ng-controller = "MainController">
+                      <div class="border-custom3 p-2"><p class="p-3 typewriter delay my-0 py-0 waiting" ng-repeat = "item in hobbies">{{item}}</p></div>
+                </div>
+        </div>
+        </div>
+
+    </div>
+</div>
+</section>
+<hr>
+<!-- About Me -->
+
+<!-- Projects -->
+<section id = "second" class = "container mb-5">
+  <span class="anchor" id = "projects"></span>
+  <div class="card text-center" ng-controller = "MainController">
+    <div class="card-header">
+      <h5 class="card-title text-start">Projects</h5>
+      <ul class="nav nav-tabs card-header-tabs nav-justified" data-bs-tabs="tabs">
+
+        <li class="nav-item" ng-repeat = "item in projects">
+          <a class="nav-link {{item.status}}" data-bs-toggle="tab" href="#{{item.id}}">{{item.title}}</a>
+        </li>
+
+      </ul>
+    </div>
+      <div class="card-body tab-content">
+
+  <div class="tab-pane {{item.status}}" id = "{{item.id}}" ng-repeat = "item in projects">
+    <div class="row">
+
+      <div class="col-md-12 mb-2">
+        <h5 class="card-title">{{item.name}}</h5>
+      </div>
+
+      <div class="col-md-2 mb-3">
+        <br>
+            <p class="card-title h6">Technologies Used:</p>
+            <div ng-repeat="icon in item.tech"><i class="{{icon}}"></i></div>
+      </div>
+
+      <div class="col-md-8">
+          <img class="mb-2" src="{{item.image}}" alt="{{item.alt}}">
+        <a href="{{item.link}}" class="btn btn-primary">Go To Webpage</a>
+        <a href="{{item.code}}" class="btn btn-primary">Go To Code</a>
+      </div>
+
+      <div class="col-md-2">
+        <br>
+              <p class="card-title h6">Description:</p>
+              <p class="card-text">{{item.description}}</p>
+      </div>
+
+    </div>
+      </div>
+
+    <div class="tab-pane" id = "pro3">
+      <div class="row">
+
+        <div class="col-md-12 mb-2">
+          <h5 class="card-title">Weather Checker Webpage</h5>
+        </div>
+
+        <div class="col-md-2 mb-3">
+          <br>
+              <p class="card-title h6">Technologies Used:</p>
+              <i class="text-orange fa-brands fa-html5 fa-3x"></i><br>
+              <i class="text-primary fa-brands fa-css3-alt fa-3x"></i><br>
+              <i class="text-warning fa-brands fa-js-square fa-3x"></i><br>
+        </div>
+
+        <div class="col-md-8">
+            <img class="mb-2" src="Src/Weather-screenshot.png" alt="weather app screenshot">
+          <a href="#" class="btn btn-primary">Go To Webpage</a>
+          <a href="#" class="btn btn-primary">Go To Code</a>
+        </div>
+
+        <div class="col-md-2">
+          <br>
+                <p class="card-title h6">Description:</p>
+                <p class="card-text">This project lets the user input a city name to get the weather results.
+                  This project used plain Javascript to control the DOM to add all the weather elements.</p>
+        </div>
+
+      </div>
+    </div>
+
+    </div>
+      </div>
+</section><hr>
+<!-- Projects -->
+
+<!-- Contact Me -->
+  <section class="container" id = "contact">
+<div class="row">
+
+ <div class="col-sm-4 col-md-4 col-lg-4 waiting L">
+   <h2 class="fw-bold mb-4">Contact Me</h2>
+   <p class="text-muted mb-5">Feel free to contact me anytime.</p>
+ </div>
+
+ <div class="col-sm-8 col-md-8 col-lg-8 waiting R">
+   <div class="row g-1">
+
+     <div class="col-sm-12 col-md-12 col-lg-6 mb-5">
+        <div class="d-flex justify-content-start align-items-start">
+            <div class="p-3 bg-primary rounded-4">
+               <i class="fas fa-at fa-lg text-white fa-fw"></i>
+             </div>
+           <div class="ms-4">
+             <p class="fw-bold mb-1">Email</p>
+             <p class="text-muted mb-0">nicholas3429@gmail.com</p>
+            </div>
+            </div>
+            </div>
+
+      <div class="col-sm-12 col-md-12 col-lg-6 mb-5">
+         <div class="d-flex justify-content-start align-items-start">
+             <div class="p-3 bg-primary rounded-4">
+                <i class="fas fa-at fa-lg text-white fa-fw"></i>
+              </div>
+            <div class="ms-4">
+              <p class="fw-bold mb-1">Email</p>
+              <p class="text-muted mb-0">nicholas.hughes@ontariotechu.net</p>
+             </div>
+             </div>
+             </div>
+
+      <div class="col-sm-12 col-md-12 col-lg-6 mb-5">
+         <div class="d-flex justify-content-start align-items-start">
+             <div class="p-3 bg-primary rounded-4">
+                <i class="fab fa-github fa-lg text-white fa-fw"></i>
+              </div>
+            <div class="ms-4">
+              <p class="fw-bold mb-1">Github</p>
+              <a class="text-muted text-decoration-none mb-0" href="https://github.com/nickhughes34/nickhughes34.github.io" target="_blank">Link</a>
+             </div>
+             </div>
+             </div>
+
+     <div class="col-sm-12 col-md-12 col-lg-6 mb-5">
+        <div class="d-flex justify-content-start align-items-start">
+            <div class="p-3 bg-primary rounded-4">
+               <i class="fab fa-linkedin fa-lg text-white fa-fw"></i>
+             </div>
+           <div class="ms-4">
+             <p class="fw-bold mb-1">Linked In</p>
+             <a class="text-muted text-decoration-none mb-0"href="http://www.linkedin.com/in/nh-8a46491a3" target="_blank">Link</a>
+            </div>
+            </div>
+            </div>
+
+         </div>
+       </div>
+     </div>
+
+  </section>
+<!-- Contact Me -->
+</main>
+   <!-- Main Workspace -->
+
+<!-- Footer -->
+<footer class="bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p></p>
+    </section>
+    <!-- Section: Text -->
+  </div>
+  <!-- Grid container -->
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            <p class="mb-0">Nicholas Hughes  © 2022 Copyright</p>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/603d518eab.js" crossorigin="anonymous"></script>
+<!-- Angular -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+<!-- Scripts -->
+<script type="text/javascript" src="Src/index-angular.js"></script>
+<script type="text/javascript" src="Src/index.js"></script>
+  </body>
+</html>
