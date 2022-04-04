@@ -1,0 +1,99 @@
+main{
+  overflow-x: hidden;
+}
+
+.navbar .nav-link {
+  color: #fff !important;
+}
+
+.background-image{
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+  border-radius: 0% 0% 100% 100%/0% 0% 10% 10%;
+}
+
+#cover{
+  position: relative;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.MainText{
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 20px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  animation: fadeIn 2s forwards;
+}
+
+.main2{
+  top: 20%;
+  left: 50%;
+}
+
+.logo{
+  width: 100%;
+  height: 100%;
+  user-select: none;
+}
+
+.SocialMedia a{
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 40px;
+}
+
+.fadeInO{
+  animation: fadeInO 3s forwards;
+}
+
+@keyframes fadeInO {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@keyframes fadeIn {
+  0% {opacity:0; transform: translate(0%, 0%)}
+  100% {opacity:1; transform: translate(-50%, -50%)}
+}
+
+.fadeInLeft{
+  animation: fadeInLeft 3s forwards;
+}
+
+@keyframes fadeInLeft {
+  0% {opacity:0; transform: translateX(-20%);}
+  100% {opacity:1; transform: translateX(0%);}
+}
+
+.fadeInRight{
+  animation: fadeInRight 3s forwards;
+}
+
+@keyframes fadeInRight {
+  0% {opacity:0; transform: translateX(20%);}
+  100% {opacity:1; transform: translateX(0%);}
+}
+
+.box div{
+  background-color: hsl(220, 33.3%, 98.2%);
+  border: 5px solid black;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.move{
+  margin-top: -20px;
+  border: 0px solid transparent;
+  border-radius: 15px;
+}
+
+
+.border1{
+  border-left: 2px solid grey;
+  border-right: 2px solid grey;
+}
