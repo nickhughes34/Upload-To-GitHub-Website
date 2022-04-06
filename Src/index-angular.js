@@ -10,6 +10,7 @@ app.controller("MainController", function($scope){
   var react = "text-info fa-brands fa-react fa-3x";
   var nodeJs = "text-success fa-brands fa-node-js fa-3x";
   var python = "text-warning fa-brands fa-python fa-3x";
+  var database = "text-dark fa-solid fa-database fa-3x";
   var jQuery = "jQuery";
 
   $scope.projects = [
