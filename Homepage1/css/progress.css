@@ -1,0 +1,192 @@
+.wrap {
+  font-family: 'Times New Roman', sans-serif;
+  width: 100%;
+  height: 60px;
+  z-index:0;
+  white-space: nowrap;
+  overflow:hidden;
+  color: #FFFFFF;
+}
+
+.stepnum {
+  margin-top: 8px;
+  font-weight: bold;
+  font-size: 1.2vw;
+}
+
+.description {
+  font-size: 1.2vw;
+}
+
+.wrap div:first-child{margin-left:-2%;}
+
+.progress {
+  margin:0;
+  margin-left:0.5%;
+  height: 60px;
+  width: 16.66%;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  line-height: 20px;
+  transition: all 0.8s;
+}
+
+.progress:before,
+.progress:after {
+  content: "";
+  position: absolute;
+  transition: all 0.8s;
+  z-index:-1;
+}
+
+.progress:before {
+  height: 50%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-transform: skew(45deg);
+  -moz-transform: skew(45deg);
+  transform: skew(45deg);
+}
+
+.progress:after {
+  height: 50%;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-transform: skew(-45deg);
+  -moz-transform: skew(-45deg);
+  transform: skew(-45deg);
+}
+
+.active:before, .active:after {
+  background: #87CEEB;
+}
+
+/* Applies to 699px and down */
+@media only screen and (max-width: 699px) {
+  .stepnum {
+    font-size: 2vw;
+  }
+  .description {
+    font-size: 1.7vw;
+  }
+}
+
+/* Applies to 600px and down */
+@media only screen and (max-width: 600px) {
+  .stepnum {
+    font-size: 2vw;
+  }
+  .description {
+    font-size: 1.65vw;
+  }
+}
+
+/* Applies to 499px and down */
+@media only screen and (max-width: 499px) {
+  .stepnum {
+    font-size: 2.3vw;
+  }
+  .description {
+    font-size: 1.7vw;
+  }
+}
+
+/* Applies to 400px and down */
+@media only screen and (max-width: 400px) {
+  .stepnum {
+    font-size: 2.5vw;
+    margin-top: 10px;
+    margin-bottom: 3px;
+  }
+  .description {
+    font-size: 1.9vw;
+  }
+}
+
+/* Applies to 300px and down */
+@media only screen and (max-width: 300px) {
+  .stepnum {
+    font-size: 3vw;
+  }
+  .description {
+    font-size: 2.1vw;
+  }
+}
+
+/* Applies to 220px and down */
+@media only screen and (max-width: 220px) {
+  .stepnum {
+    font-size: 3.2vw;
+  }
+  .description {
+    font-size: 2.2vw;
+  }
+}
+
+/* Applies to 200px and down */
+@media only screen and (max-width: 200px) {
+  .stepnum {
+    font-size: 3.3vw;
+  }
+  .description {
+    font-size: 2.3vw;
+  }
+}
+
+/* Applies to 130px and down */
+@media only screen and (max-width: 130px) {
+  .stepnum {
+    font-size: 3.4vw;
+  }
+  .description {
+    font-size: 2.4vw;
+  }
+}
+
+/* Last thing always takes precedence so that's why I put lowest last so when 320px is achieved it is not overidden */
+
+/* This rule also applies to bootstrap css. So first bootstrap then personal css, so bootstrap doesn't overide personal css */
+
+/* Applies to 700px and up */
+@media only screen and (min-width: 700px) {
+  .stepnum {
+    font-size: 1.6vw;
+  }
+  .description {
+    font-size: 1.6vw;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-height: 360px) {
+  .stepnum {
+    font-size: 1.4vw;
+  }
+  .description {
+    font-size: 1.4vw;
+  }
+}
+
+/* Applies to 1200px and up */
+@media only screen and (min-width: 1200px) {
+  .stepnum {
+    font-size: 1.2vw;
+  }
+  .description {
+    font-size: 1.2vw;
+  }
+}
+
+/* Applies to 2560px and up */
+@media only screen and (min-width: 2560px) {
+  .stepnum {
+    font-size: 1vw;
+  }
+  .description {
+    font-size: 1vw;
+  }
+}
