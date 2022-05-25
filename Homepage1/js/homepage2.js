@@ -1,4 +1,4 @@
-var backgroundVideo =  document.getElementById('backgroundVideo')
+/*var backgroundVideo =  document.getElementById('backgroundVideo')
 
 backgroundVideo.addEventListener('timeupdate', function() {
 var videoCurrentTime = backgroundVideo.currentTime;
@@ -6,3 +6,4 @@ var videoCurrentTime = backgroundVideo.currentTime;
         backgroundVideo.pause()
       }
 });
+*/
