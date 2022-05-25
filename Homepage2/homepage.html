@@ -7,11 +7,11 @@
     <!-- Sets title of web tab -->
     <title>The Space Station</title>
     <!-- Icons are imported (thus applied) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
     <!-- CSS is imported thus applied -->
     <link rel="stylesheet" href="css/homepage3.css">
-    <link rel="stylesheet" href="css/progress.css">
+    <!--<link rel="stylesheet" href="css/progress.css">-->
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <link rel="icon" type="image/x-icon" href="../images/ilogo.png">
     <!-- style media="screen" allows us to specify what we want to do on different sized screens -->
@@ -21,293 +21,138 @@
   </head>
 
   <body>
-<!--
-    <div class="wrap" style="margin-bottom:20px; margin-top:-80px;">
-
-      <div class="progress active">
-          <div class="stepnum">
-            Step 1
-          </div>
-          <div class="description">
-            Create Account
-          </div>
-      </div>
-
-      <div class="progress">
-        <div class="stepnum">
-          Step 2
-        </div>
-        <div class="description">
-          Finish Registration
-        </div>
-      </div>
-
-      <div class="progress">
-        <div class="stepnum">
-          Step 3
-        </div>
-        <div class="description">
-          Fill Questionnaire
-        </div>
-      </div>
-
-      <div class="progress">
-        <div class="stepnum">
-          Step 4
-        </div>
-        <div class="description">
-          Sign In
-        </div>
-      </div>
-
-      <div class="progress">
-        <div class="stepnum">
-          Step 5
-        </div>
-        <div class="description">
-          Fill Questionnaire
-        </div>
-      </div>
-
-      <div class="progress">
-        <div class="stepnum">
-          Last Step
-        </div>
-        <div class="description">
-          Submit Form
-        </div>
-      </div>
-
-    </div>-->
 
     <nav class="">
-      <div class="logo"><a href=""><img src="images/llogo.png" height= "auto" width= "500px" alt="logo"></a></div>
-      <input type="checkbox" id="click">
+      <div class="logo"><a href=""><img src="images/llogo.png" height= "auto" width= "250px" alt="logo"></a></div>
 
-      <label for="click" class="menu-btn">
-        <i class="fas fa-bars"></i>
-      </label>
 
-      <ul id = "first">
+      <div class="button">
+        <button id="open"><i class="fa-solid fa-bars fa-2x"></i><i class="fa-solid fa-bars fa-2x shadow"></i></button>
+      </div>
+
+      <ul id = "first" class="show2">
         <li><a class="borderStyle borderStyle2" href="#category">Missions</a></li>
         <li><a class="borderStyle borderStyle2" href="#aboutus">About Us</a></li>
         </ul>
 
-      <ul id = "second">
-        <li><a class="borderStyle borderStyle2" href="#schedule">Application Hours</a></li>
+      <ul id = "second" class="show2">
+        <li><a class="borderStyle borderStyle2" href="#schedule">Application</a></li>
         <li><a class="borderStyle borderStyle2" href="#contact">Contact Us</a></li>
       </ul>
 
     </nav>
 
-<hr>
-<div class="container">
-  <div class="categorycol col2">
-    <div class="headerimage">
-    <video id = "backgroundVideo" autoplay muted>
-      <source src="images/headervideo.mp4" type="video/mp4">
-        Video not supported by your bowser.
-    </video>
-  </div>
-    </div>
+    <div class="hidden block" id ="sideNav">
 
-  <div class="categorycol col2">
-    <div class="personalFont" style="padding-left:50px;">
-    <h4 class="left">Mission Statement:</h4>
-      <ul class="left" style="padding: 5% 20%; padding-right: 0%;">
-        <li>Developing Space Technology</li>
-        <li>Increasing Our Knowledge of Space</li>
-        <li>Exploring Space</li>
-        <li>Education of The People</li>
+      <div class="button right">
+        <button id="close"><i class="fa-solid fa-xmark fa-2x"></i><i class="fa-solid fa-xmark fa-2x shadow"></i></button>
+      </div>
+
+      <ul id = "">
+        <li><a class="borderStyle borderStyle2" href="#category">Missions</a></li>
+        <li><a class="borderStyle borderStyle2" href="#aboutus">About Us</a></li>
+        <li><a class="borderStyle borderStyle2" href="#application">Application</a></li>
+        <li><a class="borderStyle borderStyle2" href="#day1">May 25th 2022</a></li>
+        <li><a class="borderStyle borderStyle2" href="#day2">May 25th 2021</a></li>
+        <li><a class="borderStyle borderStyle2" href="#day3">Jun 11th 2020</a></li>
+        <li><a class="borderStyle borderStyle2" href="#day4">March 21st 2019</a></li>
+        <li><a class="borderStyle borderStyle2" href="#contact">Contact Us</a></li>
       </ul>
-      <p class="center">We aim to take humans father then ever before. We plan to send human, robots, AIs into space to push the boundaries of space travel.</p>
-      </div>
+
+    </div>
+
+
+    <span id="day1"></span>
+    <div class="background img3">
       <div class="headertext">
-        <button onclick="myLink();">Register Today</button>
-      </div>
-  </div>
-</div>
-<hr>
 
-    <div class="content">
-      <div class="sectiontitle center" id="category">
-        <i class="customicon"></i>
-        <h1>Recent Missions</h1>
-        <i class="customicon"></i>
-      </div><hr>
-
-      <div class="container" style="margin: 00px;">
-
-        <!--<div class="flip-box">
-        <div class="flip-box-inner">
-            <div class="flip-box-front">
-                <div class="flip-box-back">
-                    </div>
-                </div>
+              <div class="center" id="">
+                <i class="customicon"></i>
+                <div class="contianer">
+                <p class="borderStyle circle">May 25th 2022</p>
+                <h3 class="borderStyle">Recent Missions</h3>
+              <button onclick="myLink();">Register Today</button>
               </div>
-            </div>-->
-
-            <div class="container">
-
-              <div class="categorycol zoom back1">
-                <a><img src="images/moon.jpg" alt="moon">
-                <div class="overlayposition">
-                  <div class="categoryname">Moon Mission</div>
-                </div></a>
+                <i class="customicon"></i>
               </div>
-
-              <div class="categorycol zoom back2">
-                <a><img src="images/hubble.jpg" alt="hubble">
-                <div class="overlayposition">
-                  <div class="categoryname">Hubble Findings</div>
-                </div></a>
-              </div>
-
-              <div class="categorycol zoom back1">
-                <a><img src="images/earth.jpg" alt="earth">
-                <div class="overlayposition">
-                  <div class="categoryname">Earth Images</div>
-                </div></a>
-              </div>
-
-              <div class="categorycol zoom back2">
-                <a><img src="images/spacerocks.jpg" alt="space rocks">
-                <div class="overlayposition">
-                  <div class="categoryname">Deep Space Images</div>
-                </div></a>
-              </div>
-
-              <div class="categorycol zoom back1">
-                <a><img src="images/hubble2.jpg" alt="hubble MK2">
-                <div class="overlayposition">
-                  <div class="categoryname">Hubble Findings 2</div>
-                </div></a>
-              </div>
-
-              <div class="categorycol zoom back2">
-                <a><img src="images/spacebutterfly.jpg" alt="space butterfly">
-                <div class="overlayposition">
-                  <div class="categoryname">Space Butterfly</div>
-                </div></a>
-              </div>
-
-            </div>
-
-</div>
-
-        <hr>
-      <div class="sectiontitle center" id="aboutus">
-        <i class="customicon"></i>
-        <h1>About Us</h1>
-        <i class="customicon"></i>
-      </div><hr>
-
-      <div class="row">
-
-        <div class="aboutcol">
-          <div class="card">
-            <h3>99%</h3>
-            <p>Launch Rate</p>
-          </div>
-        </div>
-
-        <div class="aboutcol">
-          <div class="card">
-            <h3>99.5%</h3>
-            <p>Success Rate</p>
-          </div>
-        </div>
-
-        <div class="aboutcol">
-          <div class="card">
-            <h3>20,000+</h3>
-            <p>Employees</p>
-          </div>
-        </div>
-
-        <div class="aboutcol">
-          <div class="card">
-            <h3>10,000+</h3>
-            <p>Applicants</p>
-          </div>
-        </div>
-
-        <div class="aboutcol">
-          <div class="card">
-            <h3>2+</h3>
-            <p>Current Missions</p>
-          </div>
-        </div>
-
-        <div class="aboutcol">
-          <div class="card">
-            <h3>40+</h3>
-            <p>Offices Across Canada</p>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="row">
-        <hr>
-        <div class="sectiontitle center" id="schedule">
-          <i class="customicon"></i>
-          <h1>Application Hours</h1>
-          <i class="customicon"></i>
-        </div>
-        <hr>
-
-        <div class="schedulecol">
-          <table>
-            <tr style="background: #FFC900;">
-              <th>Location</th>
-              <th>Time</th>
-              <th>Response</th>
-            </tr>
-            <tr>
-              <td>Ajax</td>
-              <td>11am - 5pm</td>
-              <td>1-2 Weeks</td>
-            </tr>
-            <tr style="background: #FFC900;">
-              <td>Brock</td>
-              <td>11am - 4pm</td>
-              <td>1-3 Weeks</td>
-            </tr>
-            <tr>
-              <td>Clarington</td>
-              <td>11am - 5pm</td>
-              <td>1-2 Weeks</td>
-            </tr>
-            <tr style="background: #FFC900;">
-              <td>Oshawa</td>
-              <td>11am - 6pm</td>
-              <td>2-3 Weeks</td>
-            </tr>
-            <tr>
-          </table>
-        </div>
-
-        <hr>
-        <div class="sectiontitle center" id="contact">
-          <i class="customicon"></i>
-          <h1>Contact Us</h1>
-          <i class="customicon"></i>
-        </div>
-        <hr>
-        <div class="sectiontitle">
-        <p class="center">Phone: +1-Space-Station</p>
-        <p class="center">Email: TheSpaceStation@space.ca</p>
-          </div>
 
       </div>
     </div>
+
+<span id="day2"></span>
+    <div class="background img2">
+      <div class="headertext">
+
+              <div class="center" id="">
+                <i class="customicon"></i>
+                <div class="contianer">
+                <p class="borderStyle circle">May 25th 2021</p>
+                <h3 class="borderStyle">Recent Missions</h3>
+              <button onclick="myLink();">Register Today</button>
+              </div>
+                <i class="customicon"></i>
+              </div>
+
+      </div>
+    </div>
+
+<span id="day3"></span>
+    <div class="background img4">
+      <div class="headertext">
+
+              <div class="center" id="">
+                <i class="customicon"></i>
+                <div class="contianer">
+                <p class="borderStyle circle">June 11th 2020</p>
+                <h3 class="borderStyle">Recent Missions</h3>
+              <button onclick="myLink();">Register Today</button>
+              </div>
+                <i class="customicon"></i>
+              </div>
+
+      </div>
+    </div>
+
+<span id="day4"></span>
+    <div class="background img1">
+      <div class="headertext">
+
+        <div class="center" id="">
+          <i class="customicon"></i>
+          <div class="contianer">
+          <p class="borderStyle circle">March 21st 2019</p>
+          <h3 class="borderStyle">Recent Missions</h3>
+        <button onclick="myLink();">Register Today</button>
+        </div>
+          <i class="customicon"></i>
+        </div>
+
+      </div>
+    </div>
+
+<span id="contact"></span>
+<footer>
+
+  <div class="center">
+    <a><i class="fa-brands fa-facebook-f"></i></a>
+    <a><i class="fa-brands fa-twitter"></i></a>
+    <a><i class="fa-brands fa-linkedin-in"></i></a>
+  </div>
+
+    <div class="center">
+      <p class="customFont">+1 218 TSStation</p>
+      <p class="customFont">Financial Freedom @ 2022</p>
+      <p class="customFont">TheSpaceStation@space.com</p>
+    </div>
+
+</footer>
 
     <!-- Script required for alert popup  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
     <!-- Script required for detecting browser  -->
     <script src="https://unpkg.com/bowser@2.11.0/es5.js"></script>
     <!-- Script points towards my JS file -->
+    <script src="js/circletype.min.js"></script>
   <!--<script src = "js/homepage.js"></script>-->
    <script src = "js/homepage3.js"></script>
   </body>
