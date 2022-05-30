@@ -10,78 +10,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
     <!-- CSS is imported thus applied -->
-    <link rel="stylesheet" href="css/homepage2.css">
+    <link rel="stylesheet" href="css/homepage2-b.css">
     <link rel="stylesheet" href="css/progress.css">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!-- Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@1,300&display=swap" rel="stylesheet">
+     <!-- Icon-->
     <link rel="icon" type="image/x-icon" href="images/slogo.png">
     <!-- style media="screen" allows us to specify what we want to do on different sized screens -->
-    <style media="screen">
-    </style>
+    <style media="screen"></style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
   <body>
-<!--
-    <div class="wrap" style="margin-bottom:20px; margin-top:-80px;">
 
-      <div class="progress active">
-          <div class="stepnum">
-            Step 1
-          </div>
-          <div class="description">
-            Create Account
-          </div>
-      </div>
-
-      <div class="progress">
-        <div class="stepnum">
-          Step 2
-        </div>
-        <div class="description">
-          Finish Registration
-        </div>
-      </div>
-
-      <div class="progress">
-        <div class="stepnum">
-          Step 3
-        </div>
-        <div class="description">
-          Fill Questionnaire
-        </div>
-      </div>
-
-      <div class="progress">
-        <div class="stepnum">
-          Step 4
-        </div>
-        <div class="description">
-          Sign In
-        </div>
-      </div>
-
-      <div class="progress">
-        <div class="stepnum">
-          Step 5
-        </div>
-        <div class="description">
-          Fill Questionnaire
-        </div>
-      </div>
-
-      <div class="progress">
-        <div class="stepnum">
-          Last Step
-        </div>
-        <div class="description">
-          Submit Form
-        </div>
-      </div>
-
-    </div>-->
-
-    <nav class="">
-          <ul class="">
+    <nav id = "topNav" class="tleft">
+          <ul class="tleft">
             <li><a class="borderStyle borderStyle2" href="#category">Personal</a></li>
             <li><a class="borderStyle borderStyle2" href="#aboutus">About Us</a></li>
             <li><a class="borderStyle borderStyle2" href="#schedule">Bank Hours</a></li>
@@ -89,24 +35,48 @@
           </ul>
     </nav>
 
-<div class="center">
+<div id = "mainNav" class="center">
     <div class="container2" style="margin-bottom: 0px;">
       <div class="logo">
+        <div id = "buttonNav" ><button id="open"><i class="fa-solid fa-bars fa-2x"></i></button></div>
         <div class="left"><a href=""><img src="images/logo.png" height= "auto" width= "500px" alt="logo"></a></div>
-        <div class="right">
+        <div id = "search" class="right">
           <input type="text" placeholder="Search.." name="search"\>
           <button type="submit"><i class="fa fa-search"></i></button>
         </div>
       </div>
     </div>
-</div><hr style=" position: relative; width: 100%; left: 0%;">
+</div>
+<hr style=" position: relative; width: 100%; left: 0%;">
 
 <div class="feedback">
   <a><p>Feedback</p></a>
 </div>
 
-<nav class="nav2">
+<nav id = "bottomNav" class="nav2">
       <ul class="">
+        <li><a class="borderStyle borderStyle2" href="#">Accounts</a></li>
+        <li><a class="borderStyle borderStyle2" href="#">Mortgage</a></li>
+        <li><a class="borderStyle borderStyle2" href="#">Credit Cards</a></li>
+        <li><a class="borderStyle borderStyle2" href="#">Loans</a></li>
+        <li><a class="borderStyle borderStyle2" href="#">Line of Credit</a></li>
+        <li><a class="borderStyle borderStyle2" href="#">Insurance</a></li>
+        <li><a class="borderStyle borderStyle2" href="#">Other Services</a></li>
+      </ul>
+</nav>
+
+<nav id = "sideNav" class="block hidden">
+      <div id = "search2" class="">
+        <input type="text" placeholder="Search.." name="search"\>
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </div>
+      <hr>
+      <ul class="">
+        <li><a class="borderStyle borderStyle2" href="#category">Personal</a></li>
+        <li><a class="borderStyle borderStyle2" href="#aboutus">About Us</a></li>
+        <li><a class="borderStyle borderStyle2" href="#schedule">Bank Hours</a></li>
+        <li><a class="borderStyle borderStyle2" href="#contact">Contact Us</a></li>
+        <hr>
         <li><a class="borderStyle borderStyle2" href="#">Accounts</a></li>
         <li><a class="borderStyle borderStyle2" href="#">Mortgage</a></li>
         <li><a class="borderStyle borderStyle2" href="#">Credit Cards</a></li>
@@ -137,7 +107,7 @@
 <div class="center">
       <div class="container">
 
-<div class="container back1">
+<div class="container back1 item">
         <div class="categorycol item moveD zoom">
           <img src="images/people.jpg" alt="" style="width:100%;display:block;z-index:-1;">
           <div class="overlayposition">
@@ -146,7 +116,7 @@
         </div>
 
         <div class="categorycol item moveU">
-          <div class="personalFont" style="padding-left:50px;">
+          <div class="personalFont" style="padding-left:0px;">
           <h4 class="tleft">We Offer The Following Accounts:</h4>
             <ul class="tleft" style="padding-left: 20%;"><br>
               <li>Chequing Accounts</li>
@@ -161,7 +131,7 @@
         </div>
 </div>
 
-<div class="container back2">
+<div class="container back2 item">
         <div class="categorycol item moveR">
           <div class="personalFont">
           <h4 class="tleft">The Benefits To Our Mortgages Are:</h4>
@@ -186,7 +156,7 @@
         </div>
 </div>
 
-<div class="container back1">
+<div class="container back1 item">
         <div class="categorycol item moveR zoom">
           <img src="images/credit.jpg" alt="" style="width:100%;display:block;z-index:-1;">
           <div class="overlayposition">
@@ -195,7 +165,7 @@
         </div>
 
         <div class="categorycol item moveL">
-          <div class="personalFont" style="padding-left:50px;">
+          <div class="personalFont" style="padding-left:0px;">
           <h4 class="tleft">We Offer The Following Cards:</h4>
             <ul class="tleft" style="padding-left: 20%;"><br>
               <li>No Fee Student Card</li>
@@ -210,7 +180,7 @@
         </div>
 </div>
 
-<div class="container back2">
+<div class="container back2 item">
         <div class="categorycol item moveR">
           <div class="personalFont">
           <h4 class="tleft">We Offer The Following Packages:</h4>
@@ -245,7 +215,7 @@
     </div>
 
 <div class="center" style="background:white; padding: 20px;">
-      <div class="row container" style="margin-left: -10%;">
+      <div class="row container moveLeft">
 
         <div class="row2 aboutcol customFont">
             <div class="tright">
@@ -316,11 +286,11 @@
 </div>
 
 
-<div class="center" style="padding: 20px;">
-      <div class="sectiontitle" id="schedule">
-        <h1 style="color:#005FB8;">Banking Hours</h1><hr>
-      </div>
+<div class="sectiontitle" id="schedule">
+  <h1 style="color:#005FB8;">Banking Hours</h1><hr>
+</div>
 
+<div class="center" style="padding: 20px;">
       <div class="container" style="">
         <div class="schedulecol" style="">
 
@@ -417,6 +387,6 @@
     <script src="https://unpkg.com/bowser@2.11.0/es5.js"></script>
     <!-- Script points towards my JS file -->
   <script src = "js/homepage.js"></script>
-  <!--<script src = "js/homepage2.js"></script>-->
+  <script src = "js/homepage2.js"></script>
   </body>
 </html>
