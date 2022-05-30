@@ -602,7 +602,6 @@ th, td {
 
 .personalFont{
   padding: 16px;
-  font-size: 1.5vw;
 }
 
 .sectiontitle p {
@@ -759,11 +758,11 @@ body{
     margin-left: 0px;
     padding: 0px;
   }
-  .tleft{
+  .categorycol .personalFont .tleft{
       text-align: center;
       padding-top: 20px;
   }
-  .tright{
+  .categorycol .personalFont .tright{
         text-align: center;
   }
   .row2{
@@ -796,6 +795,9 @@ body{
  .back2:hover{
    background: linear-gradient(180deg, #444 , #005FB8 );
    transition: 1s;
+ }
+ .row2 .tleft{
+     padding-top: 20px;
  }
 }
 
