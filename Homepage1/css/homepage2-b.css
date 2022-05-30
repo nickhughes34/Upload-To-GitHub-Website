@@ -805,6 +805,9 @@ body{
   #open{
       left: 6%;
     }
+  .moveLeft{
+      margin-left: 10%;
+    }
 }
 
 /* Applies to 499px and down */
