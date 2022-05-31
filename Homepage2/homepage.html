@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- text direction is set to left to right -->
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" id="html">
 
   <head>
     <meta charset="utf-8" name="robots" content="noindex, nofollow">
@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="css/homepage3.css">
     <!--<link rel="stylesheet" href="css/progress.css">-->
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!--FONT-->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+    <!--ICON-->
     <link rel="icon" type="image/x-icon" href="images/ilogo.png">
     <!-- style media="screen" allows us to specify what we want to do on different sized screens -->
     <style media="screen">
@@ -57,14 +60,16 @@
         <li><a class="borderStyle borderStyle2" href="#day3">Jun 11th 2020</a></li>
         <li><a class="borderStyle borderStyle2" href="#day4">March 21st 2019</a></li>
         <li><a class="borderStyle borderStyle2" href="#contact">Contact Us</a></li>
+        <li class="center" style="  display: flex; width: 100%;"><label class="switchButton"><input id = "switchButton" type="checkbox" checked><span class="slide round"></span></label><a class="borderStyle borderStyle2" style="pointer-events: none;">Outline Text</a></li>
       </ul>
 
     </div>
 
 
     <span id="day1"></span>
+    <span id="aboutus"></span>
     <div class="background img3">
-      <div class="headertext">
+      <div class="headertext" style="position: relative;">
 
               <div class="center" id="">
                 <i class="customicon"></i>
@@ -75,8 +80,17 @@
               </div>
                 <i class="customicon"></i>
               </div>
-
       </div>
+
+<div class="b1" style="">
+      <div class="bottom">
+      <p class="">
+        <b class="borderStyle" style="padding: 0px; padding-left: 5px;">Missions Statement: </b>
+        <span class="sectiontitle" style="padding-left: 0px;">We Are Entering Space Like Never Before. We Explore The Unkown So Humanity Can Reach New Heights.</span>
+      </p>
+    </div>
+</div>
+
     </div>
 
 <span id="day2"></span>
@@ -92,8 +106,17 @@
               </div>
                 <i class="customicon"></i>
               </div>
-
       </div>
+
+<div class="b2" style="">
+      <div class="bottom b1">
+      <p class="">
+        <b class="borderStyle" style="padding: 0px; padding-left: 5px;">Register Today: </b>
+        <span class="sectiontitle" style="padding-left: 0px;">Do You Like Venturing The Unkown? Are You Observant?</span>
+      </p>
+    </div>
+</div>
+
     </div>
 
 <span id="day3"></span>
@@ -131,19 +154,27 @@
     </div>
 
 <span id="contact"></span>
-<footer>
+<footer class="center removeFooter">
 
   <div class="center">
     <a><i class="fa-brands fa-facebook-f"></i></a>
     <a><i class="fa-brands fa-twitter"></i></a>
     <a><i class="fa-brands fa-linkedin-in"></i></a>
+    <a><i class="fa-brands fa-youtube"></i></a>
+    <a><i class="fa-brands fa-instagram"></i></a>
   </div>
 
-    <div class="center">
-      <p class="customFont">+1 218 TSStation</p>
-      <p class="customFont">Financial Freedom @ 2022</p>
-      <p class="customFont">TheSpaceStation@space.com</p>
-    </div>
+      <div class="center">
+        <p class="customFont">+1 218 TSStation</p>
+      </div>
+
+      <div class="center">
+            <p class="customFont">TheSpaceStation@space.com</p>
+      </div>
+
+      <div class="center">
+            <p class="customFont">The Space Station @ 2022</p>
+      </div>
 
 </footer>
 
