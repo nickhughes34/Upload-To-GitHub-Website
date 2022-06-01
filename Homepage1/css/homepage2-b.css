@@ -9,7 +9,10 @@ body, html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Averia Serif Libre', cursive;
+  //font-family: 'Averia Serif Libre', cursive;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .customFont{
@@ -545,6 +548,10 @@ th, td {
   margin: 10px;
 }
 
+th{
+  font-weight: bold;
+}
+
 .aboutcol {
   /* Always start from the left */
   //float: left;
@@ -716,7 +723,7 @@ body{
 
 /* Applies to 1570px and down */
 @media only screen and (max-width: 1570px) {
-  #bottomNav ul{
+  #bottomNav ul, #topNav ul{
     margin-left: 0%;
   }
   nav{
