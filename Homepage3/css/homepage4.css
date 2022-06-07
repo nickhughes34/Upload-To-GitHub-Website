@@ -707,22 +707,39 @@ h2{
 
 .headertext.link button{
   font-weight: bold;
-color: var(--bg-white);
-background-color: var(--bg-table-2);
-border: 2px solid transparent;
+  color: var(--header-bg-color);
+  background-color: var(--bg-table-2);
+  border: 2px solid var(--header-bg-color);
+  margin: 15px 00px;
+  background: linear-gradient(90deg, var(--bg-table-2), var(--main-bg-color), rgba(0, 95, 184, 1), var(--bg-table-2));
+  background-size: 400%;
+  animation: animate 8s linear infinite;
+}
+
+.headertext.link{
+  border: 15px solid transparent;
+  border-top: 6px solid var(--bg-table-2);
+  border-bottom: 6px solid var(--bg-table-2);
+  width: 100%;
+  position: relative;
 }
 
 /* Sign up button in header image hover functionality */
 .headertext.link button:hover, .headertext button:hover {
   background-color: var(--bg-table-2);
   box-shadow: 0 8px 16px 0 rgba(var(--register-button),0.19), 0 6px 20px 0 rgba(var(--register-button),0.2);
-  color: var(--bg-white);
+  color: var(--header-bg-color);
   cursor: pointer;
 }
 
 .headertext.link button:hover{
   background-color: var(--header-bg-color);
   border: 2px solid  var(--bg-table-2);
+}
+
+@keyframes animate {
+  0% {background-position: 0%;}
+  100% {background-position: 400%;}
 }
 
 .underline{
