@@ -1152,6 +1152,7 @@ tr, .zoom{
     background: transparent;
     cursor: pointer;
     border: none;
+    color: var(--bg-table-2);
 }
 
 #close{
