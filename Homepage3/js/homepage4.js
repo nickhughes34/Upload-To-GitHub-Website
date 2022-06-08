@@ -10,12 +10,13 @@ var open =  document.getElementById('open');
 var close =  document.getElementById('close');
 var sideNav =  document.getElementById('sideNav');
 var html =  document.getElementById('html');
+var color = document.getElementById("Register");
 
+/*
 var op1 =  document.getElementById('op1');
 var op2 =  document.getElementById('op2');
 var op3 =  document.getElementById('op3');
 var op4 =  document.getElementById('op4');
-var color = document.getElementById("color");
 
 op1.addEventListener('click', function(){
   document.documentElement.style.setProperty('--header-bg-color', 'rgba(0,0,0,0.7)');
@@ -64,6 +65,7 @@ op4.addEventListener('click', function(){
   document.documentElement.style.setProperty('--bg-button-text', 'rgba(0, 95, 184, 1)');
   document.documentElement.style.setProperty('--bg-button-highlight', 'rgba(0, 95, 184, 1)');
 });
+*/
 
 open.addEventListener('click', Toggle);
 close.addEventListener('click', Toggle);
