@@ -1631,6 +1631,9 @@ visibility: hidden;
  .scrollWheel .row7 .aboutcol{
    flex: 1 0 50%;
  }
+ .row .aboutcol.left{
+    padding-top: 50px !important;
+ }
 }
 
 /* Applies to 860px and down */
@@ -1765,7 +1768,7 @@ visibility: hidden;
  .headertext h4 {
    font-size: 16px;
  }
- .row, .row3, .row4{
+ .row, .row3, .row4, .row7{
    grid-template-columns: repeat(1, 1fr);
  }
  .row3{
@@ -1807,9 +1810,6 @@ visibility: hidden;
  }
  .Rabout{
    width: 80%;
- }
- .row7{
-    grid-template-columns: repeat(1, 1fr);
  }
 }
 
