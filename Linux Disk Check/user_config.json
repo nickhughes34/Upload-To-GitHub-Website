@@ -1,0 +1,19 @@
+{
+	"user": [
+            {
+                "username": "example",
+                "name": "example example-example",
+                "email": "example.example-example@example.ca"
+            },
+            {
+                "username": "example",
+                "name": "example example example",
+                "email": "example.example@example.net"
+            },
+            {
+                "username": "testuser",
+                "name": "Test User",
+                "email": "example.example@example.net"
+            }
+	]
+}

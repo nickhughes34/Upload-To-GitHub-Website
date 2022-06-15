@@ -1,0 +1,14 @@
+{
+	"admin": [
+            {
+                "username": "example",
+                "name": "example example",
+                "email": "example.example@example.net",
+		    "bot_email": "example@example.com",
+                "app_password": "example",
+		    "auto_delete": "no",
+		    "report": "yes",
+		    "gpu_server": 2
+            }
+	]
+}
