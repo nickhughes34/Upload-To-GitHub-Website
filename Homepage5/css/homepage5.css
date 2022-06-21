@@ -333,13 +333,15 @@ input[type="checkbox"] {
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 9;
-  //margin-top: -180px;
+  //margin-top: 180px;
 }
 
 .header > .headertext{
   //color: var(--bg-table-2);
   color: var(--main-bg-color);
-  padding: 10% 0px;
+  padding: 0% 0px;
+  padding-top: 15%;
+  padding-bottom: 5%;
   //margin-top: 180px;
   //text-shadow: -1px -1px 0 var(--bg-white), 1px -1px 0 var(--bg-white), -1px 1px 0 var(--bg-white), 1px 1px 0 var(--bg-white);
   text-shadow: -1px -1px 0 rgb(var(--bg-table-2)), 1px -1px 0 rgb(var(--bg-table-2)), -1px 1px 0 rgb(var(--bg-table-2)), 1px 1px 0 var(--bg-table-2);
@@ -620,6 +622,12 @@ input[type="checkbox"] {
 
 footer .sectiontitle.bold{
   color: var(--main-bg-color) !important;
+}
+
+.no{
+  visibility: hidden;
+  height: 0px;
+  width: 0px;
 }
 
 /* Texts inside header image*/
