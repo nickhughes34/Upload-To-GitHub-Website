@@ -49,19 +49,19 @@ p.circle, span{
 }
 
 .img1{
-    background: url(../images/space-rocket1.jpg);
+    background: url(../images/space-rocket-1.jpg);
 }
 
 .img2{
-    background: url(../images/space-rocket2.jpg);
+    background: url(../images/space-rocket-2.jpg);
 }
 
 .img3{
-    background: url(../images/space-rocket3.jpg);
+    background: url(../images/space-rocket-3.jpg);
 }
 
 .img4{
-    background: url(../images/space-rocket4.jpg);
+    background: url(../images/space-rocket-4.jpg);
 }
 
 * {
