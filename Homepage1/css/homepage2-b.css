@@ -32,6 +32,14 @@ nav{
   flex-wrap: wrap;
 }
 
+.backing {
+    background: rgba(255,255,255,0.65);
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 35%;
+}
+
 .logo {
   color: #fff;
   font-size: 2.5vw;
@@ -358,7 +366,7 @@ input[type="checkbox"] {
   //position: relative;
   width: 100%;
   height: 65%;
-  background: url("../images/financial.jpg");
+  background: url("../images/financial1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -386,6 +394,10 @@ input[type="checkbox"] {
   color: white;
   position: relative;
   text-shadow: 1px 1px 8px rgba(0,0,0,0.6)
+}
+
+#topNav a:hover, #mainNav a:hover, #bottomNav a:hover{
+  cursor: pointer;
 }
 
 /* Header text inside header image*/
@@ -895,6 +907,9 @@ body{
     table{
       margin-left: -10%;
       width: 120%;
+    }
+    .customFont{
+      font-size: 18px;
     }
 }
 
