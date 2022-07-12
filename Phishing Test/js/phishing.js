@@ -16,11 +16,11 @@ for (i=1; i<101;i++){ //makes 2 lists fulled with numbers to 100.
 if (randomNumber == 1){
   filename = phishing.pop(-1)
   //content.innerHTML='<object id = "email" type="text/html" data="../Phishing_HTML/data (' + filename + ').html" style="min-height: 690px; width: 1500px;"></object>';
-  content.innerHTML='<object id = "email" type="text/html" data="/Phishing_HTML/data%20(' + filename + ').html" style="min-height: 690px; width: 1500px;"></object>';
+  content.innerHTML='<object id = "email" type="text/html" data="https://nickhughes34.github.io/Phishing%20Test/Phishing_HTML/data%20(' + filename + ').html" style="min-height: 690px; width: 1500px;"></object>';
 } else {
   filename = regular.pop(-1)
   //content.innerHTML='<object id = "email" type="text/html" data="../Regular_HTML/data (' + filename + ').html" style="min-height: 690px; width: 1500px;"></object>';
-  content.innerHTML='<object id = "email" type="text/html" data="/Regular_HTML/data%20(' + filename + ').html" style="min-height: 690px; width: 1500px;"></object>';
+  content.innerHTML='<object id = "email" type="text/html" data="https://nickhughes34.github.io/Phishing%20Test/Regular_HTML/data%20(' + filename + ').html" style="min-height: 690px; width: 1500px;"></object>';
 }
 
 next.addEventListener("click", function(){
@@ -65,11 +65,11 @@ if (randomNumber == 1){
     if (randomNumber == 1){
       filename = phishing.pop(-1)
       //content.innerHTML='<object id = "email" type="text/html" data="../Phishing_HTML/data (' + filename + ').html" style="min-height: 690px; width: 1500px;"></object>';
-      content.innerHTML='<object id = "email" type="text/html" data="/Phishing_HTML/data%20(' + filename + ').html" style="min-height: 690px; width: 1500px;"></object>';
+      content.innerHTML='<object id = "email" type="text/html" data="https://nickhughes34.github.io/Phishing%20Test/Phishing_HTML/data%20(' + filename + ').html" style="min-height: 690px; width: 1500px;"></object>';
     } else{
       filename = regular.pop(-1)
       //content.innerHTML='<object id = "email" type="text/html" data="../Regular_HTML/data (' + filename + ').html" style="min-height: 690px; width: 1500px;"></object>';
-      content.innerHTML='<object id = "email" type="text/html" data="/Regular_HTML/data%20(' + filename + ').html" style="min-height: 690px; width: 1500px;"></object>';
+      content.innerHTML='<object id = "email" type="text/html" data="https://nickhughes34.github.io/Phishing%20Test/Regular_HTML/data%20(' + filename + ').html" style="min-height: 690px; width: 1500px;"></object>';
     }
   }
 
