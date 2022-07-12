@@ -1,0 +1,154 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<style type="text/css">
+html {pointer-events: none;}
+
+    h4 
+    {
+        text-align: left;
+    }
+
+@media screen 
+{
+
+	.headerLineTitle
+	{
+		width:1.5in;
+		display:inline-block;
+		margin:0in;
+		margin-bottom:.0001pt;
+		font-size:11.0pt;
+		font-family:"Calibri","sans-serif";
+		font-weight:bold;
+	}
+
+	.headerLineText
+	{
+		display:inline;
+		margin:0in;
+		margin-bottom:.0001pt;
+		font-size:11.0pt;
+		font-family:"Calibri","sans-serif";
+		font-weight:normal;
+	}
+
+   .pageHeader
+   {
+		font-size:14.0pt;
+		font-family:"Calibri","sans-serif";
+		font-weight:bold;
+		visibility:hidden;
+		display:none;
+   }   
+}
+
+@media print 
+{
+	.headerLineTitle
+	{
+		width:1.5in;
+		display:inline-block;
+		margin:0in;
+		margin-bottom:.0001pt;
+		font-size:11.0pt;
+		font-family:"Calibri","sans-serif";
+		font-weight:bold;
+	}
+
+	.headerLineText
+	{
+		display:inline;
+		margin:0in;
+		margin-bottom:.0001pt;
+		font-size:11.0pt;
+		font-family:"Calibri","sans-serif";
+		font-weight:normal;
+	}
+
+   .pageHeader
+   {
+		font-size:14.0pt;
+		font-family:"Calibri","sans-serif";
+		font-weight:bold;
+		visibility:visible;
+		display:block;
+   }
+
+}
+</style>
+</head>
+<body>
+<span class='headerLineTitle'>Subject:</span><span class='headerLineText'>(no subject)</span><br/><br/>
+<font size="2"><div class="PlainText">&gt; On Sat, May 01, 2010 at 17:20:56 &#43;0200, Alois Mahdal wrote:<br>
+&gt;&gt; Hello,<br>
+&gt;&gt;<br>
+&gt;&gt; because a stupid mistake, I have interrupted apt-get during early<br>
+&gt;&gt; stage of dist-upgrade from Lenny to Squeeze.<br>
+&gt;&gt;<br>
+&gt;&gt; Now I cannot get apt-get working and I don't know how to fix it.<br>
+&gt;&gt;<br>
+<br>
+[...]<br>
+<br>
+&gt;&gt; dpkg: warning: 'ldconfig' not found on PATH.<br>
+&gt;&gt; dpkg: 1 expected program(s) not found on PATH.<br>
+&gt;&gt; NB: root's PATH should usually contain /usr/local/sbin, /usr/sbin<br>
+&gt;&gt; and /sbin.<br>
+&gt;&gt; E: Sub-process /usr/bin/dpkg returned an error code (2)<br>
+&gt;<br>
+&gt; Both &quot;locale&quot; and &quot;ldconfig&quot; were shifted from libc6 to libc-bin going<br>
+&gt; from Lenny and Squeeze; my guess would be that you upgraded to the<br>
+&gt; Squeeze version of libc6, but you did not yet complete the installation<br>
+&gt; of libc-bin, so now these important commands (and others) are missing on<br>
+&gt; your system. (The libc-bin package does not exist for Lenny.)<br>
+&gt;<br>
+&gt; If dpkg still works then you can try to download libc-bin for your<br>
+&gt; architecture from <a href="http://packages.debian.org/squeeze/libc-bin">http://packages.debian.org/squeeze/libc-bin</a> and<br>
+&gt; install the .deb with &quot;dpkg -i ...&quot;, see here:<br>
+&gt;<br>
+&gt; <a href="http://www.debian.org/doc/manuals/reference/ch02.en.html#_rescue_with_the_dpkg_command">http://www.debian.org/doc/manuals/reference/ch02.en.html#_rescue_with_the_dpkg_command</a><br>
+&gt;<br>
+<br>
+Thanks, Florian.<br>
+<br>
+Unfortunately, dpkg was too broken, so i had to use Ubuntu livecd (because&nbsp; <br>
+I could not find dpkg at Debian installer CD / rescue mode) to boot and do&nbsp; <br>
+following:<br>
+<br>
+&nbsp; 1. mount -t ext2 /dev/sdaX /media/root<br>
+&nbsp; # ...and all relevant partitions (/usr, /var, ...) respectively<br>
+&nbsp; 2. mount --bind /dev /media/root/dev<br>
+&nbsp; # Since dpkg was complaining about missing Debian-exim group, I had to&nbsp; <br>
+get rid of statoverride:<br>
+&nbsp; 3. chroot /media/root<br>
+&nbsp; 4. dpkg-statoverride --remove /etc/exim4/passwd.client<br>
+&nbsp; # Later I must not forget to restore /var/lib/dpkg/statoverride from&nbsp; <br>
+statoverride-old<br>
+&nbsp; 5. exit &amp;&amp; cd<br>
+&nbsp; 6. wget&nbsp; <br>
+<a href="http://ftp.cz.debian.org/debian/pool/main/e/eglibc/libc-bin_2.10.2-6_amd64.deb">http://ftp.cz.debian.org/debian/pool/main/e/eglibc/libc-bin_2.10.2-6_amd64.deb</a><br>
+&nbsp; 7. wget&nbsp; <br>
+<a href="http://ftp.cz.debian.org/debian/pool/main/e/eglibc/libc6_2.10.2-6_amd64.deb">http://ftp.cz.debian.org/debian/pool/main/e/eglibc/libc6_2.10.2-6_amd64.deb</a><br>
+&nbsp; 8. dpkg --root=/media/root -i libc-bin_2.10.2-6_amd64.deb<br>
+&nbsp; 9. dpkg --root=/media/root -i libc6_2.10.2-6_amd64.deb<br>
+10. reboot<br>
+<br>
+After reboot and restoration of statoverride, I can continue with apt-get&nbsp; <br>
+upgrade and apt-get dist-upgrade; dpkg seems to work.<br>
+<br>
+Thanks again to you all!<br>
+<br>
+<br>
+-- <br>
+Using Opera's revolutionary e-mail client: <a href="http://www.opera.com/mail/">http://www.opera.com/mail/</a><br>
+<br>
+<br>
+-- <br>
+To UNSUBSCRIBE, email to debian-user-REQUEST@lists.debian.org <br>
+with a subject of &quot;unsubscribe&quot;. Trouble? Contact listmaster@lists.debian.org<br>
+Archive: <a href="http://lists.debian.org/op.vb3fsevk53tp3f@hugo.lennycz-depot">http://lists.debian.org/op.vb3fsevk53tp3f@hugo.lennycz-depot</a><br>
+<br>
+</div></font>
+</body>
+</html>

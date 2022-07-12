@@ -1,0 +1,177 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<style type="text/css">
+html {pointer-events: none;}
+
+    h4 
+    {
+        text-align: left;
+    }
+
+@media screen 
+{
+
+	.headerLineTitle
+	{
+		width:1.5in;
+		display:inline-block;
+		margin:0in;
+		margin-bottom:.0001pt;
+		font-size:11.0pt;
+		font-family:"Calibri","sans-serif";
+		font-weight:bold;
+	}
+
+	.headerLineText
+	{
+		display:inline;
+		margin:0in;
+		margin-bottom:.0001pt;
+		font-size:11.0pt;
+		font-family:"Calibri","sans-serif";
+		font-weight:normal;
+	}
+
+   .pageHeader
+   {
+		font-size:14.0pt;
+		font-family:"Calibri","sans-serif";
+		font-weight:bold;
+		visibility:hidden;
+		display:none;
+   }   
+}
+
+@media print 
+{
+	.headerLineTitle
+	{
+		width:1.5in;
+		display:inline-block;
+		margin:0in;
+		margin-bottom:.0001pt;
+		font-size:11.0pt;
+		font-family:"Calibri","sans-serif";
+		font-weight:bold;
+	}
+
+	.headerLineText
+	{
+		display:inline;
+		margin:0in;
+		margin-bottom:.0001pt;
+		font-size:11.0pt;
+		font-family:"Calibri","sans-serif";
+		font-weight:normal;
+	}
+
+   .pageHeader
+   {
+		font-size:14.0pt;
+		font-family:"Calibri","sans-serif";
+		font-weight:bold;
+		visibility:visible;
+		display:block;
+   }
+
+}
+</style>
+</head>
+<body>
+<span class='headerLineTitle'>Subject:</span><span class='headerLineText'>(no subject)</span><br/><br/>
+<font size="2"><div class="PlainText">&gt; Nothing I've seen in dmesg has ever led me to think that the r8169<br>
+&gt; driver in my Sid linux-source-2.6.31 kernel (yes, it's old; .32 and 33<br>
+&gt; fail to build) loads a blob.<br>
+<br>
+Almost all NICs load firmware blobs.&nbsp; It's in dmesg somewhere.&nbsp; When the<br>
+firmware doesn't load you get something like this in dmesg:<br>
+<br>
+eth1: RTL8168d/8111d at 0xffffc90000c4e000,xx:xx:xx:xx:xx:xx, XID 083000c0<br>
+IRQ 32<br>
+eth1: unable to apply firmware patch<br>
+<br>
+That's a paste from one of the OPs here who was bitten by the 2.6.32-trunk<br>
+upgrade which IIRC is the one that ripped out the RTL firmware blob.<br>
+<br>
+I can't find via Google a dmesg snippet of a successful RTL firmware load.<br>
+Here's what it looks like for Intel 8255X using the e100 driver, with the<br>
+firmware blobs all compiled into the kernel:<br>
+<br>
+e100 0000:00:0d.0: firmware: using built-in firmware e100/d101m_ucode.bin<br>
+<br>
+&quot;built-in&quot; signifies that the firmware blob has been included in the kernel<br>
+at compile time.&nbsp; I do this to avoid issues such as this RTL problem.&nbsp; It<br>
+only adds a couple hundred K to the kernel image.&nbsp; And I use the vanilla<br>
+kernel.org sources to avoid any Debian &quot;non-free&quot; issues.<br>
+<br>
+Just about every NIC on the planet uses a firmware blob.&nbsp; There are, IIRC, 3<br>
+ways to load the device firmware into the Linux kernel.&nbsp; This applies to all<br>
+devices that require soft firmware, not just NICs:<br>
+<br>
+1.&nbsp; Compile all device firmware blobs into the kernel<br>
+2.&nbsp; Compile the individual blob into the driver, use initrd<br>
+3.&nbsp; Put firmware file in root filesystem, tell kernel the path<br>
+<br>
+#3 won't work with drivers that are needed during the boot process such as<br>
+block device drivers.&nbsp; Those require method 1 or 2.&nbsp; NICs should be able to<br>
+use 1-3.<br>
+<br>
+There are 3 different dmesg statements and 3 different errors depending on<br>
+which method 1-3 above that you're using.<br>
+<br>
+&gt;&gt; At least a couple of people on this list went out and bought<br>
+&gt;&gt; non-RealTek PCI<br>
+&gt;&gt; NICs to fix the problem instead of reverting to the older kernel.<br>
+&gt; <br>
+&gt; I sort of remember that.<br>
+<br>
+Yeah, I just pulled the mails.&nbsp; One upgraded to 2.6.32-trunk on his<br>
+firewall, bricking it until he disabled the onboard RTL and installed an<br>
+Intel e100 IIRC.&nbsp; They thought it was a udev issue til I noticed the<br>
+firmware load failure message referenced up above in this email.&nbsp; The other<br>
+had an RTL wireless that failed for the same reason.&nbsp; I can't recall how<br>
+they fixed that one.&nbsp; IIRC the OP didn't swap hardware to achieve the fix,<br>
+so they did something with the kernel/driver/firmware.<br>
+<br>
+&gt; I'm not surprised.&nbsp; Since I'm only connected to a small 100Mbps LAN<br>
+&gt; which then connects to a 12Mbps cable modem, it doesn't really affect me.<br>
+<br>
+Do some FTP or SCP tests back and forth to another LAN machine and see what<br>
+transfers rates you get out of that RTL chip.&nbsp; I bet you get 1/3rd wire<br>
+speed at best, about 30MB/s, if even that.&nbsp; The machines themselves need to<br>
+be modern to saturate the link--no slow CPUs or disks.&nbsp; Any ~2GHz CPU with<br>
+512MB RAM and a decent 7.2K RPM SATA disk should be able to push/pull 50MB/s<br>
+across the wire.&nbsp; For that matter, eliminate the disk by creating a 200MB<br>
+RAM disk on each machine.&nbsp; Create a test file with dd and FTP/SCP it back<br>
+and forth between the RAM disks.&nbsp; If your RTL chip can peak the wire it'll<br>
+be a 2-3 second transfer if your network chips and Linux TCP stacks are up<br>
+to the task.<br>
+<br>
+&gt; Maybe if I ever get .32 or .33 I'll squeal in anger.&nbsp; Until then...<br>
+<br>
+It's looking like the RTL firmware blob issue may have been limited to the<br>
+trunk kernel.&nbsp; You may get lucky.&nbsp; Then again, if you roll your own and put<br>
+the firmware blobs in the kernel itself as I do, you shouldn't have a<br>
+problem.&nbsp; That is, if the Debian kernel source doesn't have the blob ripped<br>
+out for being &quot;non-free&quot;.<br>
+<br>
+You mentioned you had problems building 2.6.32 and .33 kernel source.&nbsp; Do<br>
+you use the Debian kernel source or kernel.org source?&nbsp; I've been using the<br>
+kernel.org source for quite some time and have never had any real problems<br>
+with it (knocks on wood).&nbsp; I had a build problem with .33 a while back but<br>
+that turned out to be due to a slight bit too much overclock on my machine<br>
+in this warmer weather.&nbsp; ;)<br>
+<br>
+-- <br>
+Stan<br>
+<br>
+<br>
+-- <br>
+To UNSUBSCRIBE, email to debian-user-REQUEST@lists.debian.org <br>
+with a subject of &quot;unsubscribe&quot;. Trouble? Contact listmaster@lists.debian.org<br>
+Archive: <a href="http://lists.debian.org/4BC6960E.7020202@hardwarefreak.com">http://lists.debian.org/4BC6960E.7020202@hardwarefreak.com</a><br>
+<br>
+</div></font>
+</body>
+</html>

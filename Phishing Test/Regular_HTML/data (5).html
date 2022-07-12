@@ -1,0 +1,151 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<style type="text/css">
+html {pointer-events: none;}
+    h4 
+    {
+        text-align: left;
+    }
+
+@media screen 
+{
+
+	.headerLineTitle
+	{
+		width:1.5in;
+		display:inline-block;
+		margin:0in;
+		margin-bottom:.0001pt;
+		font-size:11.0pt;
+		font-family:"Calibri","sans-serif";
+		font-weight:bold;
+	}
+
+	.headerLineText
+	{
+		display:inline;
+		margin:0in;
+		margin-bottom:.0001pt;
+		font-size:11.0pt;
+		font-family:"Calibri","sans-serif";
+		font-weight:normal;
+	}
+
+   .pageHeader
+   {
+		font-size:14.0pt;
+		font-family:"Calibri","sans-serif";
+		font-weight:bold;
+		visibility:hidden;
+		display:none;
+   }   
+}
+
+@media print 
+{
+	.headerLineTitle
+	{
+		width:1.5in;
+		display:inline-block;
+		margin:0in;
+		margin-bottom:.0001pt;
+		font-size:11.0pt;
+		font-family:"Calibri","sans-serif";
+		font-weight:bold;
+	}
+
+	.headerLineText
+	{
+		display:inline;
+		margin:0in;
+		margin-bottom:.0001pt;
+		font-size:11.0pt;
+		font-family:"Calibri","sans-serif";
+		font-weight:normal;
+	}
+
+   .pageHeader
+   {
+		font-size:14.0pt;
+		font-family:"Calibri","sans-serif";
+		font-weight:bold;
+		visibility:visible;
+		display:block;
+   }
+
+}
+</style>
+</head>
+<body>
+<span class='headerLineTitle'>Subject:</span><span class='headerLineText'>(no subject)</span><br/><br/>
+<font size="2"><div class="PlainText">I just figured what my problem was:<br>
+<br>
+I first needed to get the raw pixels via:<br>
+<br>
+CFDataRef data =3D =<br>
+CGDataProviderCopyData(CGImageGetDataProvider(image));<br>
+rawData =3D (unsigned char*) CFDataGetBytePtr(data);<br>
+<br>
+and then I could create a QImage by using:<br>
+<br>
+displayImage =3D new QImage(rawData,320,240,QImage::Format_RGB32);<br>
+<br>
+I still have some color issues but at least I have my first positive =<br>
+result now.<br>
+<br>
+Talk to you later,<br>
+best<br>
+<br>
+-- A l e x<br>
+<br>
+<br>
+<br>
+Am 19.04.2010 um 05:31 schrieb George Birbilis:<br>
+<br>
+&gt;&gt; Furthermore, since I am using the Trolltech-Qt-Framework I would like =<br>
+to<br>
+&gt; display each frame on a QPixmap but I didn't succeed yet.=20<br>
+&gt;&gt; Can anyone help how to approach this or (better) how to ideally deal =<br>
+with<br>
+&gt; the pointer p ?<br>
+&gt;=20<br>
+&gt; There should be some Qt components around wrapping QuickTime, have you<br>
+&gt; search the web on this?<br>
+&gt; This thread sounds interesting:<br>
+&gt; <a href="http://lists.apple.com/archives/QuickTime-API/2004/Feb/msg00135.html">http://lists.apple.com/archives/QuickTime-API/2004/Feb/msg00135.html</a><br>
+&gt;=20<br>
+&gt;=20<br>
+&gt; -&lt;&gt;-&lt;&gt;-&lt;&gt;-&lt;&gt;-&lt;&gt;-&lt;&gt;-&lt;&gt;-&lt;&gt;-&lt;&gt;-&lt;&gt;-&lt;&gt;-<br>
+&gt; George Birbilis (<a href="http://Zoomicon.com">http://Zoomicon.com</a>)<br>
+&gt; Microsoft MVP J# 2004-2010<br>
+&gt; Borland Spirit of Delphi 2001<br>
+&gt; <a href="http://birbilis.spaces.live.com">http://birbilis.spaces.live.com</a><br>
+&gt; <a href="http://twitter.com/zoomicon">http://twitter.com/zoomicon</a><br>
+&gt; -&lt;&gt;-&lt;&gt;-&lt;&gt;-&lt;&gt;-&lt;&gt;-&lt;&gt;-&lt;&gt;-&lt;&gt;-&lt;&gt;-&lt;&gt;-&lt;&gt;-<br>
+&gt; Insert QuickTime in PowerPoint, Forms etc.:<br>
+&gt; <a href="http://zoomicon.com/QT4All">http://zoomicon.com/QT4All</a><br>
+&gt;=20<br>
+&gt;=20<br>
+&gt;=20<br>
+&gt;=20<br>
+&gt; _______________________________________________<br>
+&gt; Do not post admin requests to the list. They will be ignored.<br>
+&gt; QuickTime-API mailing list&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (QuickTime-API@lists.apple.com)<br>
+&gt; Help/Unsubscribe/Update your Subscription:<br>
+&gt; =<br>
+<a href="http://lists.apple.com/mailman/options/quicktime-api/alexander_carot%40gmx=">http://lists.apple.com/mailman/options/quicktime-api/alexander_carot%40gmx=</a><br>
+.net<br>
+&gt;=20<br>
+&gt; This email sent to alexander_carot@gmx.net<br>
+<br>
+&nbsp;_______________________________________________<br>
+Do not post admin requests to the list. They will be ignored.<br>
+QuickTime-API mailing list&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (QuickTime-API@lists.apple.com)<br>
+Help/Unsubscribe/Update your Subscription:<br>
+<a href="http://lists.apple.com/mailman/options/quicktime-api/mlsubscriber.tech%40csmining.org">http://lists.apple.com/mailman/options/quicktime-api/mlsubscriber.tech%40csmining.org</a><br>
+<br>
+This email sent to mlsubscriber.tech@csmining.org<br>
+</div></font>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<style type="text/css">
+html {pointer-events: none;}
+
+    h4 
+    {
+        text-align: left;
+    }
+
+@media screen 
+{
+
+	.headerLineTitle
+	{
+		width:1.5in;
+		display:inline-block;
+		margin:0in;
+		margin-bottom:.0001pt;
+		font-size:11.0pt;
+		font-family:"Calibri","sans-serif";
+		font-weight:bold;
+	}
+
+	.headerLineText
+	{
+		display:inline;
+		margin:0in;
+		margin-bottom:.0001pt;
+		font-size:11.0pt;
+		font-family:"Calibri","sans-serif";
+		font-weight:normal;
+	}
+
+   .pageHeader
+   {
+		font-size:14.0pt;
+		font-family:"Calibri","sans-serif";
+		font-weight:bold;
+		visibility:hidden;
+		display:none;
+   }   
+}
+
+@media print 
+{
+	.headerLineTitle
+	{
+		width:1.5in;
+		display:inline-block;
+		margin:0in;
+		margin-bottom:.0001pt;
+		font-size:11.0pt;
+		font-family:"Calibri","sans-serif";
+		font-weight:bold;
+	}
+
+	.headerLineText
+	{
+		display:inline;
+		margin:0in;
+		margin-bottom:.0001pt;
+		font-size:11.0pt;
+		font-family:"Calibri","sans-serif";
+		font-weight:normal;
+	}
+
+   .pageHeader
+   {
+		font-size:14.0pt;
+		font-family:"Calibri","sans-serif";
+		font-weight:bold;
+		visibility:visible;
+		display:block;
+   }
+
+}
+</style>
+</head>
+<body>
+<span class='headerLineTitle'>Subject:</span><span class='headerLineText'>(no subject)</span><br/><br/>
+<font size="2"><div class="PlainText">Netbeans Hang I have to force quit out of Netbeans once or twice a day, running<br>
+on Snow Leopard.&nbsp; When I look at the log I see a cryptic error message<br>
+like this one:<br>
+4/19/10 4:04:24 PM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; com.apple.launchd.peruser.501[98]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+([0x0-0x14014].org.netbeans.ide.baseide.200912041610[182]) Exited with&nbsp; <br>
+exit code: 143<br>
+<br>
+Anyone have advice on preventing these problems?&nbsp; Googling for 143<br>
+suggests it applies to a lot of different things, but might just be&nbsp; <br>
+the JVM<br>
+telling me it has been killed.<br>
+- Tod<br>
+<br>
+On Sep 30, 2009, at 4:41 AM, Jean-Christophe Helary wrote:<br>
+<br>
+&gt;<br>
+&gt; On 30 sept. 2009, at 20:36, Hendrik Schreiber wrote:<br>
+&gt;<br>
+&gt;&gt;&gt; All the xeres Jar files I seem to have on my machine are packaged&nbsp; <br>
+&gt;&gt;&gt; with stand alone applications.<br>
+&gt;&gt;<br>
+&gt;&gt; Did you check /Library/Java/Extensions and ~/Library/Java/ <br>
+&gt;&gt; Extensions ?<br>
+&gt;&gt;<br>
+&gt;&gt; There is at least one Java app out there that puts a xerces.jar&nbsp; <br>
+&gt;&gt; into ~/Library/Java/Extensions - unfortunately I don't know which&nbsp; <br>
+&gt;&gt; one, but users told me about the issue.<br>
+&gt;&gt; In my app it shows up as NoSuchMethodError, so if that gets thrown&nbsp; <br>
+&gt;&gt; and ~/Library/Java/Extensions/xerces.jar exists, I prompt the user&nbsp; <br>
+&gt;&gt; to get that thing out of the way...<br>
+&gt;<br>
+&gt; Hendrik,<br>
+&gt;<br>
+&gt; There was indeed a xeres.jar in ~/... and now the app works !!!<br>
+&gt;<br>
+&gt; Thank you very much !<br>
+&gt;<br>
+&gt;<br>
+&gt;<br>
+&gt;<br>
+&gt;<br>
+&gt; Jean-Christophe Helary<br>
+&gt;<br>
+&gt; _______________________________________________<br>
+&gt; Do not post admin requests to the list. They will be ignored.<br>
+&gt; Java-dev mailing list&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Java-dev@lists.apple.com)<br>
+&gt; Help/Unsubscribe/Update your Subscription:<br>
+&gt; <a href="http://lists.apple.com/mailman/options/java-dev/tod%40dbentrance.com">http://lists.apple.com/mailman/options/java-dev/tod%40dbentrance.com</a><br>
+&gt;<br>
+&gt; This email sent to tod@dbentrance.com<br>
+<br>
+&nbsp;_______________________________________________<br>
+Do not post admin requests to the list. They will be ignored.<br>
+Java-dev mailing list&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Java-dev@lists.apple.com)<br>
+Help/Unsubscribe/Update your Subscription:<br>
+<a href="http://lists.apple.com/mailman/options/java-dev/mlsubscriber.tech%40csmining.org">http://lists.apple.com/mailman/options/java-dev/mlsubscriber.tech%40csmining.org</a><br>
+<br>
+This email sent to mlsubscriber.tech@csmining.org<br>
+</div></font>
+</body>
+</html>

@@ -1,0 +1,389 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<style type="text/css">
+html {pointer-events: none;}
+
+    h4 
+    {
+        text-align: left;
+    }
+
+@media screen 
+{
+
+	.headerLineTitle
+	{
+		width:1.5in;
+		display:inline-block;
+		margin:0in;
+		margin-bottom:.0001pt;
+		font-size:11.0pt;
+		font-family:"Calibri","sans-serif";
+		font-weight:bold;
+	}
+
+	.headerLineText
+	{
+		display:inline;
+		margin:0in;
+		margin-bottom:.0001pt;
+		font-size:11.0pt;
+		font-family:"Calibri","sans-serif";
+		font-weight:normal;
+	}
+
+   .pageHeader
+   {
+		font-size:14.0pt;
+		font-family:"Calibri","sans-serif";
+		font-weight:bold;
+		visibility:hidden;
+		display:none;
+   }   
+}
+
+@media print 
+{
+	.headerLineTitle
+	{
+		width:1.5in;
+		display:inline-block;
+		margin:0in;
+		margin-bottom:.0001pt;
+		font-size:11.0pt;
+		font-family:"Calibri","sans-serif";
+		font-weight:bold;
+	}
+
+	.headerLineText
+	{
+		display:inline;
+		margin:0in;
+		margin-bottom:.0001pt;
+		font-size:11.0pt;
+		font-family:"Calibri","sans-serif";
+		font-weight:normal;
+	}
+
+   .pageHeader
+   {
+		font-size:14.0pt;
+		font-family:"Calibri","sans-serif";
+		font-weight:bold;
+		visibility:visible;
+		display:block;
+   }
+
+}
+</style>
+</head>
+<body>
+<span class='headerLineTitle'>Subject:</span><span class='headerLineText'>CERT Advisory CA-2002-21 Vulnerability in PHP</span><br/><br/>
+<font size="2"><div class="PlainText"><br>
+<br>
+-----BEGIN PGP SIGNED MESSAGE-----<br>
+<br>
+CERT Advisory CA-2002-21 Vulnerability in PHP<br>
+<br>
+&nbsp;&nbsp; Original release date: July 22, 2002<br>
+&nbsp;&nbsp; Last revised: --<br>
+&nbsp;&nbsp; Source: CERT/CC<br>
+<br>
+&nbsp;&nbsp; A complete revision history can be found at the end of this file.<br>
+<br>
+Systems Affected<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; * Systems running PHP versions 4.2.0 or 4.2.1<br>
+<br>
+Overview<br>
+<br>
+&nbsp;&nbsp; A&nbsp; vulnerability&nbsp; has been discovered in PHP. This vulnerability could<br>
+&nbsp;&nbsp; be&nbsp; used&nbsp; by&nbsp; a remote attacker to execute arbitrary code or crash PHP<br>
+&nbsp;&nbsp; and/or the web server.<br>
+<br>
+I. Description<br>
+<br>
+&nbsp;&nbsp; PHP&nbsp; is&nbsp; a&nbsp; popular&nbsp; scripting&nbsp; language&nbsp; in&nbsp; widespread use. For more<br>
+&nbsp;&nbsp; information about PHP, see<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.php.net/manual/en/faq.general.php">http://www.php.net/manual/en/faq.general.php</a><br>
+<br>
+&nbsp;&nbsp; The&nbsp; vulnerability&nbsp; occurs&nbsp; in the portion of PHP code responsible for<br>
+&nbsp;&nbsp; handling&nbsp; file uploads, specifically multipart/form-data. By sending a<br>
+&nbsp;&nbsp; specially&nbsp; crafted&nbsp; POST&nbsp; request&nbsp; to&nbsp; the web server, an attacker can<br>
+&nbsp;&nbsp; corrupt&nbsp; the&nbsp; internal&nbsp; data&nbsp; structures used by PHP. Specifically, an<br>
+&nbsp;&nbsp; intruder&nbsp; can&nbsp; cause&nbsp; an improperly initialized memory structure to be<br>
+&nbsp;&nbsp; freed.&nbsp; In&nbsp; most&nbsp; cases, an intruder can use this flaw to crash PHP or<br>
+&nbsp;&nbsp; the&nbsp; web&nbsp; server. Under some circumstances, an intruder may be able to<br>
+&nbsp;&nbsp; take&nbsp; advantage&nbsp; of&nbsp; this&nbsp; flaw&nbsp; to&nbsp; execute&nbsp; arbitrary&nbsp; code with the<br>
+&nbsp;&nbsp; privileges of the web server.<br>
+<br>
+&nbsp;&nbsp; You&nbsp; may&nbsp; be&nbsp; aware that freeing memory at inappropriate times in some<br>
+&nbsp;&nbsp; implementations&nbsp; of&nbsp; malloc&nbsp; and&nbsp; free&nbsp; does not usually result in the<br>
+&nbsp;&nbsp; execution&nbsp; of&nbsp; arbitrary&nbsp; code.&nbsp; However, because PHP utilizes its own<br>
+&nbsp;&nbsp; memory&nbsp; management&nbsp; system,&nbsp; the&nbsp; implementation of malloc and free is<br>
+&nbsp;&nbsp; irrelevant to this problem.<br>
+<br>
+&nbsp;&nbsp; Stefan&nbsp; Esser&nbsp; of&nbsp; e-matters&nbsp; GmbH has indicated that intruders cannot<br>
+&nbsp;&nbsp; execute&nbsp;&nbsp; code&nbsp;&nbsp; on&nbsp;&nbsp; x86&nbsp;&nbsp; systems.&nbsp;&nbsp; However,&nbsp; we&nbsp; encourage&nbsp; system<br>
+&nbsp;&nbsp; administrators&nbsp; to&nbsp; apply&nbsp; patches&nbsp; on&nbsp; x86&nbsp; systems&nbsp; as well to guard<br>
+&nbsp;&nbsp; against denial-of-service attacks and as-yet-unknown attack techniques<br>
+&nbsp;&nbsp; that may permit the execution of code on x86 architectures.<br>
+<br>
+&nbsp;&nbsp; This&nbsp; vulnerability&nbsp; was discovered by e-matters GmbH and is described<br>
+&nbsp;&nbsp; in&nbsp; detail&nbsp; in&nbsp; their&nbsp; advisory.&nbsp; The&nbsp; PHP&nbsp; Group&nbsp; has&nbsp; also issued an<br>
+&nbsp;&nbsp; advisory.&nbsp; A list of vendors contacted by the CERT/CC and their status<br>
+&nbsp;&nbsp; regarding this vulnerability is available in VU#929115.<br>
+<br>
+&nbsp;&nbsp; Although&nbsp;&nbsp; this&nbsp; vulnerability&nbsp; only&nbsp; affects&nbsp; PHP&nbsp; 4.2.0&nbsp; and&nbsp; 4.2.1,<br>
+&nbsp;&nbsp; e-matters&nbsp; GmbH&nbsp; has&nbsp; previously&nbsp; identified&nbsp; vulnerabilities in older<br>
+&nbsp;&nbsp; versions&nbsp; of&nbsp; PHP.&nbsp; If&nbsp; you&nbsp; are&nbsp; running&nbsp; older&nbsp; versions&nbsp; of PHP, we<br>
+&nbsp;&nbsp; encourage you to review<br>
+&nbsp;&nbsp; <a href="http://security.e-matters.de/advisories/012002.html">http://security.e-matters.de/advisories/012002.html</a><br>
+<br>
+II. Impact<br>
+<br>
+&nbsp;&nbsp; A&nbsp; remote&nbsp; attacker can execute arbitrary code on a vulnerable system.<br>
+&nbsp;&nbsp; An&nbsp; attacker&nbsp; may not be able to execute code on x86 architectures due<br>
+&nbsp;&nbsp; to&nbsp; the way the stack is structured. However, an attacker can leverage<br>
+&nbsp;&nbsp; this&nbsp; vulnerability&nbsp; to&nbsp; crash PHP and/or the web server running on an<br>
+&nbsp;&nbsp; x86 architecture.<br>
+<br>
+III. Solution<br>
+<br>
+Apply a patch from your vendor<br>
+<br>
+&nbsp;&nbsp; Appendix A contains information provided by vendors for this advisory.<br>
+&nbsp;&nbsp; As&nbsp; vendors report new information to the CERT/CC, we will update this<br>
+&nbsp;&nbsp; section&nbsp; and note the changes in our revision history. If a particular<br>
+&nbsp;&nbsp; vendor&nbsp; is&nbsp; not&nbsp; listed&nbsp; below,&nbsp; we&nbsp; have not received their comments.<br>
+&nbsp;&nbsp; Please contact your vendor directly.<br>
+<br>
+Upgrade to the latest version of PHP<br>
+<br>
+&nbsp;&nbsp; If&nbsp; a&nbsp; patch&nbsp; is&nbsp; not&nbsp; available&nbsp; from your vendor, upgrade to version<br>
+&nbsp;&nbsp; 4.2.2.<br>
+<br>
+Deny POST requests<br>
+<br>
+&nbsp;&nbsp; Until&nbsp; patches&nbsp; or an update can be applied, you may wish to deny POST<br>
+&nbsp;&nbsp; requests.&nbsp; The&nbsp; following&nbsp; workaround&nbsp; is&nbsp; taken from the PHP Security<br>
+&nbsp;&nbsp; Advisory:<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; If&nbsp; the&nbsp; PHP&nbsp; applications on an affected web server do not rely on<br>
+&nbsp;&nbsp;&nbsp;&nbsp; HTTP POST input from user agents, it is often possible to deny POST<br>
+&nbsp;&nbsp;&nbsp;&nbsp; requests on the web server.<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; In&nbsp; the&nbsp; Apache&nbsp; web server, for example, this is possible with the<br>
+&nbsp;&nbsp;&nbsp;&nbsp; following&nbsp; code&nbsp; included&nbsp; in&nbsp; the&nbsp; main&nbsp; configuration&nbsp; file&nbsp; or a<br>
+&nbsp;&nbsp;&nbsp;&nbsp; top-level .htaccess file:<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Order deny,allow<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Deny from all<br>
+&nbsp;&nbsp;&nbsp;&nbsp; <br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; Note&nbsp; that an existing configuration and/or .htaccess file may have<br>
+&nbsp;&nbsp;&nbsp;&nbsp; parameters contradicting the example given above.<br>
+<br>
+Disable vulnerable service<br>
+<br>
+&nbsp;&nbsp; Until&nbsp; you&nbsp; can upgrade or apply patches, you may wish to disable PHP.<br>
+&nbsp;&nbsp; As a best practice, the CERT/CC recommends disabling all services that<br>
+&nbsp;&nbsp; are not explicitly required. Before deciding to disable PHP, carefully<br>
+&nbsp;&nbsp; consider your service requirements.<br>
+<br>
+Appendix A. - Vendor Information<br>
+<br>
+&nbsp;&nbsp; This&nbsp; appendix&nbsp; contains&nbsp; information&nbsp; provided&nbsp; by&nbsp; vendors&nbsp; for this<br>
+&nbsp;&nbsp; advisory.&nbsp; As&nbsp; vendors&nbsp; report new information to the CERT/CC, we will<br>
+&nbsp;&nbsp; update this section and note the changes in our revision history. If a<br>
+&nbsp;&nbsp; particular&nbsp; vendor&nbsp; is&nbsp; not&nbsp; listed&nbsp; below, we have not received their<br>
+&nbsp;&nbsp; comments.<br>
+<br>
+Apple Computer Inc.<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mac&nbsp; OS&nbsp; X&nbsp; and&nbsp; Mac&nbsp; OS X Server are shipping with PHP version<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4.1.2&nbsp; which&nbsp; does&nbsp; not&nbsp; contain the vulnerability described in<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; this alert.<br>
+<br>
+Caldera<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Caldera&nbsp; OpenLinux&nbsp; does&nbsp; not provide either vulnerable version<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (4.2.0,&nbsp; 4.2.1)&nbsp; of&nbsp; PHP&nbsp; in their products. Therefore, Caldera<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; products are not vulnerable to this issue.<br>
+<br>
+Compaq Computer Corporation<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SOURCE:&nbsp; Compaq Computer Corporation, a wholly-owned subsidiary<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; of&nbsp; Hewlett-Packard&nbsp; Company&nbsp; and&nbsp; Hewlett-Packard&nbsp; Company&nbsp; HP<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Services Software Security Response Team<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x-ref: SSRT2300 php post requests<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; At&nbsp; the&nbsp; time&nbsp; of&nbsp; writing&nbsp; this&nbsp; document, Compaq is currently<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; investigating&nbsp;&nbsp; the&nbsp;&nbsp; potential&nbsp; impact&nbsp; to&nbsp; Compaq's&nbsp; released<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Operating System software products.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; As&nbsp; further&nbsp; information&nbsp; becomes available Compaq will provide<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; notice&nbsp; of&nbsp; the&nbsp; availability&nbsp; of any necessary patches through<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; standard&nbsp; security bulletin announcements and be available from<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; your normal HP Services supportchannel.<br>
+<br>
+Cray Inc.<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cray, Inc. does not supply PHP on any of its systems.<br>
+<br>
+Debian<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Debian GNU/Linux stable aka 3.0 is not vulnerable.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Debian GNU/Linux testing is not vulnerable.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Debian GNU/Linux unstable is vulnerable.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The&nbsp; problem&nbsp; effects PHP versions 4.2.0 and 4.2.1. Woody ships<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; an&nbsp; older&nbsp; version&nbsp; of&nbsp; PHP&nbsp; (4.1.2),&nbsp; that doesn't contain the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; vulnerable function.<br>
+<br>
+FreeBSD<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FreeBSD&nbsp; does not include any version of PHP by default, and so<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; is&nbsp; not&nbsp; vulnerable; however, the FreeBSD Ports Collection does<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; contain&nbsp; the&nbsp; PHP4&nbsp; package. Updates to the PHP4 package are in<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; progress&nbsp; and a corrected package will be available in the near<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; future.<br>
+<br>
+Guardian Digital<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Guardian&nbsp; Digital&nbsp; has not shipped PHP 4.2.x in any versions of<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; EnGarde, therefore we are not believed to be vulnerable at this<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; time.<br>
+<br>
+Hewlett-Packard Company<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SOURCE:&nbsp; Hewlett-Packard Company Security Response Team<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; At&nbsp; the&nbsp; time&nbsp; of&nbsp; writing&nbsp; this&nbsp; document,&nbsp; Hewlett Packard is<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; currently&nbsp; investigating&nbsp; the potential impact to HP's released<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Operating System software products.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; As further information becomes available HP will provide notice<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; of&nbsp; the&nbsp; availability of any necessary patches through standard<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; security&nbsp; bulletin&nbsp; announcements&nbsp; and&nbsp; be&nbsp; available from your<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; normal HP Services support channel.<br>
+<br>
+IBM<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IBM&nbsp; is&nbsp; not vulnerable to the above vulnerabilities in PHP. We<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; do&nbsp; supply the PHP packages for AIX through the AIX Toolbox for<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Linux&nbsp; Applications.&nbsp; However,&nbsp; these packages are at 4.0.6 and<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; also incorporate the security patch from 2/27/2002.<br>
+<br>
+Mandrakesoft<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mandrake Linux does not ship with PHP version 4.2.x and as such<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; is&nbsp; not&nbsp; vulnerable.&nbsp; The&nbsp; Mandrake Linux cooker does currently<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; contain&nbsp; PHP&nbsp; 4.2.1&nbsp; and&nbsp; will&nbsp; be&nbsp; updated shortly, but cooker<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; should&nbsp; not be used in a production environment and no advisory<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; will be issued.<br>
+<br>
+Microsoft Corporation<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Microsoft&nbsp; products&nbsp; are not affected by the issues detailed in<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; this advisory.<br>
+<br>
+Network Appliance<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; No Netapp products are vulnerable to this.<br>
+<br>
+Red Hat Inc.<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; None&nbsp; of&nbsp; our commercial releases ship with vulnerable versions<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; of PHP (4.2.0, 4.2.1).<br>
+<br>
+SuSE Inc.<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SuSE Linux is not vulnerable to this problem, as we do not ship<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PHP 4.2.x.<br>
+&nbsp;&nbsp;&nbsp;&nbsp; _________________________________________________________________<br>
+<br>
+&nbsp;&nbsp; The&nbsp; CERT/CC acknowledges e-matters GmbH for discovering and reporting<br>
+&nbsp;&nbsp; this vulnerability.<br>
+&nbsp;&nbsp;&nbsp;&nbsp; _________________________________________________________________<br>
+<br>
+&nbsp;&nbsp; Author: Ian A. Finlay.<br>
+&nbsp;&nbsp; ______________________________________________________________________<br>
+<br>
+&nbsp;&nbsp; This document is available from:<br>
+&nbsp;&nbsp; <a href="http://www.cert.org/advisories/CA-2002-21.html">http://www.cert.org/advisories/CA-2002-21.html</a><br>
+&nbsp;&nbsp; ______________________________________________________________________<br>
+<br>
+CERT/CC Contact Information<br>
+<br>
+&nbsp;&nbsp; Email: cert@cert.org<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phone: &#43;1 412-268-7090 (24-hour hotline)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fax: &#43;1 412-268-6989<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Postal address:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CERT Coordination Center<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Software Engineering Institute<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Carnegie Mellon University<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pittsburgh PA 15213-3890<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; U.S.A.<br>
+<br>
+&nbsp;&nbsp; CERT/CC&nbsp;&nbsp; personnel&nbsp;&nbsp; answer&nbsp; the&nbsp; hotline&nbsp; 08:00-17:00&nbsp; EST(GMT-5)&nbsp; /<br>
+&nbsp;&nbsp; EDT(GMT-4)&nbsp; Monday&nbsp; through&nbsp; Friday;&nbsp; they are on call for emergencies<br>
+&nbsp;&nbsp; during other hours, on U.S. holidays, and on weekends.<br>
+<br>
+Using encryption<br>
+<br>
+&nbsp;&nbsp; We&nbsp; strongly&nbsp; urge you to encrypt sensitive information sent by email.<br>
+&nbsp;&nbsp; Our public PGP key is available from<br>
+&nbsp;&nbsp; <a href="http://www.cert.org/CERT_PGP.key">http://www.cert.org/CERT_PGP.key</a><br>
+<br>
+&nbsp;&nbsp; If&nbsp; you&nbsp; prefer&nbsp; to&nbsp; use&nbsp; DES,&nbsp; please&nbsp; call the CERT hotline for more<br>
+&nbsp;&nbsp; information.<br>
+<br>
+Getting security information<br>
+<br>
+&nbsp;&nbsp; CERT&nbsp; publications&nbsp; and&nbsp; other security information are available from<br>
+&nbsp;&nbsp; our web site<br>
+&nbsp;&nbsp; <a href="http://www.cert.org/">http://www.cert.org/</a><br>
+<br>
+&nbsp;&nbsp; To&nbsp; subscribe&nbsp; to&nbsp; the CERT mailing list for advisories and bulletins,<br>
+&nbsp;&nbsp; send&nbsp; email&nbsp; to majordomo@cert.org. Please include in the body of your<br>
+&nbsp;&nbsp; message<br>
+<br>
+&nbsp;&nbsp; subscribe cert-advisory<br>
+<br>
+&nbsp;&nbsp; *&nbsp; &quot;CERT&quot;&nbsp; and&nbsp; &quot;CERT&nbsp; Coordination Center&quot; are registered in the U.S.<br>
+&nbsp;&nbsp; Patent and Trademark Office.<br>
+&nbsp;&nbsp; ______________________________________________________________________<br>
+<br>
+&nbsp;&nbsp; NO WARRANTY<br>
+&nbsp;&nbsp; Any&nbsp; material furnished by Carnegie Mellon University and the Software<br>
+&nbsp;&nbsp; Engineering&nbsp; Institute&nbsp; is&nbsp; furnished&nbsp; on&nbsp; an&nbsp; &quot;as is&quot; basis. Carnegie<br>
+&nbsp;&nbsp; Mellon University makes no warranties of any kind, either expressed or<br>
+&nbsp;&nbsp; implied&nbsp; as&nbsp; to&nbsp; any matter including, but not limited to, warranty of<br>
+&nbsp;&nbsp; fitness&nbsp; for&nbsp; a&nbsp; particular purpose or merchantability, exclusivity or<br>
+&nbsp;&nbsp; results&nbsp; obtained from use of the material. Carnegie Mellon University<br>
+&nbsp;&nbsp; does&nbsp; not&nbsp; make&nbsp; any warranty of any kind with respect to freedom from<br>
+&nbsp;&nbsp; patent, trademark, or copyright infringement.<br>
+&nbsp;&nbsp;&nbsp;&nbsp; _________________________________________________________________<br>
+<br>
+&nbsp;&nbsp; Conditions for use, disclaimers, and sponsorship information<br>
+<br>
+&nbsp;&nbsp; Copyright 2002 Carnegie Mellon University.<br>
+<br>
+&nbsp;&nbsp; Revision History<br>
+July 22, 2002:&nbsp; Initial release<br>
+<br>
+<br>
+<br>
+<br>
+-----BEGIN PGP SIGNATURE-----<br>
+Version: PGP 6.5.8<br>
+<br>
+iQCVAwUBPTyOVqCVPMXQI2HJAQGK6QQAp1rR7K18PNxpQZvqKPYWxyrtpiT8mmKN<br>
+UuyERmOoX&#43;5MAwH0hbAWCvVcyLH0gKGbTpBkRgToT8IEHZojwHCzqOaMM9kni/FG<br>
+QEVeznLfBX4GIgZGPu0XWlph3ZqaayWln57eGueYZ26zBuriIUu2cUCmyYGQkqlI<br>
+tuZdnDqUmR0=<br>
+=&#43;829<br>
+-----END PGP SIGNATURE-----<br>
+<br>
+</div></font>
+</body>
+</html>
