@@ -1,0 +1,396 @@
+:root{
+  --bg-highlight: rgba(235,235,235,0.8);
+  --bg-search: rgba(245,245,245,0.5);
+  --bg-search-focus: rgba(255,255,255,1);
+  //--icon-color: rgba(255,255,255,1);
+  --icon-color: rgba(0,0,0,1);
+}
+
+html, body{
+  //overflow-x: hidden;
+}
+
+html{
+  overflow-x: hidden;
+  background: url("../images/background2.jpg");
+  height: 100%;
+  background-position: center;
+  //background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.person{
+  border-radius: 50px;
+}
+
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center2{
+  display: flex;
+  justify-content: center;
+}
+
+.left2{
+  text-align: left;
+  padding-left: 20px;
+}
+
+.center.right a, .center.left a, .center.searchBar a{
+  height: 40px;
+  width: 30px;
+}
+
+ .center.right a i, .center.left a i, .center.searchBar a i{
+ font-size: 30px;
+ }
+
+nav a{
+  color: var(--icon-color);
+}
+
+#topNav nav a:hover{
+ //cursor: pointer;
+ cursor: default;
+ background-color: var(--bg-highlight);
+ border-radius: 50px;
+}
+
+input[type="text"]{
+  height: 50px;
+  border-radius: 5px;
+  border: 0px solid transparent;
+  background-color: var(--bg-search);
+  width: 500px;
+  padding-left: 70px;
+  font-size: 18px;
+  font-family: "Times New Roman";
+}
+
+input[type="text"]:focus{
+background-color: var(--bg-search-focus);
+border: 0px solid transparent;
+outline: none;
+}
+
+::placeholder {
+  color: var(--icon-color);
+  opacity: 0.7; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: var(--icon-color);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: var(--icon-color);
+}
+
+.center.right a, .center.left a, .center.searchBar a{
+  padding: 0px 10px;
+  margin: 0px 10px;
+}
+
+.searchBar{
+ position: relative;
+}
+
+.searchBar a{
+  position: absolute;
+}
+
+.searchBar a.searchLeft{
+  top: 12%;
+  left: 0%;
+}
+
+.searchBar a.searchRight{
+  top: 12%;
+  right: 0%;
+}
+
+.fullHR{
+  width: 110%;
+  margin-left:-5%;
+}
+
+.left{
+}
+
+.searchBar{
+  margin-left: 100px;
+  order: 1;
+}
+
+.right{
+  margin-left: auto;
+  order: 2;
+}
+
+#sideNav{
+  width: 300px;
+}
+
+#sideNav nav ul{
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+#sideNav nav a i, #sideNav nav li button i{
+  font-size: 30px;
+  padding-right: 20px;
+  margin-left: 0px;
+}
+
+#sideNav nav li button{
+  height: 40px;
+}
+
+#sideNav li{
+  height: 40px;
+  width: 300px;
+  margin-left: -10px;
+  padding-left: 35px;
+}
+
+#sideNav nav li{
+  border-radius: 0px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+#sideNav nav li button{
+  padding: 0px 25px;
+  margin: 0px;
+  margin-left: -25px;
+  border-radius: 5px;
+  border: 0px solid transparent;
+  margin-bottom: 8px;
+}
+
+#sideNav nav li:hover:not(.disactive), #sideNav nav li button:hover{
+ //cursor: pointer;
+ cursor: default;
+}
+
+#sideNav nav li:hover:not(.active, .disactive){
+ background-color: var(--bg-highlight);
+}
+
+.active{
+  font-weight: bold;
+  background-color: var(--bg-search-focus);
+}
+
+#sideNav nav ul li{
+  display: flex;
+  align-items: center;
+}
+
+main{
+  display: grid;
+  grid-template-columns: 370px auto;
+}
+
+#next span{
+ padding-right: 5px;
+}
+
+#next{
+  margin-top: 10px;
+  width: 20%;
+  border-radius: 5px;
+  border: 0px solid transparent;
+  padding: 15px;
+  background-color: var(--bg-highlight);
+  transition: 0.25s all ease;
+  cursor: pointer;
+}
+
+#next:hover{
+  background-color: var(--bg-search-focus);
+}
+
+.temp{
+  background-color: var(--bg-search-focus);
+  height: 700px;
+  border: 2px solid transparent;
+  border-radius: 2px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#email{
+  //pointer-events: none;
+}
+
+.green{
+  border: 5px solid green;
+}
+
+.red{
+  border: 5px solid red;
+}
+
+.black{
+  border: 5px solid black;
+}
+
+p.green{
+  border: none;
+  color: green;
+}
+
+p.red{
+  border: none;
+  color: red;
+}
+
+p.black{
+  border: none;
+  color: black;
+}
+
+/* Applies to 1920px and down */
+@media only screen and (max-width: 1920px) {
+  .temp{
+    overflow-y: auto;
+    overflow-x: auto;
+  }
+}
+
+/* Applies to 1545px and down */
+@media only screen and (max-width: 1545px) {
+}
+
+/* Applies to 1326px and down */
+@media only screen and (max-width: 1326px) {
+  main{
+    display: block;
+  }
+  #sideNav {
+    display: none;
+  }
+  #displayEmailDiv > object{
+    margin-left: 26%;
+  }
+}
+
+/* Applies to 1215px and down */
+@media only screen and (max-width: 1225px) {
+  input[type="text"]{
+    display: none;
+  }
+  .searchBar a.searchLeft{
+    display: none;
+  }
+  .searchBar a.searchRight{
+    display: none;
+  }
+}
+
+/* Applies to 1100px and down */
+@media only screen and (max-width: 1105px) {
+}
+
+/* Applies to 992px and down */
+@media only screen and (max-width: 992px) {
+}
+
+/* Applies to 860px and down */
+@media only screen and (max-width: 860px) {
+}
+
+
+/* Applies to 810px and down */
+@media only screen and (max-width: 810px) {
+}
+
+/* Applies to 799px and down */
+@media only screen and (max-width: 799px) {
+}
+
+/* Applies to moblie */
+@media only screen and (hover: none) and (pointer: coarse) and (max-width: 799px) {
+}
+
+/* Applies to 755px and down */
+@media only screen and (max-width: 765px) {
+  #displayEmailDiv > object{
+    margin-left: 30%;
+  }
+}
+
+/* Applies to 706px and down */
+@media only screen and (max-width: 706px) {
+  .center.right{
+    display: none;
+  }
+  .center.left{
+    margin-left: 80px;
+  }
+}
+
+/* Applies to 600px and down */
+@media (max-width: 600px) {
+  #displayEmailDiv > object{
+    margin-left: 40%;
+  }
+}
+
+/* Applies to 499px and down */
+@media only screen and (max-width: 499px) {
+}
+
+/* Applies to 420px and down */
+@media only screen and (max-width: 420px) {
+}
+
+/* Applies to 400px and down */
+@media only screen and (max-width: 400px) {
+}
+
+/* Applies to 350px and down */
+@media only screen and (max-width: 350px) {
+}
+
+/* Applies to 300px and down */
+@media only screen and (max-height: 300px) {
+}
+/* Applies to 220px and down */
+@media only screen and (max-height: 220px) {
+}
+
+/* Applies to 200px and down */
+@media only screen and (max-height: 200px) {
+}
+
+/* Applies to 130px and down */
+@media only screen and (max-height: 130px) {
+}
+
+/* Last thing always takes precedence so that's why I put lowest last so when 320px is achieved it is not overidden */
+
+/* This rule also applies to bootstrap css. So first bootstrap then personal css, so bootstrap doesn't overide personal css */
+
+/* Applies to 700px and up */
+@media only screen and (min-width: 700px) {
+}
+
+@media only screen and (min-width: 992px) and (max-height: 360px) {
+}
+
+/* Applies to 1200px and up */
+@media only screen and (min-width: 1200px) {
+}
+
+@media (max-width: 1800px) {
+}
+
+/* Applies to 2560px and up */
+@media only screen and (min-width: 2560px) {
+}
