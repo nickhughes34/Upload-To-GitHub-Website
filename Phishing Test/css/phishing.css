@@ -1,265 +1,394 @@
 :root{
-  --bg-highlight: rgba(235,235,235,0.8);
-  --bg-search: rgba(245,245,245,0.5);
-  --bg-search-focus: rgba(255,255,255,1);
-  //--icon-color: rgba(255,255,255,1);
-  --icon-color: rgba(0,0,0,1);
+  --bg-highlight: rgba(235,235,235,0.8) !important;
+  --bg-search: rgba(245,245,245,0.5) !important;
+  --bg-search-focus: rgba(255,255,255,1) !important;
+  //--icon-color: rgba(255,255,255,1) !important;
+  --icon-color: rgba(0,0,0,1) !important;
 }
 
-html, body{
-  //overflow-x: hidden;
+html:not(#displayEmail), body:not(#displayEmail){
+  //overflow-x: hidden !important;
+  background-color: transparent !important;
+  font-family: "Times New Roman" !important;
+  font-size: 16px !important;
 }
 
 html{
-  overflow-x: hidden;
-  background: url("../images/background2.jpg");
-  height: 100%;
-  background-position: center;
-  //background-repeat: no-repeat;
-  background-size: cover;
+  overflow-x: hidden !important;
+  background: url("../images/background2.jpg") !important;
+  height: 100% !important;
+  background-position: center !important;
+  //background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+#name{
+  border: 2px solid black !important;
 }
 
 .person{
-  border-radius: 50px;
+  border-radius: 50px !important;
 }
 
 .center{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
 .center2{
-  display: flex;
-  justify-content: center;
+  display: flex !important;
+  justify-content: center !important;
 }
 
 .left2{
-  text-align: left;
-  padding-left: 20px;
+  text-align: left !important;
+  padding-left: 20px !important;
 }
 
 .center.right a, .center.left a, .center.searchBar a{
-  height: 40px;
-  width: 30px;
+  height: 40px !important;
+  width: 30px !important;
+  border: 0px solid transparent !important;
+  text-decoration: none !important;
+  padding: 0px !important;
+}
+
+li a{
+  padding: 0px !important;
 }
 
  .center.right a i, .center.left a i, .center.searchBar a i{
- font-size: 30px;
+ font-size: 30px !important;
+ padding: 0px !important;
  }
 
 nav a{
-  color: var(--icon-color);
+  color: var(--icon-color) !important;
 }
 
 #topNav nav a:hover{
- //cursor: pointer;
- cursor: default;
- background-color: var(--bg-highlight);
- border-radius: 50px;
+ //cursor: pointer !important;
+ cursor: default !important;
+ background-color: var(--bg-highlight) !important;
+ border-radius: 50px !important;
+ color: black !important;
+}
+
+#topNav, #results{
+  margin-top: 10px !important;
 }
 
 input[type="text"]{
-  height: 50px;
-  border-radius: 5px;
-  border: 0px solid transparent;
-  background-color: var(--bg-search);
-  width: 500px;
-  padding-left: 70px;
-  font-size: 18px;
-  font-family: "Times New Roman";
+  height: 50px !important;
+  border-radius: 5px !important;
+  border: 0px solid transparent !important;
+  background-color: var(--bg-search) !important;
+  width: 500px !important;
+  padding-left: 70px !important;
+  font-size: 18px !important;
+  font-family: "Times New Roman" !important;
 }
 
 input[type="text"]:focus{
-background-color: var(--bg-search-focus);
-border: 0px solid transparent;
-outline: none;
+background-color: var(--bg-search-focus) !important;
+border: 0px solid transparent !important;
+outline: none !important;
 }
 
 ::placeholder {
-  color: var(--icon-color);
-  opacity: 0.7; /* Firefox */
+  color: var(--icon-color) !important;
+  opacity: 0.7 !important; /* Firefox */
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
- color: var(--icon-color);
+ color: var(--icon-color) !important;
 }
 
 ::-ms-input-placeholder { /* Microsoft Edge */
- color: var(--icon-color);
+ color: var(--icon-color) !important;
 }
 
 .center.right a, .center.left a, .center.searchBar a{
-  padding: 0px 10px;
-  margin: 0px 10px;
+  padding: 0px 10px !important;
+  margin: 0px 10px !important;
 }
 
 .searchBar{
- position: relative;
+ position: relative !important;
 }
 
 .searchBar a{
-  position: absolute;
+  position: absolute !important;
 }
 
 .searchBar a.searchLeft{
-  top: 12%;
-  left: 0%;
+  top: 12% !important;
+  left: 0% !important;
 }
 
 .searchBar a.searchRight{
-  top: 12%;
-  right: 0%;
+  top: 12% !important;
+  right: 0% !important;
 }
 
 .fullHR{
-  width: 110%;
-  margin-left:-5%;
+  width: 110% !important;
+  margin-left: -10% !important;
+  margin: 10px 0px !important;
+}
+
+.switch{
+   margin-left: 50px !important;
+   margin-right: 5px !important;
 }
 
 .left{
 }
 
 .searchBar{
-  margin-left: 100px;
-  order: 1;
+  margin-left: 100px !important;
+  order: 1 !important;
 }
 
 .right{
-  margin-left: auto;
-  order: 2;
+  margin-left: auto !important;
+  order: 2 !important;
 }
 
 #sideNav{
-  width: 300px;
+  width: 300px !important;
 }
 
 #sideNav nav ul{
-  list-style: none;
-  padding: 0px;
-  margin: 0px;
+  list-style: none !important;
+  padding: 0px !important;
+  margin: 0px !important;
 }
 
 #sideNav nav a i, #sideNav nav li button i{
-  font-size: 30px;
-  padding-right: 20px;
-  margin-left: 0px;
+  font-size: 30px !important;
+  padding-right: 20px !important;
+  margin-left: 0px !important;
+}
+
+#sideNav a{
+border: 0px solid transparent !important;
+}
+
+#sideNav a:hover{
+background-color: transparent !important;
+color: black !important;
 }
 
 #sideNav nav li button{
-  height: 40px;
+  height: 40px !important;
 }
 
 #sideNav li{
-  height: 40px;
-  width: 300px;
-  margin-left: -10px;
-  padding-left: 35px;
+  height: 40px !important;
+  width: 300px !important;
+  margin-left: -10px !important;
+  padding-left: 35px !important;
 }
 
 #sideNav nav li{
-  border-radius: 0px;
-  border-top-right-radius: 50px;
-  border-bottom-right-radius: 50px;
+  border-radius: 0px !important;
+  border-top-right-radius: 50px !important;
+  border-bottom-right-radius: 50px !important;
+
 }
 
 #sideNav nav li button{
-  padding: 0px 25px;
-  margin: 0px;
-  margin-left: -25px;
-  border-radius: 5px;
-  border: 0px solid transparent;
-  margin-bottom: 8px;
+  padding: 0px 25px !important;
+  margin: 0px !important;
+  margin-left: -25px !important;
+  border-radius: 5px !important;
+  border: 0px solid transparent !important;
+  margin-bottom: 8px !important;
 }
 
 #sideNav nav li:hover:not(.disactive), #sideNav nav li button:hover{
- //cursor: pointer;
- cursor: default;
+ //cursor: pointer !important;
+ cursor: default !important;
 }
 
 #sideNav nav li:hover:not(.active, .disactive){
- background-color: var(--bg-highlight);
+ background-color: var(--bg-highlight) !important;
 }
 
 .active{
-  font-weight: bold;
-  background-color: var(--bg-search-focus);
+  font-weight: bold !important;
+  background-color: var(--bg-search-focus) !important;
 }
 
 #sideNav nav ul li{
-  display: flex;
-  align-items: center;
+  display: flex !important;
+  align-items: center !important;
 }
 
 main{
-  display: grid;
-  grid-template-columns: 370px auto;
+  display: grid !important;
+  grid-template-columns: 370px auto !important;
 }
 
 #next span{
- padding-right: 5px;
+ padding-right: 5px !important;
 }
 
 #next{
-  margin-top: 10px;
-  width: 20%;
-  border-radius: 5px;
-  border: 0px solid transparent;
-  padding: 15px;
-  background-color: var(--bg-highlight);
-  transition: 0.25s all ease;
-  cursor: pointer;
+  margin-top: 10px !important;
+  width: 20% !important;
+  border-radius: 5px !important;
+  border: 0px solid transparent !important;
+  padding: 15px !important;
+  background-color: var(--bg-highlight) !important;
+  transition: 0.25s all ease !important;
+  cursor: pointer !important;
 }
 
 #next:hover{
-  background-color: var(--bg-search-focus);
+  background-color: var(--bg-search-focus) !important;
+}
+
+#displayEmail{
+  position: relative !important;
+}
+
+#results, #dontlink{
+font-size: 16px !important;
+font-weight: normal !important;
 }
 
 .temp{
-  background-color: var(--bg-search-focus);
-  height: 700px;
-  border: 2px solid transparent;
-  border-radius: 2px;
-  overflow-y: auto;
-  overflow-x: hidden;
+  background-color: var(--bg-search-focus) !important;
+  height: 700px !important;
+  border: 5px solid transparent !important;
+  border-radius: 2px !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  z-index: -5 !important;
+}
+
+.hidden{
+  position: absolute !important;
+  z-index: -10 !important;
+  top: 0% !important;
 }
 
 #email{
-  //pointer-events: none;
+  //pointer-events: none !important;
 }
 
 .green{
-  border: 5px solid green;
+  border: 5px solid green !important;
 }
 
 .red{
-  border: 5px solid red;
+  border: 5px solid red !important;
 }
 
 .black{
-  border: 5px solid black;
+  border: 5px solid black !important;
 }
 
 p.green{
-  border: none;
-  color: green;
+  border: none !important;
+  color: green !important;
 }
 
 p.red{
-  border: none;
-  color: red;
+  border: none !important;
+  color: red !important;
 }
 
 p.black{
-  border: none;
-  color: black;
+  border: none !important;
+  color: black !important;
+}
+
+.transparent{
+  border: 5px solid transparent !important;
+}
+
+p.transparent{
+  border: none !important;
+  color: transparent !important;
+}
+
+.done{
+  pointer-events: none !important;
+}
+
+.switchButton{
+  position: relative !important;
+  display: inline-block !important;
+  width: 50px !important;
+  height: 24px !important;
+}
+
+.switchButton input {
+  opacity: 0 !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+.slide {
+  position: absolute !important;
+  cursor: pointer !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  background-color: #ccc !important;
+  -webkit-transition: .25s !important;
+  transition: .25s !important;
+}
+
+.slide:before {
+  position: absolute !important;
+  content: "" !important;
+  height: 16px !important;
+  width: 16px !important;
+  left: 4px !important;
+  bottom: 4px !important;
+  background-color: #f9354c !important;
+  -webkit-transition: .25s !important;
+  transition: .25s !important;
+}
+
+input:checked + .slide {
+  background-color: #0031ff !important;
+}
+
+input:checked + .slide:before{
+    background-color: #d3bb99 !important;
+}
+
+input:focus + .slide {
+  box-shadow: 0 0 1px #0031ff !important;
+}
+
+input:checked + .slide:before {
+  -webkit-transform: translateX(26px) !important;
+  -ms-transform: translateX(26px) !important;
+  transform: translateX(26px) !important;
+}
+
+/* Rounded sliders */
+.slide.round {
+  border-radius: 34px !important;
+}
+
+.slide.round:before {
+  border-radius: 50% !important;
 }
 
 /* Applies to 1920px and down */
 @media only screen and (max-width: 1920px) {
   .temp{
-    overflow-y: auto;
-    overflow-x: auto;
+    overflow-y: auto !important;
+    overflow-x: auto !important;
   }
 }
 
@@ -270,26 +399,26 @@ p.black{
 /* Applies to 1326px and down */
 @media only screen and (max-width: 1326px) {
   main{
-    display: block;
+    display: block !important;
   }
   #sideNav {
-    display: none;
+    display: none !important;
   }
   #displayEmailDiv > object{
-    margin-left: 26%;
+    margin-left: 26% !important;
   }
 }
 
 /* Applies to 1215px and down */
 @media only screen and (max-width: 1225px) {
-  input[type="text"]{
-    display: none;
+#searchbarreadonly{
+    display: none !important;
   }
   .searchBar a.searchLeft{
-    display: none;
+    display: none !important;
   }
   .searchBar a.searchRight{
-    display: none;
+    display: none !important;
   }
 }
 
@@ -321,24 +450,24 @@ p.black{
 /* Applies to 755px and down */
 @media only screen and (max-width: 765px) {
   #displayEmailDiv > object{
-    margin-left: 30%;
+    margin-left: 30% !important;
   }
 }
 
 /* Applies to 706px and down */
 @media only screen and (max-width: 706px) {
   .center.right{
-    display: none;
+    display: none !important;
   }
   .center.left{
-    margin-left: 80px;
+    margin-left: 80px !important;
   }
 }
 
 /* Applies to 600px and down */
 @media (max-width: 600px) {
   #displayEmailDiv > object{
-    margin-left: 40%;
+    margin-left: 40% !important;
   }
 }
 
@@ -393,4 +522,8 @@ p.black{
 
 /* Applies to 2560px and up */
 @media only screen and (min-width: 2560px) {
+}
+
+#r_b{
+  display: none !important;
 }

@@ -30,21 +30,21 @@
           <div class="center">
 
             <div class="center left">
-              <a class="center"><i class="fa-solid fa-bars"></i></a>
+              <a class="center dontlink"><i class="fa-solid fa-bars"></i></a>
               <img src="images/logo_black.png" alt="logo" height="50px" width="200px">
               </div>
 
               <div class="searchBar center">
-                <a class="center searchLeft"><i class="fa-solid fa-magnifying-glass"></i></a>
-              <input type="text" name="" value="" placeholder="Search Mail" readonly>
-              <a class="center searchRight"><i class="fa-solid fa-bars-staggered"></i></a>
+                <a class="center searchLeft dontlink"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <input id = "searchbarreadonly" type="text" name="" value="" placeholder="Search Mail" readonly>
+              <a class="center searchRight dontlink"><i class="fa-solid fa-bars-staggered"></i></a>
             </div>
 
           <div class="center right">
-              <a class="center"><i class="fa-regular fa-circle-question"></i></a>
-              <a class="center"><i class="fa-solid fa-gear"></i></a>
-              <a class="center"><i class="fa-solid fa-list-ul"></i></a>
-              <a class="center"><img class="person" src="images/person.png" alt="person" height="50px" width="50px"></a>
+              <a class="center dontlink"><i class="fa-regular fa-circle-question"></i></a>
+              <a class="center dontlink"><i class="fa-solid fa-gear"></i></a>
+              <a class="center dontlink"><i class="fa-solid fa-list-ul"></i></a>
+              <a class="center dontlink"><img class="person" src="images/person.png" alt="person" height="50px" width="50px"></a>
               </div>
 
           </div>
@@ -61,31 +61,48 @@
 
           <ul class="">
             <li class="disactive"><button class="center"><i class="fa-solid fa-pencil"></i><span>Compose<span></button></li>
-            <li class="active"><a class=""><i class="fa-solid fa-inbox"></i></a><span>Inbox<span></li>
-            <li class=""><a class=""><i class="fa-regular fa-star" style="margin-left: -1.875px; padding-right: 18.125px;"></i></a><span>Starred<span></li>
-            <li class=""><a class=""><i class="fa-regular fa-clock"></i></a><span>Snoozed<span></li>
-            <li class=""><a class=""><i class="fa-solid fa-circle-exclamation"></i></a><span>Important<span></li>
-            <li class=""><a class=""><i class="fa-regular fa-paper-plane"></i></a><span>Sent<span></li>
-            <li class=""><a class=" "><i class="fa-regular fa-file-lines" style="margin-left: 3.75px; padding-right: 23.75px;"></i></a><span>Drafts<span></li>
-            <li class=""><a class=" "><i class="fa-regular fa-comment-dots"></i></a><span>Chats<span></li>
-            <li class=""><a class=" "><i class="fa-solid fa-business-time" style="padding-right: 12.5px;"></i></a><span>Scheduled<span></li>
-            <li class=""><a class=" "><i class="fa-regular fa-envelope"></i></a><span>All Mail<span></li>
-            <li class=""><a class=" "><i class="fa-solid fa-triangle-exclamation"></i></a><span>Spam<span></li>
-            <li class=""><a class=" "><i class="fa-regular fa-trash-can" style="margin-left: 1.875px; padding-right: 21.875px;"></i></a><span>Trash<span></li>
-            <li class=""><a class=" "><i class="fa-solid fa-gear"></i></a><span>Manage Labels<span></li>
-            <li class=""><a class=" "><i class="fa-solid fa-plus" style="margin-left: 1.875px; padding-right: 21.875px;"></i></a><span>Create New Labels<span></li>
+            <li class="active"><a class="dontlink"><i class="fa-solid fa-inbox"></i></a><span>Inbox<span></li>
+            <li class=""><a class="dontlink"><i class="fa-regular fa-star" style="margin-left: -1.875px; padding-right: 18.125px;"></i></a><span>Starred<span></li>
+            <li class=""><a class="dontlink"><i class="fa-regular fa-clock"></i></a><span>Snoozed<span></li>
+            <li class=""><a class="dontlink"><i class="fa-solid fa-circle-exclamation"></i></a><span>Important<span></li>
+            <li class=""><a class="dontlink"><i class="fa-regular fa-paper-plane"></i></a><span>Sent<span></li>
+            <li class=""><a class="dontlink"><i class="fa-regular fa-file-lines" style="margin-left: 3.75px; padding-right: 23.75px;"></i></a><span>Drafts<span></li>
+            <li class=""><a class="dontlink"><i class="fa-regular fa-comment-dots"></i></a><span>Chats<span></li>
+            <li class=""><a class="dontlink"><i class="fa-solid fa-business-time" style="padding-right: 12.5px;"></i></a><span>Scheduled<span></li>
+            <li class=""><a class="dontlink"><i class="fa-regular fa-envelope"></i></a><span>All Mail<span></li>
+            <li class=""><a class="dontlink"><i class="fa-solid fa-triangle-exclamation"></i></a><span>Spam<span></li>
+            <li class=""><a class="dontlink"><i class="fa-regular fa-trash-can" style="margin-left: 1.875px; padding-right: 21.875px;"></i></a><span>Trash<span></li>
+            <li class=""><a class="dontlink"><i class="fa-solid fa-gear"></i></a><span>Manage Labels<span></li>
+            <li class=""><a class="dontlink"><i class="fa-solid fa-plus" style="margin-left: 1.875px; padding-right: 21.875px;"></i></a><span>Create New Labels<span></li>
           </ul>
 
         </nav>
       </section>
 
       <section id="displayEmail" ng-controller = "MainController">
-          <div id="outline" class="temp">
+
+        <div id="outline" class="temp" style="min-height: 690px !important; width: 1500px !important;">
+
+            <!--<h1 id ="subject" class="left2">Subject</h1>-->
+
+            <div id = "beforeDisplayEmailDiv" class="center2">
+              <div id = "displayEmailDiv" class="">
+
+                        <div class="center">
+                            <input id = "name" type="text" name="name" value="" placeholder="Enter Name (testing)">
+                        </div>
+
+              </div>
+            </div>
+
+        </div>
+
+          <div id="outline2" class="temp hidden" style="min-height: 690px !important; width: 500px !important;">
 
               <!--<h1 id ="subject" class="left2">Subject</h1>-->
 
-              <div id = "beforeDisplayEmailDiv" class="center2">
-                <div id = "displayEmailDiv" class="">
+              <div id = "beforeDisplayEmailDiv2" class="center2">
+                <div id = "displayEmailDiv2" class="">
 
                 </div>
               </div>
@@ -93,7 +110,16 @@
           </div>
 
           <div class="center">
-          <button id = "next" class="center"><span>Next</span><i class="fa-solid fa-arrow-right"></i></button>
+          <button id = "next" class="center"><span>Start</span><i class="fa-solid fa-arrow-right"></i></button>
+
+            <label class="switchButton switch">
+              <input id="border" type="checkbox" checked=""><span class="slide round"></span></label>
+              <p>Border Outline (testing)</p>
+
+              <label class="switchButton switch">
+                <input id="alert" type="checkbox" checked=""><span class="slide round"></span></label>
+                <p>Alert (testing)</p>
+
           </div>
 
           <div class="center">
