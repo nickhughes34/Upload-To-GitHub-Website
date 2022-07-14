@@ -1,3 +1,0 @@
-Phishing: https://monkey.org/~jose/phishing/ 
-
-Regular/ham: https://github.com/zrz1996/Spam-Email-Classifier-DataSet/blob/master/ham.zip
