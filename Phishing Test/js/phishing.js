@@ -75,11 +75,15 @@ for (i=1; i<101;i++){ //makes 2 lists fulled with numbers to 100. And fills user
 //First email is loaded in the background, added the phishing number to list.
   if (randomNumber == 1){
     filename.push(phishing.pop(-1));
-    file = '../Phishing_HTML/data%20(' + filename[filename.length - 1] + ').html'
+    //For github you have to use the full link but anywhere else the below code should work.
+    //file = '../Phishing_HTML/data%20(' + filename[filename.length - 1] + ').html'
+    file = 'https://nickhughes34.github.io/Phishing%20Test/Phishing_HTML/data%20(' + filename[filename.length - 1] + ').html'
     $("#displayEmailDiv2").load(file)
   } else{
     filename.push(regular.pop(-1));
-    file = '../Regular_HTML/data%20(' + filename[filename.length - 1] + ').html'
+    //For github you have to use the full link but anywhere else the below code should work.
+    //file = '../Regular_HTML/data%20(' + filename[filename.length - 1] + ').html'
+    file = 'https://nickhughes34.github.io/Phishing%20Test/Regular_HTML/data%20(' + filename[filename.length - 1] + ').html'
     $("#displayEmailDiv2").load(file)
   }
 
@@ -196,12 +200,16 @@ $(document).ready(function(){
         if (randomNumber == 1){
           filename.push(phishing.pop(-1));
           //file = url; the url should be where the file is hosted.
-          file = '../Phishing_HTML/data%20(' + filename[filename.length - 1] + ').html';
+          //For github you have to use the full link but anywhere else the below code should work.
+          //file = '../Phishing_HTML/data%20(' + filename[filename.length - 1] + ').html'
+          file = 'https://nickhughes34.github.io/Phishing%20Test/Phishing_HTML/data%20(' + filename[filename.length - 1] + ').html'
           $("#displayEmailDiv2").load(file);
         } else{
           filename.push(regular.pop(-1));
           //file = url; the url should be where the file is hosted.
-          file = '../Regular_HTML/data%20(' + filename[filename.length - 1] + ').html';
+          //For github you have to use the full link but anywhere else the below code should work.
+          //file = '../Regular_HTML/data%20(' + filename[filename.length - 1] + ').html'
+          file = 'https://nickhughes34.github.io/Phishing%20Test/Regular_HTML/data%20(' + filename[filename.length - 1] + ').html'
           $("#displayEmailDiv2").load(file);
         }
       }
