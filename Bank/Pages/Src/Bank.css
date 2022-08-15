@@ -1,0 +1,157 @@
+main{
+  overflow-x: hidden;
+}
+
+.bg-grey{
+background-color: #f5f6f7;
+}
+
+footer li a{
+  text-decoration: none;
+  border-bottom: 1px dotted white;
+}
+
+footer li a:hover{
+  border-bottom: 1px solid white;
+}
+
+#navbarContent ul li a{
+  position: relative;
+}
+
+#navbarContent ul li a:after {
+  bottom: 0px;
+  width: 0px;
+  content: "";
+  height: 3px;
+  right: 50%;
+  position: absolute;
+  background: black;
+  transition: width 0.5s ease 0s, right 0.5s ease 0s;
+}
+
+#navbarContent ul li a:hover:after {
+  width: 100%;
+  right: 0px;
+}
+
+.over{
+  overflow: hidden;
+}
+
+.blur{
+  filter:blur(4px);
+ pointer-events: none;
+ user-select: none;
+ position: relative;
+ z-index: -1
+}
+
+.navbar .nav-link {
+  color: #fff !important;
+}
+
+.background-image{
+  width: 100%;
+  border-radius: 5px;
+}
+
+.cover-image{
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.logo{
+  width: 50%;
+  user-select: none;
+}
+
+.fadeInO{
+  animation: fadeInO 3s forwards;
+}
+
+@keyframes fadeInO {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+.fadeInLeft{
+  animation: fadeInLeft 3s forwards;
+}
+
+@keyframes fadeInLeft {
+  0% {opacity:0; transform: translateX(-20%);}
+  100% {opacity:1; transform: translateX(0%);}
+}
+
+.fadeInRight{
+  animation: fadeInRight 3s forwards;
+}
+
+@keyframes fadeInRight {
+  0% {opacity:0; transform: translateX(20%);}
+  100% {opacity:1; transform: translateX(0%);}
+}
+
+.box div{
+  background-color: hsl(220, 33.3%, 98.2%);
+  border: 5px solid black;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.move{
+  margin-top: -20px;
+  border: 0px solid transparent;
+  border-radius: 15px;
+}
+
+.border1{
+  border-left: 2px solid grey;
+  border-right: 2px solid grey;
+}
+
+#panels1 a:hover {
+    color:red;
+}
+
+#panels1 a:focus {
+    color:red;
+}
+
+.anchor{
+  top: -50px;
+  position: relative;
+  display: block;
+  visibility: hidden;
+}
+
+.rounded-left, .rounded-right, .rounded-none{
+  border: 2px solid white;
+}
+
+.rounded-left{
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.rounded-right{
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+@media (max-width: 1000px){
+  .navbar-nav{
+    text-align: center;
+}
+
+.btn.rounded-left{
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.btn.rounded-right{
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Website's Google Font, Bootstrap, Css, Js files -->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Src/Bank.css">
+    <link rel="stylesheet" href="Src/Application.css">
+
+    <!-- Website's Title and Icon -->
+    <title>Login | Bank of  Sunshine</title>
+    <link rel="icon" href="./Src/logo-1-min-trim-2.png">
+    <meta charset="utf-8">
+  </head>
+
+  <body class="backImage">
+
+<!-- Main -->
+<main>
+
+      <!-- Login -->
+      <section>
+
+
+        <section class="gradient-form py-5">
+          <div class="container py-5">
+            <div class="row d-flex justify-content-center align-items-center">
+              <div class="col-md-12">
+                <div class="card text-black rounded-left rounded-right">
+                  <div class="row g-0">
+
+                    <a href="/" class="backButton text-dark">Home</a>
+                    <div class="col-md-6 d-flex align-items-center color1 rounded-left">
+                      <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                        <h3 class="mb-4 text-center fw-bold">Bank of Sunshine</h3>
+                        <p class="mb-0"> Need loans? This is how you apply for them today: Apply for the loan.
+                          Get the desired money you needed. Create a schedule that works for your budget.
+                          Pay it back on time. Also note: You can have multiple loan applications open at once.</p>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="card-body p-md-5 mx-md-4">
+
+                        <div class="text-center">
+                          <a href = "/"><img src="./Src/logo-1-min-trim.png" width = "185px" alt="logo"></a>
+                          <h4 class="mt-4 mb-5 pb-1 fw-bold">Bank of Sunshine</h4>
+                        </div>
+
+                        <form method = "POST" action="/SignIn" class="needs-validation" novalidate>
+                          <p>Please login to your account</p>
+
+                          {% if error %}
+                            <div class="form-outline form-floating mb-4">
+                            <div class="error">{{ error }}</div>
+                            </div>
+                          {% endif %}
+
+                          <div class="form-outline form-floating mb-4">
+                          <input type="text" class="form-control" id="username" placeholder="Username" name="username" value = "{{ username }}" required />
+                          <label for="username" class="form-label">Username</label>
+                          <div class="valid-feedback">Valid Username!</div>
+                          <div class="invalid-feedback">Please Provide Your Correct Username.</div>
+                          </div>
+
+
+                          <div class="form-outline form-floating mb-4">
+                          <input type="password" class="form-control" id="password" placeholder="Password" name="password" required />
+                          <label for="password" class="form-label">Password</label>
+                          <div class="valid-feedback">Valid Password!</div>
+                          <div class="invalid-feedback">Please Provide Your Correct Password.</div>
+                          </div>
+
+                          <div class="text-center pt-1 mb-4 pb-1">
+                            <button class="btn btn-outline-primary btn-block fa-lg mb-3 rounded-left rounded-right" type="submit">Log in</button>
+                            <a class="text-muted">Forgot your password?</a>
+                          </div>
+
+                          <div class="d-flex align-items-center justify-content-center pb-4">
+                            <p class="mb-0 me-2">Don't have an account?</p>
+                            <a class="btn btn-outline-primary fa-lg rounded-left rounded-right" href = "/CreateAccount">Create</a>
+                          </div>
+
+                        </form>
+
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </section>
+      <!-- Login -->
+
+</main>
+<!-- Main-->
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/603d518eab.js" crossorigin="anonymous"></script>
+<!-- Angular -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+<!-- Scripts -->
+<script type="text/javascript" src="./Src/Application.js"></script>
+  </body>
+</html>

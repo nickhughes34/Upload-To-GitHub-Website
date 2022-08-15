@@ -1,0 +1,24 @@
+<html>
+    <body>
+        <h1> Results </h1>
+        <table>
+
+            {% if result %}
+            <tr>
+                <th>TD</th>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+
+            {% for row in result %}
+            <tr>
+                <td>{{row.id}}</td>
+                <td>{{row.name}}</td>
+                <td>{{row.age}}</td>
+            </tr>
+            {% endfor %}
+            {% endif %}
+
+        </table>
+    </body>
+</html>

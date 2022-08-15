@@ -1,0 +1,71 @@
+#app{
+  border-radius: 10px;
+}
+
+form{
+  user-select: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.valid-feedback, .invalid-feedback, .error{
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  color: white;
+  padding: 0px 5px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.invalid-feedback, .error{
+  border-left: 5px solid red;
+  background-color: #F88379;
+}
+
+.valid-feedback{
+  border-left: 5px solid green;
+  background-color: #50C878;
+}
+
+.backImage{
+    background: linear-gradient(90deg,#f76943, #ffce00);
+    background-image: url("../Src/jason-dent-building-min.jpg");
+    background-size: cover;
+}
+
+.backImage2{
+    background-image: url("../Src/bank-kwinton.jpg");
+}
+
+.color1{
+/* fallback for browsers */
+background: #f76943;
+background: linear-gradient(90deg,#f76943, #ffce00);
+}
+
+.formBack{
+margin-top: -200px;
+background: hsla(0, 0%, 100%, 0.6);
+backdrop-filter: blur(30px);
+}
+
+.backButton{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  text-decoration: none;
+}
+
+.backButton:hover{
+  text-decoration: underline;
+}
