@@ -1,4 +1,4 @@
-#Stock Market React Application
+Stock Market React Application
 <br>
 Used:<br>
 <br>
