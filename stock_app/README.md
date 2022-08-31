@@ -1,5 +1,5 @@
 Stock Market React Application
-<br>
+<br><br>
 Used:<br>
 <br>
 Bootstrap<br>
