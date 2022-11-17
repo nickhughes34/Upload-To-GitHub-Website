@@ -1,5 +1,4 @@
-<h1>Bank of Sunshine</h1><br>
-<br>
+<h1>Bank of Sunshine</h1>
 Description:<br>
 
 This project takes user input and checks for validation with custom validation messages. Also has server side validation for usernames, email and passwords. Used Flask framework in python and sessions to keep the user logged in while using the website.<br><br>
