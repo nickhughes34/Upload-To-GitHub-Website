@@ -1,0 +1,32 @@
+html, body{
+    background: linear-gradient(217deg, #00ccff, rgba(255,0,0,0) 78%),
+    linear-gradient(127deg, #005FB8, rgba(0,255,0,0) 78%),
+     linear-gradient(336deg, #FFC900, rgba(0,0,255,0) 78%);
+     height: 100%;
+     width: 100%;
+     overflow-x: hidden;
+}
+
+label{
+    font-weight: bolder;
+}
+
+#Title{
+    text-shadow: 1px 1px 2px red, 0 0 0.5em blue, 0 0 0.5em blue;
+}
+
+#mid1, #mid2{
+    width: 25%;
+}
+
+.px-auto{
+    margin-left: 10%;
+}
+
+.mr-5{
+    margin-right: 5%;
+}
+
+.width-100{
+    width: 100;
+}
