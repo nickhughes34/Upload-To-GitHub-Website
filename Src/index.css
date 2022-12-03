@@ -1,3 +1,7 @@
+.overflow{
+  overflow: hidden;
+}
+
 .navbar .nav-link {
   color: #fff !important;
 }
@@ -24,28 +28,145 @@ li{
 .background-image{
   height: 100vh;
   width: 100%;
-  background-color: #212529;
-  z-index: -1;
+  z-index: 2;
+
+  background-image: radial-gradient(
+    rgba(10, 110, 253, 0.1) 20%,
+    transparent 22%
+  );
+  background-position: 0% 0%;
+  background-size: 8vw 8vw;
+
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transition: opacity 0.8s ease, background-size 0.8s ease, background-position 0.8s ease;
+}
+
+.background-image2{
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+
+  background-image: url("https://images.unsplash.com/photo-1522252234503-e356532cafd5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1325&q=80");
+  background-position: center 50%;
+  background-size: 110vw;
+  opacity: 0.2;
+
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transition: opacity 0.8s ease, background-size 0.8s ease, background-position 0.8s ease;
 }
 
 #cover{
+  height: 100vh;
+  width: 100%;
   position: relative;
   text-align: center;
   margin-bottom: 50px;
-  //overflow-x: hidden;
+  background-color: #212529;
+  /*overflow-x: hidden;*/
 }
 
 .MainText{
   color: white;
-  font-family: "Times New Roman", Times, serif;
-  font-weight: bold;
-  font-size: 20px;
+  font-family: "Ibarra Real Nova", serif;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 25%;
+  text-align: left;
   transform: translate(-50%, -50%);
-  z-index: 2;
+  z-index: 3;
+  font-size: clamp(1vw, 2vw, 3vw); 
 }
+
+.MainText h1{
+  font-size: clamp(1vw, 3vw, 4vw); 
+}
+
+.MainText p{
+  font-size: clamp(1vw, 1.5vw, 2.5vw); 
+  /*color: rgba(106, 17, 203, 1);*/
+}
+
+.MainText hr{
+  border: 2px solid blue;
+  border-radius: 5px;
+  width: 120%;
+}
+
+.header{
+  pointer-events: none; 
+}
+
+.fancyLink{
+  color: white !important; 
+  display: block;
+  text-decoration: none;
+  transition: opacity 0.4s ease;
+}
+
+.fancyLinkContainer:hover > .fancyLink{
+  opacity: 0.1;
+}
+
+.fancyLinkContainer:hover > .fancyLink:hover{
+  opacity: 1;
+}
+
+.MainText:hover ~ .background-image{
+  background-size: 7vw 7vw;
+  opacity: 0.4;
+}
+
+#cover[data-index="-1"] > .background-image{
+  background-position: 0% 0%;
+}
+
+#cover[data-index="0"] > .background-image{
+  background-position: 0% -25%;
+}
+
+#cover[data-index="1"] > .background-image{
+  background-position: 0% -50%;
+}
+
+#cover[data-index="2"] > .background-image{
+  background-position: 0% -75%;
+}
+
+#cover[data-index="3"] > .background-image{
+  background-position: 0% -100%;
+}
+
+.MainText:hover ~ .background-image2{
+  background-size: 100vw;
+  opacity: 0.1;
+}
+
+
+#cover[data-index="-1"] > .background-image2{
+  background-position: center 65%;
+}
+
+#cover[data-index="0"] > .background-image2{
+  background-position: center 60%;
+}
+
+#cover[data-index="1"] > .background-image2{
+  background-position: center 55%;
+}
+
+#cover[data-index="2"] > .background-image2{
+  background-position: center 50%;
+}
+
+#cover[data-index="3"] > .background-image2{
+  background-position: center 45%;
+}
+
+
 
 .SocialMedia a{
   margin-left: 20px;
@@ -122,7 +243,7 @@ li{
               border-right: 5px solid rgba(37, 117, 252, 0.5);}
 }
 
-.dot {
+/*.dot {
     height: 50px;
     width: 50px;
     background-color: #bbb;
@@ -145,7 +266,7 @@ li{
 
 .dot4 {
   right: 60%;
-}
+}*/
 
 @keyframes slide {
   0% {transform:translateY(00%); background-color: rgba(106, 17, 203, 1); }
