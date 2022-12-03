@@ -20,3 +20,21 @@ $(window).scroll(function() {
 	});
 
 });
+
+var body = document.getElementById("body");
+var cover = document.getElementById("cover");
+var links = Array.from(document.getElementsByClassName("fancyLink"));
+
+document.getElementById("top").addEventListener("click", function(){
+	body.classList.add("overflow");
+});
+
+links.forEach((element, index) => {
+	element.onmouseover = () => {
+		cover.dataset.index = index;
+	}
+
+	element.onclick = () => {
+		body.classList.remove("overflow");
+	}
+});
