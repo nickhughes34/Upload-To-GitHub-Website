@@ -92,6 +92,7 @@ li{
 
 .MainText hr{
   border: 2px solid blue;
+  background-color: blue;
   border-radius: 5px;
   width: 120%;
 }
@@ -354,4 +355,10 @@ li{
 .MainText:hover ~ .background-image2{
   background-size: cover;
 }
+}
+
+@media only screen and (max-width: 800px) {
+  .overflow{
+    overflow: scroll;
+  }
 }
