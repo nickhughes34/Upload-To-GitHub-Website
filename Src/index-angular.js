@@ -28,4 +28,13 @@ $scope.hobbies = ["Reading", "Coding", "Walking", "Moblie Game Design", "Buildin
 
   $scope.description2 = "I have developed a mobile game call Pixel Block Defense in Android Studio. I make abundant long-term and short-term goals to stay organized. I have plenty of experience with coding and network systems.";
 
+    $scope.workExperience1 = [
+    "- Implemented UX and UI designs for university research lab using Bootstrap, CSS, JavaScript, Node, Express, etc.",
+    "- Updated and improved old and preexisting architecture.",
+    "- Tested and debugged websites regularly to improve performance.",
+    "- Collaborated with team members to improve technical and creative aspects of our website.",
+    "- Managed the SAIN Lab website. That includes updating pages, create new pages, and creating user profiles.",
+    "- Preformed maintenance on a production level server, using LVM’s to increase SWAP memory, and reparation drives.",
+    "- Implemented Python scripts to help automate the delete of old data, automate the installation of security patches, and scheduled reboot of the system."
+  ]
 })
