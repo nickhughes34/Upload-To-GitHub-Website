@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" class="">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Website's Google Font, Bootstrap, Css, Js files -->
@@ -15,47 +15,66 @@
     <link rel="stylesheet" href="Src/index.css">
 
     <!-- Website's Title and Icon -->
-    <title>Portfolio - Nicholas Hughes</title>
+    <title>Portforlio - Nicholas Hughes</title>
     <link rel="icon" href="Src/hockey-puck-solid.svg">
     <meta charset="utf-8">
   </head>
 
-  <body ng-app = "MainPage">
+  <body id="body" ng-app = "MainPage" class="overflow">
 
    <!-- Main Workspace -->
    <main>
 
     <!-- Introduction -->
-    <section id = "cover" class="mb-0">
-        <div class="background-image"></div>
-          <div class="dot"></div>
-          <div class="dot dot2"></div>
-          <div class="dot dot3"></div>
-          <div class="dot dot4"></div>
-    <div class="MainText">
-      <h1 class="border3">Nicholas Hughes</h1>
-      <p>I aspire to be a Full Stack Developer</p>
-      <p>Check out my Github page and Projects below</p>
+    <!--<section id = "cover" class="mb-0">
+      <div class="background-image"></div>
+        <div class="dot"></div>
+        <div class="dot dot2"></div>
+        <div class="dot dot3"></div>
+        <div class="dot dot4"></div>
+      <div class="MainText">
+        <h1 class="border3">Nicholas Hughes</h1>
+        <p>I aspire to be a Frontend Web developer</p>
+        <p>Check out my Github page and Projects below</p>
 
-      <div class="SocialMedia mb-5">
-        <a class="text-white" href="http://www.linkedin.com/in/nh-8a46491a3" target="_blank">
-          <i class="fab fa-linkedin"></i></a>
+        <div class="SocialMedia mb-5">
+          <a class="text-white" href="http://www.linkedin.com/in/nh-8a46491a3" target="_blank">
+            <i class="fab fa-linkedin"></i></a>
 
-        <a class="text-white" href="https://github.com/nickhughes34/nickhughes34.github.io" target="_blank">
-          <i class="fab fa-github"></i></a>
-          </div>
+          <a class="text-white" href="https://github.com/nickhughes34/nickhughes34.github.io" target="_blank">
+            <i class="fab fa-github"></i></a>
+        </div>
 
           <p class="mt-5 border2">Scroll down</p>
-          </div>
-        </section>
-        <!-- Introduction -->
+      </div>
+    </section>-->
+    <!-- Introduction -->
 
-        <!-- Nav Bar -->
+    <!-- Introduction -->
+    <section id = "cover" class="mb-0">
+      <div class="MainText">
+        <div class="header">
+          <h1>Nicholas Hughes</h1>
+          <p>Full Stack Engineer</p><hr>
+        </div>
+        <div class="fancyLinkContainer">
+          <a class="fancyLink" href="#about">About Me</a>
+          <a class="fancyLink" href="#experience">Work Experience</a>
+          <a class="fancyLink" href="#projects">My Projects</a>
+          <a class="fancyLink" href="#contact">Contact Me</a>
+        </div>
+      </div>
+      <div class="background-image"></div>
+      <div class="background-image2"></div>
+    </section>
+    <!-- Introduction -->
+
+      <!-- Nav Bar -->
       <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
         <!-- Container wrapper -->
         <div class="container-fluid">
           <!-- Navbar brand -->
-          <a class="navbar-brand text-white" href="#">Portfolio</a>
+          <a class="navbar-brand text-white" href="#">Portforlio</a>
           <!-- Toggle button -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fa fa-bars text-white"></i>
@@ -64,7 +83,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul id = "firstUl" class="navbar-nav me-auto mb-2 mb-lg-0">
               <!-- Link -->
-              <li class="nav-item"><a class="nav-link" href="#">Top</a></li>
+              <li class="nav-item"><a id="top" class="nav-link" href="#">Top</a></li>
               <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
               <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
               <li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
@@ -131,6 +150,35 @@
 </section>
 <hr>
 <!-- About Me -->
+
+
+   <!-- Experience -->
+   <section id = "first" class = "mt-5">
+    <span class="anchor" id = "experience"></span>
+  <div class = "text-center mb-5">
+    <h2 class="fs-2">Experience</h2>
+  </div>
+
+<div class="container mb-5">
+  <div class="row g-4 box d-flex justify-content-center align-items-center">
+
+      <div class="col-sm-12 col-md-12 text-start">
+        <div>
+        <h5 class="border-custom4 p-2 text-center">Sain Lab / Lab Technician / May 2022 - Present</h5>
+              <div class="my-4" ng-controller = "MainController">
+                    <div class="border-custom3 p-2">
+                      <dl>
+                        <dd class="p-3 typewriter delay my-0 py-0 waiting mb-0" ng-repeat = "item in workExperience1">{{item}}</dd>
+                      </dl>
+                    </div>
+              </div>
+      </div>
+      </div>
+  </div>
+</div>
+</section>
+<hr>
+<!-- Experience -->
 
 <!-- Projects -->
 <section id = "second" class = "container mb-5">
@@ -209,86 +257,83 @@
 
     </div>
       </div>
-</section><hr>
+</section>
 <!-- Projects -->
 
-<!-- Contact Me -->
-  <section class="container" id = "contact">
-<div class="row">
-
- <div class="col-sm-4 col-md-4 col-lg-4 waiting L">
-   <h2 class="fw-bold mb-4">Contact Me</h2>
-   <p class="text-muted mb-5">Feel free to contact me anytime.</p>
- </div>
-
- <div class="col-sm-8 col-md-8 col-lg-8 waiting R">
-   <div class="row g-1">
-
-     <div class="col-sm-12 col-md-12 col-lg-6 mb-5">
-        <div class="d-flex justify-content-start align-items-start">
-            <div class="p-3 bg-primary rounded-4">
-               <i class="fas fa-at fa-lg text-white fa-fw"></i>
-             </div>
-           <div class="ms-4">
-             <p class="fw-bold mb-1">Email</p>
-             <p class="text-muted mb-0">nicholas3429@gmail.com</p>
-            </div>
-            </div>
-            </div>
-
-      <div class="col-sm-12 col-md-12 col-lg-6 mb-5">
-         <div class="d-flex justify-content-start align-items-start">
-             <div class="p-3 bg-primary rounded-4">
-                <i class="fas fa-at fa-lg text-white fa-fw"></i>
-              </div>
-            <div class="ms-4">
-              <p class="fw-bold mb-1">Phone</p>
-              <p class="text-muted mb-0"></p>
-             </div>
-             </div>
-             </div>
-
-      <div class="col-sm-12 col-md-12 col-lg-6 mb-5">
-         <div class="d-flex justify-content-start align-items-start">
-             <div class="p-3 bg-primary rounded-4">
-                <i class="fab fa-github fa-lg text-white fa-fw"></i>
-              </div>
-            <div class="ms-4">
-              <p class="fw-bold mb-1">Github</p>
-              <a class="text-muted text-decoration-none mb-0" href="https://github.com/nickhughes34" target="_blank">https://github.com/nickhughes34/</a>
-             </div>
-             </div>
-             </div>
-
-     <div class="col-sm-12 col-md-12 col-lg-6 mb-5">
-        <div class="d-flex justify-content-start align-items-start">
-            <div class="p-3 bg-primary rounded-4">
-               <i class="fab fa-linkedin fa-lg text-white fa-fw"></i>
-             </div>
-           <div class="ms-4">
-             <p class="fw-bold mb-1">LinkedIn</p>
-             <a class="text-muted text-decoration-none mb-0"href="http://www.linkedin.com/in/nh-8a46491a3" target="_blank">http://www.linkedin.com/in/nh-8a46491a3</a>
-            </div>
-            </div>
-            </div>
-
-         </div>
-       </div>
-     </div>
-
-  </section>
-<!-- Contact Me -->
 </main>
    <!-- Main Workspace -->
 
 <!-- Footer -->
-<footer class="bg-dark text-center text-white">
+<footer class="bg-dark text-white">
   <!-- Grid container -->
-  <div class="container p-4">
+  <div class="container pt-5 text-primary">
     <!-- Section: Text -->
-    <section class="mb-4">
-      <p></p>
-    </section>
+    <!-- Contact Me -->
+  <section class="container" id = "contact">
+    <div class="row">
+    
+     <div class="col-sm-4 col-md-4 col-lg-4 waiting L">
+       <h2 class="fw-bold mb-4">Contact Me</h2>
+       <p class="text-white mb-5">Feel free to contact me anytime.</p>
+     </div>
+    
+     <div class="col-sm-8 col-md-8 col-lg-8 waiting R">
+       <div class="row g-1">
+    
+         <div class="col-sm-12 col-md-12 col-lg-6 mb-5">
+            <div class="d-flex justify-content-start align-items-start">
+                <div class="p-3 bg-primary rounded-4">
+                   <i class="fas fa-at fa-lg text-white fa-fw"></i>
+                 </div>
+               <div class="ms-4">
+                 <p class="fw-bold mb-1">Email</p>
+                 <a class="link-light mb-0" href="mailto:nicholas3429@gmail.com">nicholas3429@gmail.com</a>
+                </div>
+                </div>
+                </div>
+    
+          <div class="col-sm-12 col-md-12 col-lg-6 mb-5">
+             <div class="d-flex justify-content-start align-items-start">
+                 <div class="p-3 bg-primary rounded-4">
+                    <i class="fas fa-at fa-lg text-white fa-fw"></i>
+                  </div>
+                <div class="ms-4">
+                  <p class="fw-bold mb-1">Phone</p>
+                  <p class="link-light mb-0"></p>
+                 </div>
+                 </div>
+                 </div>
+    
+          <div class="col-sm-12 col-md-12 col-lg-6 mb-5">
+             <div class="d-flex justify-content-start align-items-start">
+                 <div class="p-3 bg-primary rounded-4">
+                    <i class="fab fa-github fa-lg text-white fa-fw"></i>
+                  </div>
+                <div class="ms-4">
+                  <p class="fw-bold mb-1">Github</p>
+                  <a class="link-light mb-0" href="https://github.com/nickhughes34/" target="_blank">https://github.com/nickhughes34/</a>
+                 </div>
+                 </div>
+                 </div>
+    
+         <div class="col-sm-12 col-md-12 col-lg-6 mb-5">
+            <div class="d-flex justify-content-start align-items-start">
+                <div class="p-3 bg-primary rounded-4">
+                   <i class="fab fa-linkedin fa-lg text-white fa-fw"></i>
+                 </div>
+               <div class="ms-4">
+                 <p class="fw-bold mb-1">LinkedIn</p>
+                 <a class="link-light mb-0"href="http://www.linkedin.com/in/nh-8a46491a3" target="_blank">http://www.linkedin.com/in/nh-8a46491a3</a>
+                </div>
+                </div>
+                </div>
+    
+             </div>
+           </div>
+         </div>
+    
+      </section>
+    <!-- Contact Me -->
     <!-- Section: Text -->
   </div>
   <!-- Grid container -->
@@ -309,7 +354,7 @@
 <!-- Angular -->
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
 <!-- Scripts -->
-<script src="Src/index-angular.js"></script>
-<script src="Src/index.js"></script>
+<script type="text/javascript" src="Src/index-angular.js"></script>
+<script type="text/javascript" src="Src/index.js"></script>
   </body>
 </html>
