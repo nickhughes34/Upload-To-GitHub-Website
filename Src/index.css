@@ -78,15 +78,15 @@ li{
   text-align: left;
   transform: translate(-50%, -50%);
   z-index: 3;
-  font-size: clamp(1vw, 2vw, 3vw); 
+  font-size: clamp(2vw, 2vw, 3vw); 
 }
 
 .MainText h1{
-  font-size: clamp(1vw, 3vw, 4vw); 
+  font-size: clamp(3vw, 3vw, 4vw); 
 }
 
 .MainText p{
-  font-size: clamp(1vw, 1.5vw, 2.5vw); 
+  font-size: clamp(1.5vw, 1.5vw, 2.5vw); 
   /*color: rgba(106, 17, 203, 1);*/
 }
 
@@ -329,5 +329,29 @@ li{
 @media (max-width: 1000px){
   .navbar-nav {
     text-align: center;
+}
+}
+
+@media (max-width: 800px){
+.MainText{
+  left: 35%;
+  text-align: left;
+  font-size: 20px; 
+}
+
+.MainText h1{
+  font-size: 30px; 
+}
+
+.MainText p{
+  font-size: 25px; 
+}
+.background-image2{
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.MainText:hover ~ .background-image2{
+  background-size: cover;
 }
 }
