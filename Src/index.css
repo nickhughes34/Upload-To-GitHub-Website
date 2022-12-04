@@ -1,5 +1,21 @@
+:root{
+  --waveAnimationLength: 10vw;
+}
+
+
 .overflow{
-  overflow: hidden;
+  overflow: auto;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+html::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 .navbar .nav-link {
@@ -15,10 +31,23 @@ li{
   list-style: none;
 }
 
-.jQuery{
-  background: url("Src/jquery-icon.svg");
-  width: 42px;
+.expItem li{
+  list-style-type: disc;
+}
+
+.jQuery, .flask, .cProgramming{
+  background: url("jquery-icon.svg");
+  width: 48px;
   height: 48px;
+  background-size: 48px 48px;
+}
+
+.flask{
+  background: url("Flask.png");
+}
+
+.cProgramming{
+  background: url("c.png");
 }
 
 .text-orange{
@@ -74,7 +103,7 @@ li{
   font-family: "Ibarra Real Nova", serif;
   position: absolute;
   top: 50%;
-  left: 25%;
+  left: 28%;
   text-align: left;
   transform: translate(-50%, -50%);
   z-index: 3;
@@ -148,23 +177,23 @@ li{
 
 
 #cover[data-index="-1"] > .background-image2{
-  background-position: center 65%;
+  background-position: center 40%;
 }
 
 #cover[data-index="0"] > .background-image2{
-  background-position: center 60%;
+  background-position: center 45%;
 }
 
 #cover[data-index="1"] > .background-image2{
-  background-position: center 55%;
-}
-
-#cover[data-index="2"] > .background-image2{
   background-position: center 50%;
 }
 
+#cover[data-index="2"] > .background-image2{
+  background-position: center 55%;
+}
+
 #cover[data-index="3"] > .background-image2{
-  background-position: center 45%;
+  background-position: center 60%;
 }
 
 
@@ -281,7 +310,7 @@ li{
   visibility: hidden;
 }
 
-#firstUl a{
+#first, #firstUl a{
   position: relative;
 }
 
@@ -302,7 +331,7 @@ li{
 }
 
 .border-custom3, .border-custom4{
-  border-radius: 35px;
+  border-radius: 0px;
 }
 
 .border-custom3{
@@ -311,6 +340,34 @@ li{
 
 .border-custom4{
   animation: colorChange4 5s infinite alternate;
+}
+
+.proItem{
+  border-radius: 5px;
+  border: 2px solid transparent;
+  z-index: 1;
+  background-color: white;
+  transform: scale(0.95);
+  animation: proItemHoverR 0.25s forwards;
+}
+
+.proItem h3, .proItem p, .hobItem h3{
+  pointer-events: none;
+}
+
+.proItem:hover{
+  animation: proItemHover 0.5s forwards;
+  z-index: 2;
+}
+
+@keyframes proItemHover {
+  0%{box-shadow: 0 0px 0px 0 rgba(0,0,0,0.2); border: 2px solid transparent; transform: scale(0.95);}
+  100%{box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); border: 2px solid black; transform: scale(1);}
+}
+
+@keyframes proItemHoverR {
+  0%{box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); border: 2px solid black; transform: scale(1);}
+  100%{box-shadow: 0 0px 0px 0 rgba(0,0,0,0.2); border: 2px solid transparent; transform: scale(0.95);}
 }
 
 @keyframes colorChange3 {
@@ -325,6 +382,80 @@ li{
           border-bottom: 5px solid rgba(114, 175, 211, 1);}
   100% {border-top: 5px solid rgba(114, 175, 211, 1);
               border-bottom: 5px solid rgba(55, 236, 186, 1);}
+}
+
+#wave{
+  position: absolute;
+  background-color: transparent;
+  height: 10vh;
+  width: var(--waveAnimationLength);
+  top: 20vh;
+  left: 0%;
+  transition: all 0.5s ease;
+}
+
+#wave2{
+  position: absolute;
+  background-color: transparent;
+  height: 10vh;
+  width: var(--waveAnimationLength);
+  top: 30vh;
+  right: 0%;
+  transition: all 0.5s ease;
+}
+
+.hobItem{
+  border: 2px solid transparent;
+  height: 25vh;
+  border-radius: 1vw;
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+  transform: scale(0.95);
+  animation: hobItemHoverR 0.25s forwards;
+}
+
+.hobItem:hover{
+  animation: hobItemHover 0.35s forwards;
+  z-index: 2;
+
+  color: white;
+  /*background: url("https://upload.wikimedia.org/wikipedia/en/b/b6/Toronto_Maple_Leafs_2016_logo.svg");*/
+  text-shadow: 1px 1px 10px #005FB8, 0 0 0.5em #005FB8, 0 0 0.2em #005FB8;
+}
+
+@keyframes hobItemHover {
+  0%{box-shadow: 0 0px 0px 0 rgba(0,0,0,0.2); border: 0px solid transparent; transform: scale(0.95);}
+  100%{box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); border: 0px solid black; transform: scale(1);}
+}
+
+@keyframes hobItemHoverR {
+  0%{box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); border: 0px solid black; transform: scale(1);}
+  100%{box-shadow: 0 0px 0px 0 rgba(0,0,0,0.2); border: 0px solid transparent; transform: scale(0.95);}
+}
+
+.hobItemBackgound{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  opacity: 0.5;
+  background-color: white;
+
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  z-index: -1;
+}
+
+.hobItem:hover .hobItemBackgound{
+  opacity: 1;
+}
+
+.desItem{
+  text-indent: 50px;
 }
 
 @media (max-width: 1000px){
