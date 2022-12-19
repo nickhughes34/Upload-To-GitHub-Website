@@ -16,11 +16,127 @@ app.controller("MainController", function($scope){
   var flask = "flask";
 
   $scope.projects = [
-    {id:"pro1",status:"active",title:"Bank Page", name:"Bank of Sunshine Loan Page",image:"Src/Bank-of-Sunshine-screenshot.png",alt:"bank screenshot",description:"This project takes user input and checks for validation with custom validation messages. Also has server side validation for usernames, email and passwords. Used Flask framework in python and sessions to keep the user logged in while using the website.",code:"https://github.com/nickhughes34/nickhughes34.github.io/tree/main/Bank",link:"https://nickhughes34.pythonanywhere.com/",tech:{html, css, javascript, bootstrap, angular, python}},
-    {id:"pro2",status:"",title:"Stock Viewer", name:"NDVP Stock Viewer",image:"Src/NDVP-stock-app.png",alt:"stock viewer screenshot",description:"This project takes user input as a prop and interacts with other components. Uses the TradeView import to lookup and display stock values.",code:"https://github.com/nickhughes34/nickhughes34.github.io/tree/main/stock_app",link:"",tech:{react, bootstrap, mdb}},
-    {id:"pro3",status:"",title:"Real Estate Page", name:"Real Esate Webpage",image:"Src/Real-Estate-screenshot.png",alt:"real estate screenshot",description:"This project lets the user view a real estate homepage for Real Estate Today. Used Bootstrap for easy placement of elements.",code:"https://github.com/nickhughes34/nickhughes34.github.io/tree/main/Real_Estate",link:"https://nickhughes34.github.io/Real_Estate/Real_Estate.html",tech:{html, css, javascript, bootstrap, mdb}},
-    {id:"pro4",status:"",title:"Coffee Menu", name:"Coffee Menu Webpage",image:"Src/Coffee-screenshot.png",alt:"coffee menu screenshot",description:"This project lets the user view a menu for Coffee Cafe Today. Used jQuery to setup a delayed animation for when user scrolls into view. Used Bootstrap and Angular for easy placement of elements.",code:"https://github.com/nickhughes34/nickhughes34.github.io/tree/main/Coffee",link:"https://nickhughes34.github.io/Coffee/coffee.html",tech:{html, css, javascript, angular, bootstrap, mdb}},
-    {id:"pro5",status:"",title:"Weather App", name:"Weather Checker Webpage",image:"Src/Weather-screenshot.png",alt:"weather app screenshot",description:"This project lets the user input a city name to get the weather results. This project used plain Javascript to control the DOM to add all the weather elements.",code:"https://github.com/nickhughes34/nickhughes34.github.io/tree/main/Weather",link:"https://nickhughes34.github.io/Weather/weather.html",tech:{html, css, javascript}}];
+    {
+      id:"bank",
+      status:"show active",
+      title:"Bank Page", 
+      name:"Bank of Sunshine Loan Page",
+      image:"Src/Bank-of-Sunshine-screenshot.png",
+      alt:"bank screenshot",
+      description:"This project takes user input and checks for validation with custom validation messages. Also has server side validation for usernames, \
+                   email and passwords. Used Flask framework in python and sessions to keep the user logged in while using the website.",
+      code:"https://github.com/nickhughes34/nickhughes34.github.io/tree/main/Bank",
+      link:"https://nickhughes34.pythonanywhere.com/",
+      tech:{html, css, javascript, bootstrap, angular, python}
+    },
+    {
+      id:"homepage4",
+      status:"",
+      title:"Quick Meals", 
+      name:"Quick Meals Mock Homepage",
+      image:"Src/homepage4-screenshot.png",
+      alt:"Quick Meals screenshot",
+      description:"This project is a mock homepage for a food delivery company. It uses plain JavaScript.",
+      code:"https://github.com/nickhughes34/nickhughes34.github.io/tree/main/Homepage4",
+      link:"https://nickhughes34.github.io/Homepage4/homepage.html",
+      tech:{html, css, javascript}
+    },
+    {
+      id:"homepage3",
+      status:"",
+      title:"Turbo Logistics", 
+      name:"Turbo Logistics Mock Homepage",
+      image:"Src/homepage3-screenshot.png",
+      alt:"Turbo Logistics screenshot",
+      description:"This project is a mock homepage for a delivery company. It uses plain JavaScript.",
+      code:"https://github.com/nickhughes34/nickhughes34.github.io/tree/main/Homepage3",
+      link:"https://nickhughes34.github.io/Homepage3/homepage.html",
+      tech:{html, css, javascript}
+    },
+    {
+      id:"homepage5",
+      status:"",
+      title:"Durham Print", 
+      name:"Durham Print Mock Homepage",
+      image:"Src/homepage5-screenshot.png",
+      alt:"Durham Print screenshot",
+      description:"This project is a mock homepage for a business card company. It uses plain JavaScript.",
+      code:"https://github.com/nickhughes34/nickhughes34.github.io/tree/main/Homepage5",
+      link:"https://nickhughes34.github.io/Homepage5/homepage.html",
+      tech:{html, css, javascript}
+    },
+    {
+      id:"homepage1",
+      status:"",
+      title:"Financial Freedom Canada", 
+      name:"Financial Freedom Canada Mock Homepage",
+      image:"Src/homepage1-screenshot.png",
+      alt:"Financial Freedom Canada screenshot",
+      description:"This project is a mock homepage for a bank. It uses plain JavaScript.",
+      code:"https://github.com/nickhughes34/nickhughes34.github.io/tree/main/Homepage1",
+      link:"https://nickhughes34.github.io/Homepage1/homepage.html",
+      tech:{html, css, javascript}
+    },
+    {
+      id:"homepage2",
+      status:"",
+      title:"The Space Station", 
+      name:"The Space Station Mock Homepage",
+      image:"Src/homepage2-screenshot.png",
+      alt:"The Space Station screenshot",
+      description:"This project is a mock homepage for a space exploration company. It uses plain JavaScript.",
+      code:"https://github.com/nickhughes34/nickhughes34.github.io/tree/main/Homepage2",
+      link:"https://nickhughes34.github.io/Homepage2/homepage.html",
+      tech:{html, css, javascript}
+    },
+    {
+      id:"stock",
+      status:"",
+      title:"Stock Viewer", 
+      name:"NDVP Stock Viewer",
+      image:"Src/NDVP-stock-app.png",
+      alt:"stock viewer screenshot",
+      description:"This project takes user input as a prop and interacts with other components. Uses the TradeView import to lookup and display stock values.",
+      code:"https://github.com/nickhughes34/nickhughes34.github.io/tree/main/stock_app",
+      link:"",
+      tech:{react, bootstrap, mdb}
+    },
+    {
+      id:"weather",
+      status:"",
+      title:"Weather App",
+      name:"Weather Checker Webpage",
+      image:"Src/Weather-screenshot.png",
+      alt:"weather app screenshot",
+      description:"This project lets the user input a city name to get the weather results. This project used plain Javascript to control the DOM to add all the weather elements.",
+      code:"https://github.com/nickhughes34/nickhughes34.github.io/tree/main/Weather",
+      link:"https://nickhughes34.github.io/Weather/weather.html",
+      tech:{html, css, javascript}
+    },
+    {
+      id:"real",
+      status:"",
+      title:"Real Estate Page", 
+      name:"Real Esate Webpage",
+      image:"Src/Real-Estate-screenshot.png",
+      alt:"real estate screenshot",
+      description:"This project lets the user view a real estate homepage for Real Estate Today. Used Bootstrap for easy placement of elements.",
+      code:"https://github.com/nickhughes34/nickhughes34.github.io/tree/main/Real_Estate",link:"https://nickhughes34.github.io/Real_Estate/Real_Estate.html",
+      tech:{html, css, javascript, bootstrap, mdb}
+    },
+    {
+      id:"coffee",
+      status:"",
+      title:"Coffee Menu", 
+      name:"Coffee Menu Webpage",
+      image:"Src/Coffee-screenshot.png",
+      alt:"coffee menu screenshot",
+      description:"This project lets the user view a menu for Coffee Cafe Today. Used jQuery to setup a delayed animation for when user scrolls into view. \
+                   Used Bootstrap and Angular for easy placement of elements.",code:"https://github.com/nickhughes34/nickhughes34.github.io/tree/main/Coffee",
+      link:"https://nickhughes34.github.io/Coffee/coffee.html",
+      tech:{html, css, javascript, angular, bootstrap, mdb}
+    }
+  ];
 
   $scope.proficient = [
     ["Python", "5 years", python],
