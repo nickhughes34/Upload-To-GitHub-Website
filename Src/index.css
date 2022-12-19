@@ -458,6 +458,21 @@ li{
   text-indent: 50px;
 }
 
+canvas{
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  z-index: -100;
+}
+
+Main .container{
+  background-color: white;
+}
+
+.pill-item-25{
+  width: 20%;
+}
+
 @media (max-width: 1000px){
   .navbar-nav {
     text-align: center;
@@ -485,6 +500,9 @@ li{
 }
 .MainText:hover ~ .background-image2{
   background-size: cover;
+}
+.pill-item-25{
+  width: auto;
 }
 }
 
