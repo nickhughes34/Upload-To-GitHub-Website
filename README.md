@@ -29,7 +29,7 @@ These are most of my projects that I have completed over the years:
 <ul>
 <li>A homepage for a bank.</li>
 <li>Used <b>Javascript</b> to complete this task.</li>
-<li><a https://nickhughes34.github.io/Homepage1/homepage.html">https://nickhughes34.github.io/Homepage1/homepage.html</a></li>
+<li><a href="https://nickhughes34.github.io/Homepage1/homepage.html">https://nickhughes34.github.io/Homepage1/homepage.html</a></li>
 </ul>
 </li>
 
@@ -37,7 +37,7 @@ These are most of my projects that I have completed over the years:
 <ul>
 <li>A homepage for a bank.</li>
 <li>Used <b>Javascript</b> to complete this task.</li>
-<li><a https://nickhughes34.github.io/Homepage2/homepage.html">https://nickhughes34.github.io/Homepage2/homepage.html</a></li>
+<li><a href="https://nickhughes34.github.io/Homepage2/homepage.html">https://nickhughes34.github.io/Homepage2/homepage.html</a></li>
 </ul>
 </li>
 
@@ -45,7 +45,7 @@ These are most of my projects that I have completed over the years:
 <ul>
 <li>A homepage for a bank.</li>
 <li>Used <b>Javascript</b> to complete this task.</li>
-<li><a https://nickhughes34.github.io/Homepage3/homepage.html">https://nickhughes34.github.io/Homepage3/homepage.html</a></li>
+<li><a href="https://nickhughes34.github.io/Homepage3/homepage.html">https://nickhughes34.github.io/Homepage3/homepage.html</a></li>
 </ul>
 </li>
 
@@ -53,7 +53,7 @@ These are most of my projects that I have completed over the years:
 <ul>
 <li>A homepage for a bank.</li>
 <li>Used <b>Javascript</b> to complete this task.</li>
-<li><a https://nickhughes34.github.io/Homepage4/homepage.html">https://nickhughes34.github.io/Homepage4/homepage.html</a></li>
+<li><a href="https://nickhughes34.github.io/Homepage4/homepage.html">https://nickhughes34.github.io/Homepage4/homepage.html</a></li>
 </ul>
 </li>
 
@@ -61,7 +61,7 @@ These are most of my projects that I have completed over the years:
 <ul>
 <li>A homepage for a bank.</li>
 <li>Used <b>Javascript</b> to complete this task.</li>
-<li><a https://nickhughes34.github.io/Homepage5/homepage.html">https://nickhughes34.github.io/Homepage5/homepage.html</a></li>
+<li><a href="https://nickhughes34.github.io/Homepage5/homepage.html">https://nickhughes34.github.io/Homepage5/homepage.html</a></li>
 </ul>
 </li>
 
