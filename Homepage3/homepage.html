@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<!-- text direction is set to left to right -->
+<html lang="en" dir="ltr" id="html">
+
+  <head>
+    <meta charset="utf-8" name="robots" content="noindex, nofollow">
+    <!-- Sets title of web tab -->
+    <title>Turbo Logistics</title>
+    <!-- Icons are imported (thus applied) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <!-- FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&amp;display=swap" rel="stylesheet">
+    <!-- CSS is imported thus applied -->
+    <link rel="stylesheet" href="css/homepage4.css">
+    <!--<link rel="stylesheet" href="css/progress.css">-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="icon" type="image/x-icon" href="images/logo_blue.png">
+    <!-- style media="screen" allows us to specify what we want to do on different sized screens -->
+    <style media="screen">
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+<!--
+<div id = "color" class="color shrink2">
+  <p>Colors:</p>
+  <ul>
+    <li><button id="op1"></button></li>
+    <li><button id="op2"></button></li>
+    <li><button id="op3"></button></li>
+    <li><button id="op4"></button></li>
+  </ul>
+</div>
+-->
+
+
+  <div  id = "Register"  class="categorycol col3 color shrink2" style="margin-bottom: 0px;">
+    <div class="headertext link">
+      <button onclick="myLink();">Register Today</button>
+    </div>
+  </div>
+
+    <div class="center">
+      <nav id="navCheck" class="container2 shrink">
+        <div id = "buttonNav" ><button id="open"><i class="fa-solid fa-bars fa-2x"></i></button></div>
+          <div class="logo"><a href=""><img id = "logo" class="shrink" src="images/logo_truck_white.png" alt="logo" style="padding:5px;"></a></div>
+        <input type="checkbox" id="click">
+
+        <label for="click" class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+
+        <ul id = "first">
+          <li><a class="borderStyle borderStyle2">Services</a></li>
+          <li><a class="borderStyle borderStyle2">About Us</a></li>
+          </ul>
+
+        <ul id = "second">
+          <li><a class="borderStyle borderStyle2">Packages</a></li>
+          <li><a class="borderStyle borderStyle2">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <nav id = "sideNav" class="block hidden">
+      <div class="button right">
+        <button id="close"><i class="fa-solid fa-xmark fa-2x"></i></button>
+      </div>
+
+      <ul class="">
+        <li><a class="">Home</a><span class="fright"></span></li>
+        <li><a class="">Services</a><span class="fright"></span></li>
+        <li><a class="">Personal</a><span class="fright"></span></li>
+        <li><a class="">Business</a><span class="fright"></span></li>
+        <li><a class="">Register Today</a><span class="fright"></span></li>
+        <li><a class="">About Us</a><span class="fright"></span></li>
+        <li><a class="">Packages</a><span class="fright"></span></li>
+        <li><a class="">News</a><span class="fright"></span></li>
+        <li><a class="">Resources</a><span class="fright"></span></li>
+        <li><a class="">Other Services</a><span class="fright"></span></li>
+        <li style="border:none; text-align: center;">
+          <div id = "navFoot" class="">
+              <div class="footer-right">
+
+                <p class="footer-about" style="margin-bottom: 20px;">
+                  <span class="sectiontitle" style="color:var(--bg-black);background:none;">Contact Us</span>
+                </p>
+
+                <div class="footer-icons">
+                  <a><i class="fa-brands fa-facebook-f"></i></a>
+                  <a><i class="fa-brands fa-twitter"></i></a>
+                  <a><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a><i class="fa-brands fa-instagram"></i></a>
+                  <a><i class="fa-brands fa-youtube"></i></a>
+                </div>
+
+              </div>
+          </div>
+        </li>
+      </ul>
+</nav>
+
+<div class="header">
+  <div class="headertext" style="color: var(--bg-black);">
+    <div class="backing">
+      <h3 class="headerBorder" style="padding-bottom: 10px;">The Fastest Shipping In Canada!</h3><hr class="headerHR">
+      <h4 style="padding-top:10px;">Shipping Made Easier!</h4>
+    </div>
+  </div>
+</div>
+
+<div class="center">
+  <div class="container" style="margin: 50px; margin-top: -100px; z-index: 9;">
+      <ul class="search">
+
+      <li style="border: none; width:100%;">
+        <div class="left" style="">
+          <h1>Track a Package:</h1>
+      <input type="text" placeholder="Tracking ID.." name="search"><button type="submit">TRACK</button></input>
+    </div></li>
+
+    <div class="row2">
+      <li style="border: none;"><a><div class=""><i class="fa-solid fa-sack-xmark fa-3x"></i><h2 class="borderStyle">Exchange Rate</h2></div></a></li>
+      <li class="borderLeft2"><a><div class=""><i class="fa-solid fa-truck-fast fa-3x"></i><h2 class="borderStyle">Shipping</h2></div></a></li>
+      <li class="borderLeft"><a><div class=""><i class="fa-solid fa-building fa-3x"></i><h2 class="borderStyle">Locations</h2></div></a></li>
+      <li class="borderLeft2"><a><div class=""><i class="fa-solid fa-arrow-rotate-left fa-3x"></i><h2 class="borderStyle">Returns</h2></div></a></li>
+    </div>
+
+    </ul>
+  </div>
+</div>
+
+<hr>
+<span id="category" class="anchor"></span>
+<div class="sectiontitle" style="z-index:9;position: relative;">
+  <div class="center zoom">
+  <i class="customicon"></i>
+  <h1>Services</h1>
+  <i class="customicon" style="transform: rotateY(180deg);"></i>
+  </div>
+</div><hr>
+
+<div class="center">
+<div class="container card">
+
+<div class="categorycol col3 center headertext2">
+  <button class="underline" type="button" id="Personal" name="amount">Personal </button>
+  <div class="vl"></div>
+  <button class="" type="button" id="Business" name="amount">Business </button>
+</div>
+<span id="personal" class="anchor"></span>
+<span id="business" class="anchor"></span>
+<div class="categorycol col2 box" id = "PersonalLink">
+  <div class="personalFont" style="padding: 0px 0px;">
+    <ul class="under left left2">
+      <h4 class="center" style="padding-bottom: 5%;"><u style="font-weight: bold;">Personal</u></h4>
+      <li><a>Sending</a><span class="fright"></span></li><hr class="break">
+      <li><a>Receiving</a><span class="fright"></span></li><hr class="break">
+      <li><a>Postal Services</a><span class="fright"></span></li><hr class="break">
+      <li><a>Collectibles</a><span class="fright"></span></li><hr class="break">
+    </ul>
+    </div>
+</div>
+
+<div id = "PersonalLinkImage" class="categorycol col2">
+      <img src="images/shipping7.jpg">
+</div>
+
+<div id = "BusinessLinkImage" class="categorycol col2 block">
+      <img src="images/shipping8.jpg">
+</div>
+
+  <div class="categorycol col2 box block" id = "BusinessLink">
+    <div class="personalFont" style="padding: 0px 0px;">
+    <ul class="under left" style="">
+      <h4 class="center" style="padding-bottom: 5%;"><u style="font-weight: bold;">Business</u></h4>
+      <li><a>Shipping</a><span class="fright"></span></li><hr class="break">
+      <li><a>Postal Services</a><span class="fright"></span></li><hr class="break">
+      <li><a>Small Business</a><span class="fright"></span></li><hr class="break">
+      <li><a>Large Business</a><span class="fright"></span></li><hr class="break">
+    </ul>
+      </div>
+  </div>
+
+</div>
+</div>
+<hr>
+
+    <div class="content">
+      <div class="sectiontitle" id="">
+        <span id="aboutus" class="anchor"></span>
+        <div class="center zoom">
+        <i class="customicon"></i>
+        <h1>About Us</h1>
+        <i class="customicon" style="transform: rotateY(180deg);"></i>
+      </div>
+      </div><hr>
+
+      <div class="row" style="margin-bottom: 0px;">
+
+        <div class="aboutcol">
+          <img src="images/home2.jpg" alt="shipping from home">
+          <div class="card">
+            <h3>Shipping From Home</h3>
+            <p style="padding-top: 10px;">Use our online tool that lets you create our shipping labels on the go. Then print them when your ready and your good to go.</p>
+            <button type="submit">Label Maker</button>
+          </div>
+        </div>
+
+        <div class="aboutcol">
+          <img src="images/track.jpg" alt="tracking dashboard">
+          <div class="card">
+            <h3>Tracking</h3>
+            <p style="padding-top: 10px;">Use our new technology wizard to access the location of your packages. This tool even allows you to get updates sent to your phone when your package is on the move.</p>
+            <button type="submit">Get Started</button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="">
+
+        <section id = "sPackages">
+                <hr>
+                <div class="sectiontitle" id="">
+                  <span id="schedule" class="anchor"></span>
+                  <div class="center zoom">
+                  <i class="customicon"></i>
+                  <h1>Packages</h1>
+                  <i class="customicon" style="transform: rotateY(180deg);"></i>
+                </div>
+                </div>
+                <hr>
+
+                <div class="table">
+                  <table>
+                    <tr>
+                      <th>Package Type</th>
+                      <th>Pickup Time</th>
+                      <th>Delivery Days</th>
+                      <th>Delivery Hours</th>
+                    </tr>
+                    <tr>
+                      <td>Basic</td>
+                      <td>2:00PM - 5:00PM</td>
+                      <td>1 - 2 Weeks</td>
+                      <td>5:30PM - 9:00PM</td>
+                    </tr>
+                    <tr>
+                      <td>Advanced</td>
+                      <td>1:00PM - 4:00PM</td>
+                      <td>1 Week</td>
+                      <td>1:30PM - 6:00PM</td>
+                    </tr>
+                    <tr>
+                      <td>Premium</td>
+                      <td>11:00AM - 2:00PM</td>
+                      <td>3 - 5 Day</td>
+                      <td>11:00AM - 4:00PM</td>
+                    </tr>
+                    <tr>
+                      <td>Turbo</td>
+                      <td>9:00AM - 12:00PM</td>
+                      <td>1 - 2 Day</td>
+                      <td>9:00AM - 12:00PM</td>
+                    </tr>
+                    <tr>
+                  </table>
+                </div>
+        </section>
+
+        <section id ="sNews">
+        <hr>
+        <div class="sectiontitle" id="">
+          <span id="news" class="anchor"></span>
+          <div class="center zoom">
+          <i class="customicon"></i>
+          <h1>News</h1>
+          <i class="customicon" style="transform: rotateY(180deg);"></i>
+        </div>
+        </div>
+        <hr>
+
+        <div class="row3" style="margin-bottom: 0px;">
+
+          <div class="aboutcol" style="">
+            <img id = "sizeup" src="images/track.jpg" alt="tracking dashboard" style="filter: brightness(50%)">
+            <div class="card full" style=" color: var(--main-bg-color);">
+              <h3>Tracking</h3>
+              <p style="padding-top: 10px;">Use our new technology wizard to access the location of your packages. This tool even allows you to get updates sent to your phone when your package is on the move.</p>
+              <button type="submit" style="color: var(--main-bg-color); border: 2px solid var(--main-bg-color);">Read Now</button>
+            </div>
+          </div>
+
+        <div class="row4" style="margin-bottom: 0px;">
+
+        <div class="aboutcol" style="border: none;">
+          <div class="row5">
+
+          <div class=""><img src="images/award.jpg" alt="award"></div>
+          <div class="card tcenter">
+            <h3 class="">TL Awarded 2022's Small Business of the Year</h3>
+            <p style="padding-top: 0px;" class="">May 21, 2022</p>
+            <button type="submit" class="">Read Now</button>
+          </div>
+
+            </div>
+        </div>
+
+        <div class="aboutcol" style="border: none;">
+          <div class="row5">
+
+          <div class=""><img src="images/grant.jpg" alt="grant winner"></div>
+          <div class="card">
+            <h3 class="">TL Launches First Ever Business Grant Contest</h3>
+            <p style="padding-top: 0px;">April 15, 2022</p>
+            <button type="submit">Read Now</button>
+          </div>
+
+          </div>
+        </div>
+
+        </div>
+      </div>
+
+      <div class="center">
+            <div class="aboutcol" style="border-bottom:none; padding-bottom: 20px;">
+                  <button id= "more" type="submit">Read More</button>
+            </div>
+      </div>
+
+          </section>
+
+<section id= "sResources">
+        <hr>
+        <div class="sectiontitle" id="">
+          <span id="resources" class="anchor"></span>
+          <div class="center zoom">
+          <i class="customicon"></i>
+          <h1>Resources</h1>
+          <i class="customicon" style="transform: rotateY(180deg);"></i>
+        </div>
+        </div>
+        <hr>
+
+<div class="">
+        <div class="center" style="padding: 20px 0px;">
+          <div class="row6">
+
+            <div class="aboutcol">
+              <img src="images/label.jpg" alt="truck label">
+              <div class="card">
+                <h3>Shipping Labels</h3>
+                <div class="">
+                  <p style="padding-top: 10px;" class="">Use our online tool that lets you create our shipping labels on the go. Then print them when your ready and your good to go.</p>
+                  <button type="submit" class="">Print</button>
+                </div>
+              </div>
+              <div class="" style="height: 20px;"></div>
+            </div>
+
+            <div class="aboutcol">
+              <img src="images/schedule.jpg" alt="schedule">
+              <div class="card">
+                <h3>Schedule</h3>
+                <div class="">
+                  <p style="padding-top: 10px;" class="">Use our online tool that lets you create your own personal schedules.</p>
+                  <button type="submit" class="">Get Started</button>
+                </div>
+              </div>
+              <div class="" style="height: 20px;"></div>
+            </div>
+
+            <div class="aboutcol">
+              <img src="images/news.jpg" alt="truck news">
+              <div class="card">
+                <h3>News Portal</h3>
+                <div class="">
+                  <p style="padding-top: 10px;" class="">Use our online news portal that lets you stay up to date on our operations.</p>
+                  <button type="submit" class="">Read Articles</button>
+                </div>
+              </div>
+              <div class="" style="height: 20px;"></div>
+            </div>
+
+      </div>
+  </div>
+</div>
+
+</section>
+
+        <hr>
+        <div class="sectiontitle" id="">
+          <span id="contact" class="anchor"></span>
+          <div class="center zoom">
+          <i class="customicon"></i>
+          <h1>Contact Us</h1>
+          <i class="customicon" style="transform: rotateY(180deg);"></i>
+        </div>
+        </div>
+        <hr>
+
+
+      <!--  <div class="center" style="//background: var(--header-bg-color);">
+          <div class="container">
+            <footer class="footer center">
+
+        <div class="footer-left">
+              <ul class="footer-links">
+                <li><a class="borderStyle">Home</a></li>
+                <li><a class="borderStyle">Details</a></li>
+                <li><a class="borderStyle">About Us</a></li>
+                <li><a class="borderStyle">Packages</a></li>
+                <li><a class="borderStyle">News</a></li>
+                <li><a class="borderStyle">Schedule</a></li>
+                <li><a class="borderStyle">Operations</a></li>
+                <li><a class="borderStyle">Careers</a></li>
+                <li><a class="borderStyle">Questions</a></li>
+              </ul>
+        </div>
+
+        <div class="footer-center">
+          <div>
+            <i class="fa fa-map-marker"></i>
+            <p>Canada</p>
+          </div>
+
+          <div>
+            <i class="fa fa-phone"></i>
+            <p>+1 TurboLogistics</p>
+          </div>
+
+          <div>
+            <i class="fa fa-envelope"></i>
+            <p><a>TurboLogistics@shipping.com</a></p>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <p class="footer-about">
+            <span class="sectiontitle" style="color:var(--bg-black);background:none; padding:0px;">Social Media</span>
+          </p>
+
+          <div class="footer-icons">
+            <a><i class="fa-brands fa-facebook-f"></i></a>
+            <a><i class="fa-brands fa-twitter"></i></a>
+            <a><i class="fa-brands fa-linkedin-in"></i></a>
+            <a><i class="fa-brands fa-instagram"></i></a>
+            <a><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        </footer>
+          </div>
+        </div>-->
+
+         <div class="center" style="//background: var(--header-bg-color);">
+            <div class="container">
+              <footer class="footer center">
+
+                  <div class="footer-equals">
+                    <p class="footer-about">
+                      <span class="sectiontitle" style="color:var(--bg-black);background:none; padding:0px;">Helpful Links</span>
+                    </p>
+
+                    <ul class="footer-links">
+                      <li><a class="borderStyle">Services</a></li>
+                      <li><a class="borderStyle">Packages</a></li>
+                      <li><a class="borderStyle">News</a></li>
+                      <li><a class="borderStyle">Schedule</a></li>
+                    </ul>
+
+                  </div>
+
+                  <div class="footer-equals e1">
+                    <p class="footer-about">
+                      <span class="sectiontitle" style="color:var(--bg-black);background:none; padding:0px;">Company Info</span>
+                    </p>
+
+                    <ul class="footer-links">
+                      <li><a class="borderStyle">About Us</a></li>
+                      <li><a class="borderStyle">Operations</a></li>
+                      <li><a class="borderStyle">Careers</a></li>
+                    </ul>
+
+                  </div>
+
+                  <div class="footer-equals e2">
+                    <p class="footer-about">
+                      <span class="sectiontitle" style="color:var(--bg-black);background:none; padding:0px;">Support</span>
+                    </p>
+
+                    <ul class="footer-links">
+                      <li><a class="borderStyle">Questions</a></li>
+                      <li><a class="borderStyle">Feedback</a></li>
+                    </ul>
+
+                  </div>
+
+                  <div class="footer-equals e2">
+                    <p class="footer-about">
+                      <span class="sectiontitle" style="color:var(--bg-black);background:none; padding:0px;">Social Media</span>
+                    </p>
+
+                    <div class="footer-icons">
+                      <a><i class="fa-brands fa-facebook-f"></i></a>
+                      <a><i class="fa-brands fa-twitter"></i></a>
+                      <a><i class="fa-brands fa-linkedin-in"></i></a>
+                      <a><i class="fa-brands fa-instagram"></i></a>
+                      <a><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                  </div>
+
+            </footer>
+              </div>
+            </div>
+
+
+        <hr>
+        <div class="center" style="margin-top: 0px; margin-bottom: 0px; width:100%; height: 50px; background-color: var(--header-bg-color);">
+          <p class="footer-note customFont">Turbo Logistics @ 2022</p>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Script required for alert popup  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <!-- Script required for detecting browser  -->
+    <script src="https://unpkg.com/bowser@2.11.0/es5.js"></script>
+    <!-- Script points towards my JS file -->
+    <script src = "js/homepage.js"></script>
+   <script src = "js/homepage4.js"></script>
+  </body>
+</html>
