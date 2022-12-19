@@ -1,4 +1,4 @@
-<h1>Protofolio</h1>
+<h1>Portfolio</h1>
 These are most of my projects that I have completed over the years:
 <ul>
 
