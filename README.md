@@ -35,7 +35,7 @@ These are most of my projects that I have completed over the years:
 
 <li><b>Homepage2 - The Space Station</b>
 <ul>
-<li>A homepage for a bank.</li>
+<li>A homepage for a space exploration company.</li>
 <li>Used <b>Javascript</b> to complete this task.</li>
 <li><a href="https://nickhughes34.github.io/Homepage2/homepage.html">https://nickhughes34.github.io/Homepage2/homepage.html</a></li>
 </ul>
@@ -43,7 +43,7 @@ These are most of my projects that I have completed over the years:
 
 <li><b>Homepage3 - Turbo Logistics</b>
 <ul>
-<li>A homepage for a bank.</li>
+<li>A homepage for a delivery.</li>
 <li>Used <b>Javascript</b> to complete this task.</li>
 <li><a href="https://nickhughes34.github.io/Homepage3/homepage.html">https://nickhughes34.github.io/Homepage3/homepage.html</a></li>
 </ul>
@@ -51,7 +51,7 @@ These are most of my projects that I have completed over the years:
 
 <li><b>Homepage4 - Quick Meals</b>
 <ul>
-<li>A homepage for a bank.</li>
+<li>A homepage for a food delivery.</li>
 <li>Used <b>Javascript</b> to complete this task.</li>
 <li><a href="https://nickhughes34.github.io/Homepage4/homepage.html">https://nickhughes34.github.io/Homepage4/homepage.html</a></li>
 </ul>
@@ -59,7 +59,7 @@ These are most of my projects that I have completed over the years:
 
 <li><b>Homepage5 - Durham Print</b>
 <ul>
-<li>A homepage for a bank.</li>
+<li>A homepage for a business card company.</li>
 <li>Used <b>Javascript</b> to complete this task.</li>
 <li><a href="https://nickhughes34.github.io/Homepage5/homepage.html">https://nickhughes34.github.io/Homepage5/homepage.html</a></li>
 </ul>
