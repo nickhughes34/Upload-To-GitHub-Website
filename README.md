@@ -25,6 +25,46 @@ These are most of my projects that I have completed over the years:
 </ul>
 </li>
 
+<li><b>Homepage1 - Financial Freedom Canada</b>
+<ul>
+<li>A homepage for a bank.</li>
+<li>Used <b>Javascript</b> to complete this task.</li>
+<li><a https://nickhughes34.github.io/Homepage1/homepage.html">https://nickhughes34.github.io/Homepage1/homepage.html</a></li>
+</ul>
+</li>
+
+<li><b>Homepage2 - The Space Station</b>
+<ul>
+<li>A homepage for a bank.</li>
+<li>Used <b>Javascript</b> to complete this task.</li>
+<li><a https://nickhughes34.github.io/Homepage2/homepage.html">https://nickhughes34.github.io/Homepage2/homepage.html</a></li>
+</ul>
+</li>
+
+<li><b>Homepage3 - Turbo Logistics</b>
+<ul>
+<li>A homepage for a bank.</li>
+<li>Used <b>Javascript</b> to complete this task.</li>
+<li><a https://nickhughes34.github.io/Homepage3/homepage.html">https://nickhughes34.github.io/Homepage3/homepage.html</a></li>
+</ul>
+</li>
+
+<li><b>Homepage4 - Quick Meals</b>
+<ul>
+<li>A homepage for a bank.</li>
+<li>Used <b>Javascript</b> to complete this task.</li>
+<li><a https://nickhughes34.github.io/Homepage4/homepage.html">https://nickhughes34.github.io/Homepage4/homepage.html</a></li>
+</ul>
+</li>
+
+<li><b>Homepage5 - Durham Print</b>
+<ul>
+<li>A homepage for a bank.</li>
+<li>Used <b>Javascript</b> to complete this task.</li>
+<li><a https://nickhughes34.github.io/Homepage5/homepage.html">https://nickhughes34.github.io/Homepage5/homepage.html</a></li>
+</ul>
+</li>
+
 <li><b>Node Server Code</b>
 <ul>
 <li>A bunch of different Node.js code examples for some basic webpages, that query a database and communicate with the UX or UI.</li>
