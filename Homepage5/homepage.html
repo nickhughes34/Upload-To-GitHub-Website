@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<!-- text direction is set to left to right -->
+<html lang="en" dir="ltr" id="html">
+
+  <head>
+    <meta charset="utf-8" name="robots" content="noindex, nofollow">
+    <!-- Sets title of web tab -->
+    <title>Durham Print | Business Cards</title>
+    <!-- Icons are imported (thus applied) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <!-- FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat&family=Open+Sans:ital@1&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <!-- CSS is imported thus applied -->
+    <link rel="stylesheet" href="css/homepage5.css">
+    <!--<link rel="stylesheet" href="css/progress.css">-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="icon" type="image/x-icon" href="images/slogo.png">
+    <!-- style media="screen" allows us to specify what we want to do on different sized screens -->
+    <style media="screen">
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+
+    <div class="">
+
+      <nav id="navCheck" class="shrink">
+        <div id = "buttonNav" ><button id="open"><i class="fa-solid fa-bars fa-2x"></i></button></div>
+        <input type="checkbox" id="click">
+
+        <label for="click" class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+
+        <ul id = "first">
+          <li><a class="borderStyle borderStyle2">Home</a></li>
+
+          <div class="dropdownMenu">
+          <li style="pointer-events: none;"><a class="borderStyle borderStyle2" href="#">Quick Selection<span style="padding-left:5px;"></span><i class="fa-solid fa-arrow-down"></i></a></li>
+            <ul class="dropdownContent">
+            <li><a class="borderStyle borderStyle2">Browse</a></li>
+            <li><a class="borderStyle borderStyle2" >Upload</a></li>
+            <li><a class="borderStyle borderStyle2">Contact</a></li>
+            </ul>
+            </div>
+
+          <div class="dropdownMenu">
+          <li style="pointer-events: none;"><a class="borderStyle borderStyle2" href="#">Cards<span style="padding-left:5px;"></span><i class="fa-solid fa-arrow-down"></i></a></li>
+            <ul class="dropdownContent">
+            <li><a class="borderStyle borderStyle2">For You</a></li>
+            <li><a class="borderStyle borderStyle2">Shapes</a></li>
+            <li><a class="borderStyle borderStyle2">Textures</a></li>
+            <li><a class="borderStyle borderStyle2">Specialty</a></li>
+            <li><a class="borderStyle borderStyle2">Recycled</a></li>
+            </ul>
+            </div>
+
+            <div class="dropdownMenu">
+            <li style="pointer-events: none;"><a class="borderStyle borderStyle2" href="#">About Us<span style="padding-left:5px;"></span><i class="fa-solid fa-arrow-down"></i></a></li>
+              <ul class="dropdownContent">
+              <li><a class="borderStyle borderStyle2">Benefits</a></li>
+              <li><a class="borderStyle borderStyle2">Questions</a></li>
+              <li><a class="borderStyle borderStyle2">Contact Us</a></li>
+              </ul>
+              </div>
+          </ul>
+
+          <div class="logo"><a href=""><img id = "logo" class="shrink" src="images/Logo-v5.png" alt="logo" style="padding:5px;"></a></div>
+
+        <ul id = "second" style="">
+          <li><div  id = "Register"  class="" style="margin: 0px;">
+            <div class="headertext link">
+              <button onclick="myLink();">Register Today</button>
+            </div>
+          </div></li>
+        </ul>
+      </nav>
+    </div>
+
+    <nav id = "sideNav" class="block hidden">
+      <div class="button right">
+        <button id="close"><i class="fa-solid fa-xmark fa-2x"></i></button>
+      </div>
+
+      <ul class="">
+        <li><div  id = "Register"  class="" style="margin: 0px;">
+          <div class="headertext link">
+            <button onclick="myLink();">Register Today</button>
+          </div>
+        </div></li>
+
+        <li><a class="" href="#">Home</a><span class="fright"></span></li>
+        <li><a class="" href="#Browse">Browse</a><span class="fright"></span></li>
+        <li><a class="" href="#Upload">Upload</a><span class="fright"></span></li>
+        <li><a class="" href="#Contact">Contact</a><span class="fright"></span></li>
+        <li><a class="" href="#cardsforyou">For You</a><span class="fright"></span></li>
+        <li><a class="" href="#shape">Shapes</a><span class="fright"></span></li>
+        <li><a class="" href="#textures">Textures</a><span class="fright"></span></li>
+        <li><a class="" href="#special">Specialty</a><span class="fright"></span></li>
+        <li><a class="" href="#recyled">Recycled</a><span class="fright"></span></li>
+        <li><a class="" href="#benefit">Benefits</a><span class="fright"></span></li>
+        <li><a class="" href="#questions">Questions</a><span class="fright"></span></li>
+        <li><a class="" href="#contact">Other Services</a><span class="fright"></span></li>
+        <li style="border:none; text-align: center;">
+          <div id = "navFoot" class="">
+              <div class="footer-right">
+
+                <p class="footer-about" style="margin-bottom: 20px;">
+                  <span class="sectiontitle" style="color:var(--bg-black);background:none;">Contact Us</span>
+                </p>
+
+                <div class="footer-icons">
+                  <a><i class="fa-brands fa-facebook-f"></i></a>
+                  <a><i class="fa-brands fa-twitter"></i></a>
+                  <a><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a><i class="fa-brands fa-instagram"></i></a>
+                  <a><i class="fa-brands fa-youtube"></i></a>
+                </div>
+
+              </div>
+          </div>
+        </li>
+      </ul>
+</nav>
+
+<div class="header">
+  <div class="headertext link">
+    <div class="center">
+      <div class="container2 left" style="color: var(--bg-black);">
+        <span class = "no">Photo by Nick Adams on Unsplash</span>
+        <h1 class="headerBorder bold" style="padding: 10px 00px; padding-left: 0px;">Durham Print</h1>
+        <h3 class="headerBorder" style="padding: 20px 10px; padding-left: 0px;">Customizable Designs, Textures, Shapes & More!</h3>
+        <h4 style="padding-top:10px; padding-left: 0px;">Find The Right Card Just For You!</h4>
+            <button type="submit" class="frontButton" style="color: var(--bg-black); margin-left: 0px;">Browse Our Templates!</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="content">
+      <div class="">
+
+        <section id= "sChoices" style="margin: 50px 0px;">
+            <span id="choices" class="anchor"></span>
+            <div class="center">
+              <div class="sectiontitle container2 left" style="z-index:9;position: relative;">
+                <h1 class="">Quick Selection!</h1>
+                <p class="" style="padding-top: 5px;">Below you will see our top services.</p>
+              </div>
+            </div>
+
+        <div class="center">
+                <div class="container2">
+                  <div class="row8">
+
+                    <a><div class="aboutcol">
+                      <div class="card left">
+                        <h3 class="bold">Browse Our Designs</h3>
+                        <div class="floatIcon"><i class="fa-solid fa-copy fa-2x"></i></div>
+                        <div class="">
+                          <p style="padding-top: 15px;" class="">See customizable templates.</p>
+                          <div class="center"><button type="submit" class="">Browse <i class="fa-solid fa-arrow-right"></i></button></div>
+                        </div>
+                      </div>
+                    </div></a>
+
+                    <a><div class="aboutcol">
+                      <div class="card left">
+                        <h3 class="bold">Upload Your Designs</h3>
+                        <div class="floatIcon"><i class="fa-solid fa-upload fa-2x"></i></div>
+                        <div class="">
+                          <p style="padding-top: 15px;" class="">Put your design on your card.</p>
+                          <div class="center"><button type="submit" class="">Upload <i class="fa-solid fa-arrow-right"></i></button></div>
+                        </div>
+                      </div>
+                    </div></a>
+
+                    <a><div class="aboutcol">
+                      <div class="card left">
+                        <h3 class="bold">Work With Our Designers</h3>
+                        <div class="floatIcon"><i class="fa-solid fa-signal fa-2x"></i></div>
+                        <div class="">
+                          <p style="padding-top: 15px;" class="">Meet with us and talk about it.</p>
+                          <div class="center"><button type="submit" class="">Contact <i class="fa-solid fa-arrow-right"></i></button></div>
+                        </div>
+                      </div>
+                    </div></a>
+
+              </div>
+          </div>
+        </div>
+
+        </section>
+
+        <section id= "sCardsforyou" style="margin-bottom: 50px;">
+            <span id="cardsforyou" class="anchor"></span>
+            <div class="center">
+              <div class="sectiontitle container2 left" style="z-index:9;position: relative;">
+                <h1 class="">Cards For You!</h1>
+                <p class="" style="padding-top: 5px;">From Regualar To Premium Papers, Find The Right Look For You.</p>
+              </div>
+            </div>
+
+        <div class="center">
+                <div class="container2">
+                  <div class="row6">
+
+                    <div class="aboutcol">
+                      <img src="images/standard.png" alt="food">
+                      <div class="card">
+                        <h3 class="bold">Standard</h3>
+                        <div class="">
+                          <p style="padding-top: 15px;" class="">Traditional 14pt paper stock cards.</p>
+                          <p style="padding-top: 0px;" class="">100 for $21.99</p>
+                          <button type="submit" class="">Get Started!</button>
+                        </div>
+                      </div>
+                      <div class="" style="height: 20px;"></div>
+                    </div>
+
+                    <div class="aboutcol">
+                      <img src="images/advanced.png" alt="meal kit 4">
+                      <div class="card">
+                        <h3 class="bold">Advanced</h3>
+                        <div class="">
+                          <p style="padding-top: 15px;" class="">High-quailty paper stock cards.</p>
+                          <p style="padding-top: 0px;" class="">100 for $21.99</p>
+                          <button type="submit" class="">Get Started!</button>
+                        </div>
+                      </div>
+                      <div class="" style="height: 20px;"></div>
+                    </div>
+
+                    <div class="aboutcol">
+                      <img src="images/premium.png" alt="news">
+                      <div class="card">
+                        <h3 class="bold">Premium</h3>
+                        <div class="">
+                          <p style="padding-top: 15px;" class="">Special plastic, gloss, etc. stock cards.</p>
+                          <p style="padding-top: 0px;" class="">100 for $21.99</p>
+                          <button type="submit" class="">Get Started!</button>
+                        </div>
+                      </div>
+                      <div class="" style="height: 20px;"></div>
+                    </div>
+
+              </div>
+          </div>
+        </div>
+
+        </section>
+
+        <section id ="sShape" style="margin-bottom: 50px;">
+        <span id="shape" class="anchor"></span>
+        <div class="center">
+          <div class="sectiontitle container2 left" style="z-index:9;position: relative;">
+            <h1 class="">Shop By Shapes!</h1>
+            <p class="" style="padding-top: 5px;">Try out a bunch of different shapes.</p>
+          </div>
+        </div>
+
+        <div class="center">
+        <div class="container2">
+
+                <div class="row8">
+
+                  <div class="aboutcol">
+                    <img src="images/premium.png" alt="rectangle card">
+                    <div class="card">
+                      <h3 class="bold">Rectangle</h3>
+                      <p class="" style="padding-top: 10px;">Traditional size.</p>
+                      <p class="" style="padding-top: 0px;">100 for $20.99</p>
+                      <button class="" id= "" type="submit">Learn More</button>
+                    </div>
+                  </div>
+
+                  <div class="aboutcol">
+                    <img src="images/premium.png" alt="square card">
+                    <div class="card">
+                      <h3 class="bold">Square</h3>
+                      <p class="" style="padding-top: 10px;">Unique shape is eye catching.</p>
+                      <p class="" style="padding-top: 0px;">100 for $27.99</p>
+                      <button id= "" type="submit">Get Now</button>
+                    </div>
+                  </div>
+
+                  <div class="aboutcol">
+                    <img src="images/premium.png" alt="rounded card">
+                    <div class="card">
+                      <h3 class="bold">Rounded</h3>
+                      <p class="" style="padding-top: 10px;">One qurater-inch rounded.</p>
+                      <p class="" style="padding-top: 0px;">100 for $24.99</p>
+                      <button id= "" type="submit">Get Now</button>
+                    </div>
+                  </div>
+
+                  <div class="aboutcol">
+                    <img src="images/premium.png" alt="rounded card">
+                    <div class="card">
+                      <h3 class="bold">Rounded x2</h3>
+                      <p class="" style="padding-top: 10px;">Two qurater-inch rounded.</p>
+                      <p class="" style="padding-top: 0px;">100 for $28.99</p>
+                      <button id= "" type="submit">Get Now</button>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+              </div>
+        </section>
+
+        <section id = "sTextures">
+            <span id="textures" class="anchor"></span>
+            <div class="center">
+              <div class="sectiontitle container2 left" style="z-index:9;position: relative;">
+                <h1 class="">Shop By Textures!</h1>
+                <p class="" style="padding-top: 5px;">Style your card with our get selection of textures.</p>
+              </div>
+            </div>
+
+                <div class="center">
+                  <div class="container2 scrollWheel" style="position: relative;">
+
+                    <div id= "scrollContainer" class="row7">
+
+                      <div class="aboutcol"style="background-image: url('images/Rnatural.png');">
+                        <div class="card full left">
+                          <h3 class="bold" style="padding-left: 0px;">Uncoated</h3>
+                            <p class="" style="padding-top: 5px; padding-left: 0px;">Smooth on both sides that easy to write on.</p>
+                          <p class="" style="padding-top: 0px;">100 for <span style="text-decoration: line-through;">$19.99</span> $15.99</p>
+                            <button style="margin-top: 5px;" type="submit">Get Now</button>
+                        </div>
+                      </div>
+
+                      <div class="aboutcol"style="background-image: url('images/glossy.png');">
+                        <div class="card full left">
+                          <h3 class="bold" style="padding-left: 0px;">Glossy</h3>
+                          <p class="" style="padding-top: 5px; padding-left: 0px;">Shiny on the front and easy to write on the back.</p>
+                          <p class="" style="padding-top: 0px;">100 for <span style="text-decoration: line-through;">$19.99</span> $15.99</p>
+                            <button style="margin-top: 5px;" type="submit">Get Now</button>
+                        </div>
+                      </div>
+
+                      <div class="aboutcol"style="background-image: url('images/Rnatural.png');">
+                        <div class="card full left">
+                          <h3 class="bold" style="padding-left: 0px;">Soft Touch</h3>
+                          <p class="" style="padding-top: 5px; padding-left: 0px;">Has an extra, soft lamination on both sides.</p>
+                          <p class="" style="padding-top: 0px;">100 for <span style="text-decoration: line-through;">$45.99</span> $35.99</p>
+                            <button style="margin-top: 5px;" type="submit">Get Now</button>
+                        </div>
+                      </div>
+
+                      <div class="aboutcol"style="background-image: url('images/matte.png');">
+                        <div class="card full left">
+                          <h3 class="bold" style="padding-left: 0px;">Matte</h3>
+                          <p class="" style="padding-top: 5px; padding-left: 0px;">Has a smooth, shine-free finish.</p>
+                          <p class="" style="padding-top: 0px;">100 for $15.99</p>
+                            <button style="margin-top: 5px;" type="submit">Get Now</button>
+                        </div>
+                      </div>
+
+                      <div class="aboutcol"style="background-image: url('images/linen.png');">
+                        <div class="card full left">
+                          <h3 class="bold" style="padding-left: 0px;">Linen</h3>
+                          <p class="" style="padding-top: 5px; padding-left: 0px;">Has a handcrafted look.</p>
+                          <p class="" style="padding-top: 0px;">100 for $25.99</p>
+                            <button style="margin-top: 5px;" type="submit">Get Now</button>
+                        </div>
+                      </div>
+
+                      <div class="aboutcol"style="background-image: url('images/pearl.png');">
+                        <div class="card full left">
+                          <h3 class="bold" style="padding-left: 0px;">Pearl</h3>
+                          <p class="" style="padding-top: 5px; padding-left: 0px;">Has luminous paper that adds a elegant sheen.</p>
+                          <p class="" style="padding-top: 0px;">100 for $29.99</p>
+                            <button style="margin-top: 5px;" type="submit">Get Now</button>
+                        </div>
+                      </div>
+
+                      <div class="aboutcol"style="background-image: url('images/Rnatural.png');">
+                        <div class="card full left">
+                          <h3 class="bold" style="padding-left: 0px;">Natural</h3>
+                          <p class="" style="padding-top: 5px; padding-left: 0px;">Used recyled paper to give it a natural feel.</p>
+                          <p class="" style="padding-top: 0px;">100 for $18.99</p>
+                            <button style="margin-top: 5px;" type="submit">Get Now</button>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <button id="slideLeft" type="button"><i class="fa-solid fa-arrow-left"></i></button>
+                  <button id="slideRight" type="button"><i class="fa-solid fa-arrow-right"></i></button>
+                  </div>
+                </div>
+
+        </section>
+
+        <section id ="sBenefit" style="background: #f8f8f8; margin-top: 50px;">
+          <span id="benefit" class="anchor"></span>
+          <div class="center">
+            <div class="sectiontitle container2 left" style="z-index:9;position: relative;">
+              <h1 class="">Benefits To Our Cards!</h1>
+              <p class="" style="padding-top: 5px;">See below to get the full list of benefits.</p>
+            </div>
+          </div>
+
+        <div class="center">
+          <div class="container2" style="">
+            <div class="row">
+
+              <div class="aboutcol left" style="border-bottom:none;">
+                <h3 class="bold" style="padding-bottom: 10px;"><i class="fa-solid fa-heart-pulse" style="padding-right: 5px;"></i>One Of A Kind Design!</h3>
+                <p class="left" style="padding-bottom: 50px;">Standout and make a great lasting impression with clients when they see your business card.</p>
+
+                <h3 class="bold" style="padding-bottom: 10px;"><i class="fa-solid fa-wallet" style="padding-right: 5px;"></i>Value For Your Wallet!</h3>
+                <p class="" style="padding-bottom: 50px;">We make sure you get the best bang for your buck. We use the best quality paper to ensure long lasting business cards.</p>
+              </div>
+
+              <div class="aboutcol benefit" style="border-bottom:none;">
+                  <img class="img2 mRight" src="images/back.png" alt="template card">
+                  <img class="img1 mUp" src="images/middle.png" alt="template card">
+                  <img class="img2 mLeft" src="images/back.png" alt="template card">
+              </div>
+
+              <div class="aboutcol left" style="border-bottom:none;">
+                <h3 class="bold" style="padding-bottom: 10px;"><i class="fa-solid fa-clock" style="padding-right: 5px;"></i>Value For Your Time!</h3>
+                <p class="" style="padding-bottom: 50px;">Save time from designing your own card and have our designers do it for you. Plus we will also ship them right to your door.</p>
+
+                <h3 class="bold" style="padding-bottom: 10px;"><i class="fa-solid fa-seedling" style="padding-right: 5px;"></i>Value For The Environment!</h3>
+                <p class="" style="padding-bottom: 50px;">For some of our cards we use recyled materials to ensure we are not wasting valuable resources which keeps the envoirment clean. </p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="center aboutcol" style="padding-bottom: 50px;margin-top: 0px;border:none;">
+              <button onclick="myLink();">Register Today</button>
+          </div>
+
+          </section>
+
+          <section id = "sSpecial">
+              <span id="special" class="anchor"></span>
+              <div class="center">
+                <div class="sectiontitle container2 left" style="z-index:9;position: relative;">
+                  <h1 class="">Shop By Specialty!</h1>
+                  <p class="" style="padding-top: 5px;">Leave an impression with one of our unique cards.</p>
+                </div>
+              </div>
+
+                  <div class="center">
+                    <div class="container2 scrollWheel" style="position: relative;">
+
+                      <div id= "scrollContainer2" class="row7">
+
+                        <div class="aboutcol"style="background-image: url('images/back.png');">
+                          <div class="card full left">
+                            <h3 class="bold" style="padding-left: 5px;">Plastic</h3>
+                            <p class="" style="padding-top: 5px; padding-left: 0px;">Waterproof and tear-resistant.</p>
+                          <p class="" style="padding-top: 0px;">25 for <span style="text-decoration: line-through;">$46.99</span> $36.99</p>
+                              <button style="margin-top: 5px;" type="submit">Get Now</button>
+                          </div>
+                        </div>
+
+                        <div class="aboutcol"style="background-image: url('images/QR.png');">
+                          <div class="card full left">
+                            <h3 class="bold" style="padding-left: 5px;">QR Code</h3>
+                            <p class="" style="padding-top: 5px; padding-left: 0px;">Scannable codes to help connect people online.</p>
+                            <p class="" style="padding-top: 0px;">100 for $18.99</p>
+                              <button style="margin-top: 5px;" type="submit">Get Now</button>
+                          </div>
+                        </div>
+
+                        <div class="aboutcol"style="background-image: url('images/matte.png');">
+                          <div class="card full left">
+                            <h3 class="bold" style="padding-left: 5px;">Loyalty</h3>
+                            <p class="" style="padding-top: 5px; padding-left: 0px;">Punch and stamp templates.</p>
+                            <p class="" style="padding-top: 0px;">100 for $19.99</p>
+                              <button style="margin-top: 5px;" type="submit">Get Now</button>
+                          </div>
+                        </div>
+
+                        <div class="aboutcol"style="background-image: url('images/magnetic.png');">
+                          <div class="card full left">
+                            <h3 class="bold" style="padding-left: 5px;">Magnetic</h3>
+                            <p class="" style="padding-top: 5px; padding-left: 0px;">Flexible vinyl that sticks to most metallic surfaces.</p>
+                          <p class="" style="padding-top: 0px;">25 for <span style="text-decoration: line-through;">$33.99</span> $31.99</p>
+                              <button style="margin-top: 5px;" type="submit">Get Now</button>
+                          </div>
+                        </div>
+
+                        <div class="aboutcol"style="background-image: url('images/premium.png');">
+                          <div class="card full left">
+                            <h3 class="bold" style="padding-left: 5px;">Premium Plus</h3>
+                            <p class="" style="padding-top: 5px; padding-left: 0px;">18pt thick paper.</p>
+                            <p class="" style="padding-top: 0px;">100 for $28.99</p>
+                              <button style="margin-top: 5px;" type="submit">Get Now</button>
+                          </div>
+                        </div>
+
+                        <div class="aboutcol"style="background-image: url('images/back.png');">
+                          <div class="card full left">
+                            <h3 class="bold" style="padding-left: 5px;">Stickers</h3>
+                            <p class="" style="padding-top: 5px; padding-left: 0px;">White paper stickers to stick on.</p>
+                            <p class="" style="padding-top: 0px;">10 for $9.99</p>
+                              <button style="margin-top: 5px;" type="submit">Get Now</button>
+                          </div>
+                        </div>
+
+                        <div class="aboutcol"style="background-image: url('images/Rnatural.png');">
+                          <div class="card full left">
+                            <h3 class="bold" style="padding-left: 5px;">Thin Paper</h3>
+                            <p class="" style="padding-top: 5px; padding-left: 0px;">12pt thick paper.</p>
+                            <p class="" style="padding-top: 0px;">100 for $17.99</p>
+                              <button style="margin-top: 5px;" type="submit">Get Now</button>
+                          </div>
+                        </div>
+
+                        <div class="aboutcol"style="background-image: url('images/thick.png');">
+                          <div class="card full left">
+                            <h3 class="bold" style="padding-left: 5px;">Thick Paper</h3>
+                            <p class="" style="padding-top: 5px; padding-left: 0px;">36pt thick paper.</p>
+                            <p class="" style="padding-top: 0px;">100 for $38.99</p>
+                              <button style="margin-top: 5px;" type="submit">Get Now</button>
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <button id="slideLeft2" type="button"><i class="fa-solid fa-arrow-left"></i></button>
+                    <button id="slideRight2" type="button"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                  </div>
+
+          </section>
+
+          <section id = "sRecyled">
+              <span id="recyled" class="anchor"></span>
+              <div class="center">
+                <div class="sectiontitle container2 left" style="z-index:9;position: relative;">
+                  <h1 class="">Shop By Recycled Paper!</h1>
+                  <p class="" style="padding-top: 5px;">Check out these natural and environment friendly cards.</p>
+                </div>
+              </div>
+
+                  <div class="center">
+                    <div class="container2 scrollWheel" style="position: relative;">
+
+                      <div id= "scrollContainer3" class="row7">
+
+                        <div class="aboutcol"style="background-image: url('images/Rkraft.png');">
+                          <div class="card full left">
+                            <h3 class="bold" style="padding-left: 5px;">Kraft</h3>
+                            <p class="" style="padding-top: 5px; padding-left: 0px;">Light brown, 17pt thick 95% recyled.</p>
+                            <p class="" style="padding-top: 0px;">100 for $34.99</p>
+                              <button style="margin-top: 5px;" type="submit">Get Now</button>
+                          </div>
+                        </div>
+
+                        <div class="aboutcol"style="background-image: url('images/Rnatural.png');">
+                          <div class="card full left">
+                            <h3 class="bold" style="padding-left: 5px;">Natural Textured</h3>
+                            <p class="" style="padding-top: 5px; padding-left: 0px;">100% recyled with a rippled texture.</p>
+                          <p class="" style="padding-top: 0px;">100 for <span style="text-decoration: line-through;">$39.99</span> $31.99</p>
+                              <button style="margin-top: 5px;" type="submit">Get Now</button>
+                          </div>
+                        </div>
+
+                        <div class="aboutcol"style="background-image: url('images/Rmatte.png');">
+                          <div class="card full left">
+                            <h3 class="bold" style="padding-left: 5px;">Recycled Matte</h3>
+                            <p class="" style="padding-top: 5px; padding-left: 0px;">100% recyled with a smooth finish.</p>
+                            <p class="" style="padding-top: 0px;">100 for $28.99</p>
+                              <button style="margin-top: 5px;" type="submit">Get Now</button>
+                          </div>
+                        </div>
+
+                        <div class="aboutcol"style="background-image: url('images/Rhemp.png');">
+                          <div class="card full left">
+                            <h3 class="bold" style="padding-left: 5px;">Hemp Blend</h3>
+                            <p class="" style="padding-top: 5px; padding-left: 0px;">Extra durable paper. with a hemp recyled fibres.</p>
+                            <p class="" style="padding-top: 0px;">100 for $33.99</p>
+                              <button style="margin-top: 5px;" type="submit">Get Now</button>
+                          </div>
+                        </div>
+
+                        <div class="aboutcol"style="background-image: url('images/Rbamboo.png');">
+                          <div class="card full left">
+                            <h3 class="bold" style="padding-left: 5px;">Bamboo</h3>
+                            <p class="" style="padding-top: 5px; padding-left: 0px;">High quality bamboo blend made from 80% bamboo and 20% cotton.</p>
+                            <p class="" style="padding-top: 0px;">100 for $38.99</p>
+                              <button style="margin-top: 5px;" type="submit">Get Now</button>
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <button id="slideLeft3" type="button"><i class="fa-solid fa-arrow-left"></i></button>
+                    <button id="slideRight3" type="button"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                  </div>
+
+          </section>
+
+          <section id = "sQuestions">
+              <span id="questions" class="anchor"></span>
+              <div class="center">
+                <div class="sectiontitle container2 left" style="z-index:9;position: relative;">
+                  <h1 class="">Frequently Asked Questions!</h1>
+                </div>
+              </div>
+
+                  <div class="center">
+                    <div class="container2" style="position: relative;">
+
+                      <div class="row9">
+
+                        <div id = "Q1" class="aboutcol collectToCheck">
+                          <div id = "Q1click" class="card left">
+                            <h3 class="bold left" style="padding-left: 0px;">What Is The Regualar Size Of A Business Card?</h3>
+                            <i id="Q1Visual" class="fa-solid fa-plus"></i>
+                            <div id = "Q1Contents" class="block">
+                              <p class="" style="padding-top: 20px;">Business card size in inches is: 3.5<span class="bold">"</span> x 2<span class="bold">"</span>.</p>
+                              <p class="">Business card size in mm is: 85 x 55 <span class="bold">mm</span>.</p>
+                              <p class="">Business card size in Photoshop is: 1050 x 600 <span class="bold">pixels</span>.</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div id = "Q2" class="aboutcol collectToCheck">
+                          <div id = "Q2click" class="card left">
+                            <h3 class="bold left" style="padding-left: 0px;">How Do You Organize Business Cards?</h3>
+                            <i id="Q2Visual" class="fa-solid fa-plus"></i>
+                            <div id = "Q2Contents" class="block">
+                              <p class="" style="padding-top: 20px;">We recommend using one of our business card holders, available in a variety of different shapes and styles.</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div id = "Q3" class="aboutcol collectToCheck">
+                          <div id = "Q3click" class="card left">
+                            <h3 class="bold left" style="padding-left: 0px;">How Thick Is A Business Card?</h3>
+                            <i id="Q3Visual" class="fa-solid fa-plus"></i>
+                            <div id = "Q3Contents" class="block">
+                                <p class="" style="padding-top: 20px;">The higher the "pt" the thicker the card. For example, standard cards are 14pt thick, and our thickest card is 32pt.</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div id = "Q4" class="aboutcol collectToCheck">
+                          <div id = "Q4click" class="card left">
+                            <h3 class="bold left" style="padding-left: 0px;">How Quickly Will Delivery Be?</h3>
+                            <i id="Q4Visual" class="fa-solid fa-plus"></i>
+                            <div id = "Q4Contents" class="block">
+                              <p class="" style="padding-top: 20px;">We have a variety of delivery options, including standard (1-2 weeks), priority (2-5 days) and express (1-2 days).</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div id = "Q5" class="aboutcol collectToCheck" style="margin-bottom: 50px;">
+                          <div id = "Q5click" class="card left">
+                            <h3 class="bold left" style="padding-left: 0px;">If I Add Special Finish Does It Apply To Both Sides?</h3>
+                            <i id="Q5Visual" class="fa-solid fa-plus"></i>
+                            <div id = "Q5Contents" class="block">
+                              <p class="" style="padding-top: 20px;">The front of your card will have whatever special finish or texture you selected. The back will be a smooth surface, great for adding notes.</p>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+
+          </section>
+
+<section id= "sContact">
+          <span id="contact" class="anchor"></span>
+
+         <div class="center" style="background: var(--bg-button-highlight);">
+            <div class="container2">
+              <footer class="footer center">
+
+                  <div class="footer-equals">
+                    <p class="footer-about">
+                      <h3 class="sectiontitle bold" style="color:var(--bg-black);background:none; padding:0px;">Helpful Links</h3>
+                    </p>
+
+                    <ul class="footer-links">
+                      <li><a class="borderStyle">My Account</a></li>
+                      <li><a class="borderStyle">Shipping</a></li>
+                      <li><a class="borderStyle">All Products</a></li>
+                      <li><a class="borderStyle">Ideas</a></li>
+                      <li><a class="borderStyle">Reseller Program</a></li>
+                    </ul>
+
+                  </div>
+
+                  <div class="footer-equals e1">
+                    <p class="footer-about">
+                      <h3 class="sectiontitle bold" style="color:var(--bg-black);background:none; padding:0px;">Company Info</h3>
+                    </p>
+
+                    <ul class="footer-links">
+                      <li><a class="borderStyle">About Us</a></li>
+                      <li><a class="borderStyle">Operations</a></li>
+                      <li><a class="borderStyle">Careers</a></li>
+                      <li><a class="borderStyle">For Investors</a></li>
+                      <li><a class="borderStyle">For Media</a></li>
+                    </ul>
+
+                  </div>
+
+                  <div class="footer-equals e2">
+                    <p class="footer-about">
+                      <h3 class="sectiontitle bold" style="color:var(--bg-black);background:none; padding:0px;">Support</h3>
+                    </p>
+
+                    <ul class="footer-links">
+                      <li><a class="borderStyle">Questions</a></li>
+                      <li><a class="borderStyle">Feedback</a></li>
+                      <li><a class="borderStyle">Help Center</a></li>
+                      <li><a class="borderStyle">Privacy Policy</a></li>
+                      <li><a class="borderStyle">Terms of Service</a></li>
+                    </ul>
+
+                  </div>
+
+                  <div class="footer-equals e2">
+                    <p class="footer-about">
+                      <h3 class="sectiontitle bold" style="color:var(--bg-black);background:none; padding:0px;">Social Media</h3>
+                    </p>
+
+                    <div class="footer-icons">
+                      <a><i class="fa-brands fa-facebook-f"></i></a>
+                      <a><i class="fa-brands fa-twitter"></i></a>
+                      <a><i class="fa-brands fa-linkedin-in"></i></a>
+                      <a><i class="fa-brands fa-instagram"></i></a>
+                      <a><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                  </div>
+
+            </footer>
+              </div>
+            </div>
+
+            <div class="center" style="margin-top: 0px; margin-bottom: 0px; width:100%; height: 50px; background-color: var(--bg-button-text)">
+              <h3 class="footer-note customFont bold">Durham Print @ 2022</h3>
+            </div>
+</section>
+
+      </div>
+    </div>
+
+
+    <!-- Script required for alert popup  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <!-- Script required for detecting browser  -->
+    <script src="https://unpkg.com/bowser@2.11.0/es5.js"></script>
+    <!-- Script points towards my JS file -->
+    <script src = "js/homepage.js"></script>
+   <script src = "js/homepage5.js"></script>
+  </body>
+</html>
