@@ -78,20 +78,21 @@
       <!-- Navbar -->
 
       <!-- Main Workspace -->
-      <main>
+      <main style="position: relative;">
+        <div id="wave"></div>
+        <div id="wave2"></div>
 
       <!-- Proficient In -->
       <section id = "first0" class = "mt-0" style="position: relative;">
         <!--<canvas id="3d_background"></canvas>-->
         <span class="anchor" id = "about"></span>
-        <div id="wave"></div>
-        <div id="wave2"></div>
           <div class="container px-4 py-5" id="icon-grid">
             <h2 class="pb-2 border-bottom">Proficient In</h2>
 
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-3 justify-content-center" ng-controller = "MainController">
 
-              <div class="col d-flex align-items-start pt-3 proItem" ng-repeat = "item in proficient" ng-click="Animation($index, $event)">
+              <!--<div class="col d-flex align-items-start pt-3 proItem" ng-repeat = "item in proficient" ng-Mouseover="AnimationOn($index, $event)" ng-Mouseleave="AnimationOff($index, $event)">-->
+              <div class="col d-flex align-items-start pt-3 proItem" ng-repeat = "item in proficient" ng-click="AnimationClick($index, $event)">
                 <i class="flex-shrink-0 me-3 {{item[2]}}"></i>
                 <div>
                   <h3 class="fw-bold mb-0 fs-4">{{item[0]}}</h3>
@@ -108,8 +109,6 @@
       <!-- About Me-->
       <section id = "first1" class = "mt-0">
         <span class="anchor" id = "about"></span>
-        <div id="wave"></div>
-        <div id="wave2"></div>
           <div class="container px-4 py-5" id="icon-grid">
             <h2 class="pb-2 border-bottom">About Me</h2>
 
@@ -130,14 +129,12 @@
       <!-- Hobbies -->
       <section id = "first2" class = "mt-0">
         <span class="anchor" id = "about"></span>
-        <div id="wave"></div>
-        <div id="wave2"></div>
           <div class="container px-4 py-5" id="icon-grid">
             <h2 class="pb-2 border-bottom">Hobbies</h2>
 
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-2 py-3 mx-1 justify-content-center" ng-controller = "MainController">
 
-              <div class="col d-flex align-items-center justify-content-center hobItem" ng-repeat = "item in hobbies">
+              <div class="col d-flex align-items-center justify-content-center hobItem" ng-repeat = "item in hobbies" ng-click="AnimationClick2($index, $event)">
                   <div>
                   <h3 class="fw-bold mb-0 fs-4">{{item[0]}}</h3>
                 </div>
