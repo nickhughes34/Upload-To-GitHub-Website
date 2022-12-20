@@ -14,6 +14,8 @@ app.controller("MainController", function($scope){
   var c = "cProgramming";
   var linux = "text-dark fa-brands fa-linux fa-3x";
   var flask = "flask";
+  var colors = ["#FFFFFF", "#F8F8F8", "#F5F5F5", "#F0F0F0", "#E8E8E8", "#E0E0E0", "#DCDCDC", "#D8D8D8", "#D3D3D3", "#D0D0D0", "#C8C8C8"];
+  //var colors = ["#FFFFFF", "#979DAC", "#7D8597", "#5C677D", "#33415C", "#001233", "#001845", "#002855", "#023E7D", "#0353A4", "#0466C8"];
 
   $scope.projects = [
     {
@@ -196,11 +198,34 @@ app.controller("MainController", function($scope){
     ]
   }]
 
-  $scope.Animation = function(index, $event){
+  $scope.AnimationOn = function(index, $event){
     //console.log(index, $event["currentTarget"]);
     //$event["currentTarget"].classList.add("clicken");
-    var value = ((index + 1) * 10) + "vw";
-    document.querySelector(":root").style.setProperty('--waveAnimationLength', value)
-    document.getElementById("wave").classList.add("waveAnimation");
+    var value = ((index + 1) * (100/11)) + "vw";
+    document.querySelector(":root").style.setProperty('--waveAnimationLength', value);
   }
+
+  $scope.AnimationOff = function(index, $event){
+    //console.log(index, $event["currentTarget"]);
+    //$event["currentTarget"].classList.add("clicken");
+    var value = "0vw";
+    document.querySelector(":root").style.setProperty('--waveAnimationLength', value);
+  }
+
+  $scope.AnimationClick = function(index, $event){
+    //var value = ((index) * (100/10)) + "%";
+    var value = "100%";
+    var color = colors[index];
+    document.querySelector(":root").style.setProperty('--waveAnimationLength', value);
+    document.querySelector(":root").style.setProperty('--waveBackgroundColor', color);
+  }
+
+  $scope.AnimationClick2 = function(index, $event){
+    //var value = ((index) * (100/9)) + "%";
+    var value = "100%";
+    var color = colors[index];
+    document.querySelector(":root").style.setProperty('--waveAnimationLength', value);
+    document.querySelector(":root").style.setProperty('--waveBackgroundColor', color);
+  }
+
 })
