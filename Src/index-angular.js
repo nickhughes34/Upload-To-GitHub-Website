@@ -14,6 +14,7 @@ app.controller("MainController", function($scope){
   var c = "cProgramming";
   var linux = "text-dark fa-brands fa-linux fa-3x";
   var flask = "flask";
+  var php = "text-primary fa-brands fa-php fa-3x";
   var colors = ["#FFFFFF", "#F8F8F8", "#F5F5F5", "#F0F0F0", "#E8E8E8", "#E0E0E0", "#DCDCDC", "#D8D8D8", "#D3D3D3", "#D0D0D0", "#C8C8C8"];
   //var colors = ["#FFFFFF", "#979DAC", "#7D8597", "#5C677D", "#33415C", "#001233", "#001845", "#002855", "#023E7D", "#0353A4", "#0466C8"];
 
@@ -151,7 +152,8 @@ app.controller("MainController", function($scope){
     ["jQuery", "2 years", jQuery],
     ["Linux", "2 year", linux], 
     ["Flask", "2 years", flask],
-    ["React", "1 year", react]
+    ["React", "1 year", react],
+    ["PHP", "1 year", php]
   ];
 
   $scope.description1 = "\
