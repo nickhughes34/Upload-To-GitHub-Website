@@ -14,6 +14,9 @@ app.controller("MainController", function($scope){
   var c = "cProgramming";
   var linux = "text-dark fa-brands fa-linux fa-3x";
   var flask = "flask";
+  var java = "java";
+  var mysql = "mysql";
+  var mongoDB = "mongoDB";
   var php = "text-primary fa-brands fa-php fa-3x";
   var colors = ["#FFFFFF", "#F8F8F8", "#F5F5F5", "#F0F0F0", "#E8E8E8", "#E0E0E0", "#DCDCDC", "#D8D8D8", "#D3D3D3", "#D0D0D0", "#C8C8C8"];
   //var colors = ["#FFFFFF", "#979DAC", "#7D8597", "#5C677D", "#33415C", "#001233", "#001845", "#002855", "#023E7D", "#0353A4", "#0466C8"];
@@ -145,14 +148,17 @@ app.controller("MainController", function($scope){
     ["Python", "5 years", python],
     ["HTML", "5 years", html], 
     ["CSS", "5 years", css], 
-    ["Javascript", "5 years", javascript],  
-    ["Angular","3 years", angular],
+    ["Javascript", "5 years", javascript],
     ["Node.js", "3 years", nodeJs],
-    ["C", "2 years", c], 
-    ["jQuery", "2 years", jQuery],
+    ["MongoDB", "3 years", mongoDB],
+    ["Angular","3 years", angular],
     ["Linux", "2 year", linux], 
+    ["C", "2 years", c], 
+    ["MySQL", "2 years", mysql], 
+    ["jQuery", "2 years", jQuery],
     ["Flask", "2 years", flask],
     ["React", "1 year", react],
+    ["Java", "1 year", java],
     ["PHP", "1 year", php]
   ];
 
@@ -196,7 +202,8 @@ app.controller("MainController", function($scope){
     "Collaborated with team members to improve technical and creative aspects of our website.",
     "Managed the SAIN Lab website. That includes updating pages, create new pages, and creating user profiles.",
     "Preformed maintenance on a production level server, using LVM’s to increase SWAP memory, and reparation drives.",
-    "Implemented Python scripts to help automate the delete of old data, automate the installation of security patches, and scheduled reboot of the system."
+    "Implemented Python scripts to help automate the delete of old data, automate the installation of security patches, and scheduled reboot of the system.",
+    "Used DreamHost, Nginx, and Certbot to map domain names to a production level server."
     ]
   }]
 
