@@ -92,7 +92,8 @@
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-3 justify-content-center" ng-controller = "MainController">
 
               <!--<div class="col d-flex align-items-start pt-3 proItem" ng-repeat = "item in proficient" ng-Mouseover="AnimationOn($index, $event)" ng-Mouseleave="AnimationOff($index, $event)">-->
-              <div class="col d-flex align-items-start pt-3 proItem" ng-repeat = "item in proficient" ng-click="AnimationClick($index, $event)">
+              <!--<div class="col d-flex align-items-start pt-3 proItem" ng-repeat = "item in proficient" ng-click="AnimationClick($index, $event)">-->
+              <div class="col d-flex align-items-start pt-3 proItem" ng-repeat = "item in proficient">
                 <i class="flex-shrink-0 me-3 {{item[2]}}"></i>
                 <div>
                   <h3 class="fw-bold mb-0 fs-4">{{item[0]}}</h3>
