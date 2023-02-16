@@ -36,7 +36,7 @@ li{
   list-style-type: disc;
 }
 
-.jQuery, .flask, .cProgramming{
+.jQuery, .flask, .cProgramming, .java, .mysql, .mongoDB{
   background: url("jquery-icon.svg");
   width: 48px;
   height: 48px;
@@ -51,6 +51,17 @@ li{
   background: url("c.png");
 }
 
+.java{
+  background: url("java.png");
+}
+
+.mysql{
+  background: url("mysql.png");
+}
+
+.mongoDB{
+  background: url("mongoDB.png");
+}
 .text-orange{
   color: orange;
 }
