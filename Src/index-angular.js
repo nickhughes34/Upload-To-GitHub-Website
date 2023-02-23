@@ -153,7 +153,7 @@ app.controller("MainController", function($scope){
     ["Javascript", "5 years", javascript],
     ["Node.js", "3 years", nodeJs],
     ["MongoDB", "3 years", mongoDB],
-    ["Boostrap", "3 years", bootstrap],
+    ["Bootstrap", "3 years", bootstrap],
     ["Angular","3 years", angular],
     ["Linux", "2 year", linux], 
     ["C", "2 years", c], 
