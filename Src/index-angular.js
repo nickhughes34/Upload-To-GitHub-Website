@@ -18,6 +18,8 @@ app.controller("MainController", function($scope){
   var mysql = "mysql";
   var mongoDB = "mongoDB";
   var php = "text-primary fa-brands fa-php fa-3x";
+  var bootstrap = "text-purple fa-brands fa-bootstrap fa-3x";
+  var aws = "text-warning fa-brands fa-aws fa-3x";
   var colors = ["#FFFFFF", "#F8F8F8", "#F5F5F5", "#F0F0F0", "#E8E8E8", "#E0E0E0", "#DCDCDC", "#D8D8D8", "#D3D3D3", "#D0D0D0", "#C8C8C8"];
   //var colors = ["#FFFFFF", "#979DAC", "#7D8597", "#5C677D", "#33415C", "#001233", "#001845", "#002855", "#023E7D", "#0353A4", "#0466C8"];
 
@@ -151,6 +153,7 @@ app.controller("MainController", function($scope){
     ["Javascript", "5 years", javascript],
     ["Node.js", "3 years", nodeJs],
     ["MongoDB", "3 years", mongoDB],
+    ["Boostrap", "3 years", bootstrap],
     ["Angular","3 years", angular],
     ["Linux", "2 year", linux], 
     ["C", "2 years", c], 
@@ -159,7 +162,10 @@ app.controller("MainController", function($scope){
     ["Flask", "2 years", flask],
     ["React", "1 year", react],
     ["Java", "1 year", java],
-    ["PHP", "1 year", php]
+    ["PHP", "1 year", php],
+    ["AWS RDS", "1 year", aws],
+    ["AWS DynamoDB", "< 1 year", aws],
+    ["AWS Lambda", "< 1 year", aws]
   ];
 
   $scope.description1 = "\
