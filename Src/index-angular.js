@@ -50,6 +50,44 @@ app.controller("MainController", function($scope){
       tech:{html, css, javascript}
     },
     {
+      id:"blockchain",
+      status:"",
+      title:"Voting Blockchain", 
+      name:"Government Voting Over The Blockchain",
+      image:"Src/blockchain-screenshot.jpg",
+      alt:"Voting Over The Blockchain screenshot",
+      description:"This application takes a persons vote and adds it to the blockchain which allows for safe and secure voting. \
+                   Application was developed mainly using Flask in Python and Angular with JavaScript.",
+      code:"https://github.com/nickhughes34/Voting-over-Blockchain",
+      link:"https://github.com/nickhughes34/Voting-over-Blockchain",
+      tech:{python, flask, angular, html, css, javascript}
+    },
+    {
+      id:"cryptography",
+      status:"",
+      title:"Cryptography Project", 
+      name:"Unique Cryptographic Encryption System",
+      image:"Src/cryptography-screenshot.png",
+      alt:"Cryptographic Encryption System screenshot",
+      description:"This project is a unique cryptographic encryption system that did not use any other libraries \
+                   or any form of randomization. Additionally it does not copy an existing encryption systems.",
+      code:"https://github.com/OzymandiasThe2/Cryptography-Project",
+      link:"https://github.com/OzymandiasThe2/Cryptography-Project",
+      tech:{python}
+    },
+    {
+      id:"stock",
+      status:"",
+      title:"Stock Viewer", 
+      name:"NDVP Stock Viewer",
+      image:"Src/NDVP-stock-app.png",
+      alt:"stock viewer screenshot",
+      description:"This project takes user input as a prop and interacts with other components. Uses the TradeView import to lookup and display stock values.",
+      code:"https://github.com/nickhughes34/nickhughes34.github.io/tree/main/stock_app",
+      link:"https://github.com/nickhughes34/nickhughes34.github.io/tree/main/stock_app",
+      tech:{react, bootstrap, mdb}
+    },
+    {
       id:"homepage3",
       status:"",
       title:"Turbo Logistics", 
@@ -86,30 +124,6 @@ app.controller("MainController", function($scope){
       tech:{html, css, javascript}
     },
     {
-      id:"homepage2",
-      status:"",
-      title:"The Space Station", 
-      name:"The Space Station Mock Homepage",
-      image:"Src/homepage2-screenshot.png",
-      alt:"The Space Station screenshot",
-      description:"This project is a mock homepage for a space exploration company. It uses plain JavaScript.",
-      code:"https://github.com/nickhughes34/nickhughes34.github.io/tree/main/Homepage2",
-      link:"https://nickhughes34.github.io/Homepage2/homepage.html",
-      tech:{html, css, javascript}
-    },
-    {
-      id:"stock",
-      status:"",
-      title:"Stock Viewer", 
-      name:"NDVP Stock Viewer",
-      image:"Src/NDVP-stock-app.png",
-      alt:"stock viewer screenshot",
-      description:"This project takes user input as a prop and interacts with other components. Uses the TradeView import to lookup and display stock values.",
-      code:"https://github.com/nickhughes34/nickhughes34.github.io/tree/main/stock_app",
-      link:"",
-      tech:{react, bootstrap, mdb}
-    },
-    {
       id:"weather",
       status:"",
       title:"Weather App",
@@ -122,15 +136,16 @@ app.controller("MainController", function($scope){
       tech:{html, css, javascript}
     },
     {
-      id:"real",
+      id:"homepage2",
       status:"",
-      title:"Real Estate Page", 
-      name:"Real Esate Webpage",
-      image:"Src/Real-Estate-screenshot.png",
-      alt:"real estate screenshot",
-      description:"This project lets the user view a real estate homepage for Real Estate Today. Used Bootstrap for easy placement of elements.",
-      code:"https://github.com/nickhughes34/nickhughes34.github.io/tree/main/Real_Estate",link:"https://nickhughes34.github.io/Real_Estate/Real_Estate.html",
-      tech:{html, css, javascript, bootstrap, mdb}
+      title:"The Space Station", 
+      name:"The Space Station Mock Homepage",
+      image:"Src/homepage2-screenshot.png",
+      alt:"The Space Station screenshot",
+      description:"This project is a mock homepage for a space exploration company. It uses plain JavaScript.",
+      code:"https://github.com/nickhughes34/nickhughes34.github.io/tree/main/Homepage2",
+      link:"https://nickhughes34.github.io/Homepage2/homepage.html",
+      tech:{html, css, javascript}
     },
     {
       id:"coffee",
@@ -143,6 +158,17 @@ app.controller("MainController", function($scope){
                    Used Bootstrap and Angular for easy placement of elements.",code:"https://github.com/nickhughes34/nickhughes34.github.io/tree/main/Coffee",
       link:"https://nickhughes34.github.io/Coffee/coffee.html",
       tech:{html, css, javascript, angular, bootstrap, mdb}
+    },
+    {
+      id:"real",
+      status:"",
+      title:"Real Estate Page", 
+      name:"Real Esate Webpage",
+      image:"Src/Real-Estate-screenshot.png",
+      alt:"real estate screenshot",
+      description:"This project lets the user view a real estate homepage for Real Estate Today. Used Bootstrap for easy placement of elements.",
+      code:"https://github.com/nickhughes34/nickhughes34.github.io/tree/main/Real_Estate",link:"https://nickhughes34.github.io/Real_Estate/Real_Estate.html",
+      tech:{html, css, javascript, bootstrap, mdb}
     }
   ];
 
