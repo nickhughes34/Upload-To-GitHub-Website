@@ -502,16 +502,6 @@ hr{
     border-left: 0.25px solid var(--opposite);  
 }
 
-#boxFive{
-    overflow-y: scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none; 
-}
-
-#boxFive::-webkit-scrollbar {
-    display: none;
-  }
-
 #boxFive .itemContainer, #boxFive .itemContainer h1{
     color: rgb(250,250,250);
 }
@@ -624,6 +614,28 @@ hr{
     display: none;
 }
 
+#boxFive, #boxFour, #boxThree{
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+}
+
+#boxFive::-webkit-scrollbar, #boxFour::-webkit-scrollbar, #boxThree::-webkit-scrollbar{
+    display: none;
+}
+
+@media only screen and (max-height: 800px) {
+    .theme .list{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-height: 600px) {
+    .theme .list{
+        font-size: 12px;
+    }
+}
+
 @media only screen and (max-width: 1500px) {
     .itemTitle h1, #boxFive .lowerFont, #boxFive p{
         font-size: 1.5vw;
@@ -639,7 +651,6 @@ hr{
     }
     .proficient{
         padding-top: 5vh;
-        overflow-y: scroll;
     }
 }
 
@@ -663,9 +674,6 @@ hr{
     .itemTitle h1, #boxFive .lowerFont, #boxFive p{
         font-size: 12px;
     }
-    html, #mainBox{
-        overflow-y: scroll;
-    }
 }
 
 @media only screen and (max-width: 580px) {
@@ -678,9 +686,6 @@ hr{
     }
     .size{
         display: none;
-    }
-    #boxFour{
-        overflow-y: scroll;
     }
     .labels2{
         grid-template-areas: 
