@@ -654,6 +654,9 @@ hr{
     .itemTitle h1, #boxFive .lowerFont, #boxFive p{
         font-size: 16px;
     }
+    #version{
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 740px) {
