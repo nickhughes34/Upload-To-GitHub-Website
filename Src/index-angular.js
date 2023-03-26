@@ -12,7 +12,7 @@ app.controller("MainController", function($scope){
   var python = "text-warning fa-brands fa-python fa-3x";
   var jQuery = "jQuery";
   var c = "cProgramming";
-  var linux = "text-dark fa-brands fa-linux fa-3x";
+  var linux = "fa-brands fa-linux fa-3x";
   var flask = "flask";
   var java = "java";
   var mysql = "mysql";
@@ -35,7 +35,8 @@ app.controller("MainController", function($scope){
                    email and passwords. Used Flask framework in python and sessions to keep the user logged in while using the website.",
       code:"https://github.com/nickhughes34/nickhughes34.github.io/tree/main/Bank",
       link:"https://nickhughes34.pythonanywhere.com/",
-      tech:{html, css, javascript, bootstrap, angular, python}
+      tech:{python, flask, mysql, angular, bootstrap, html, css, javascript},
+      demo: true
     },
     {
       id:"homepage4",
@@ -47,7 +48,8 @@ app.controller("MainController", function($scope){
       description:"This project is a mock homepage for a food delivery company. It uses plain JavaScript.",
       code:"https://github.com/nickhughes34/nickhughes34.github.io/tree/main/Homepage4",
       link:"https://nickhughes34.github.io/Homepage4/homepage.html",
-      tech:{html, css, javascript}
+      tech:{html, css, javascript},
+      demo: true
     },
     {
       id:"blockchain",
@@ -60,7 +62,8 @@ app.controller("MainController", function($scope){
                    Application was developed mainly using Flask in Python and Angular with JavaScript.",
       code:"https://github.com/nickhughes34/Voting-over-Blockchain",
       link:"https://github.com/nickhughes34/Voting-over-Blockchain",
-      tech:{python, flask, angular, html, css, javascript}
+      tech:{python, flask, angular, html, css, javascript},
+      demo: false
     },
     {
       id:"cryptography",
@@ -73,19 +76,8 @@ app.controller("MainController", function($scope){
                    or any form of randomization. Additionally it does not copy an existing encryption systems.",
       code:"https://github.com/OzymandiasThe2/Cryptography-Project",
       link:"https://github.com/OzymandiasThe2/Cryptography-Project",
-      tech:{python}
-    },
-    {
-      id:"stock",
-      status:"",
-      title:"Stock Viewer", 
-      name:"NDVP Stock Viewer",
-      image:"Src/NDVP-stock-app.png",
-      alt:"stock viewer screenshot",
-      description:"This project takes user input as a prop and interacts with other components. Uses the TradeView import to lookup and display stock values.",
-      code:"https://github.com/nickhughes34/nickhughes34.github.io/tree/main/stock_app",
-      link:"https://github.com/nickhughes34/nickhughes34.github.io/tree/main/stock_app",
-      tech:{react, bootstrap, mdb}
+      tech:{python},
+      demo: false
     },
     {
       id:"homepage3",
@@ -97,7 +89,8 @@ app.controller("MainController", function($scope){
       description:"This project is a mock homepage for a delivery company. It uses plain JavaScript.",
       code:"https://github.com/nickhughes34/nickhughes34.github.io/tree/main/Homepage3",
       link:"https://nickhughes34.github.io/Homepage3/homepage.html",
-      tech:{html, css, javascript}
+      tech:{html, css, javascript},
+      demo: true
     },
     {
       id:"homepage5",
@@ -109,7 +102,21 @@ app.controller("MainController", function($scope){
       description:"This project is a mock homepage for a business card company. It uses plain JavaScript.",
       code:"https://github.com/nickhughes34/nickhughes34.github.io/tree/main/Homepage5",
       link:"https://nickhughes34.github.io/Homepage5/homepage.html",
-      tech:{html, css, javascript}
+      tech:{html, css, javascript},
+      demo: true
+    },
+    {
+      id:"stock",
+      status:"",
+      title:"Stock Viewer", 
+      name:"NDVP Stock Viewer",
+      image:"Src/NDVP-stock-app.png",
+      alt:"stock viewer screenshot",
+      description:"This project takes user input as a prop and interacts with other components. Uses the TradeView import to lookup and display stock values.",
+      code:"https://github.com/nickhughes34/nickhughes34.github.io/tree/main/stock_app",
+      link:"https://github.com/nickhughes34/nickhughes34.github.io/tree/main/stock_app",
+      tech:{react, bootstrap, mdb},
+      demo: false
     },
     {
       id:"homepage1",
@@ -121,7 +128,8 @@ app.controller("MainController", function($scope){
       description:"This project is a mock homepage for a bank. It uses plain JavaScript.",
       code:"https://github.com/nickhughes34/nickhughes34.github.io/tree/main/Homepage1",
       link:"https://nickhughes34.github.io/Homepage1/homepage.html",
-      tech:{html, css, javascript}
+      tech:{html, css, javascript},
+      demo: true
     },
     {
       id:"weather",
@@ -133,7 +141,8 @@ app.controller("MainController", function($scope){
       description:"This project lets the user input a city name to get the weather results. This project used plain Javascript to control the DOM to add all the weather elements.",
       code:"https://github.com/nickhughes34/nickhughes34.github.io/tree/main/Weather",
       link:"https://nickhughes34.github.io/Weather/weather.html",
-      tech:{html, css, javascript}
+      tech:{html, css, javascript},
+      demo: true
     },
     {
       id:"homepage2",
@@ -145,7 +154,8 @@ app.controller("MainController", function($scope){
       description:"This project is a mock homepage for a space exploration company. It uses plain JavaScript.",
       code:"https://github.com/nickhughes34/nickhughes34.github.io/tree/main/Homepage2",
       link:"https://nickhughes34.github.io/Homepage2/homepage.html",
-      tech:{html, css, javascript}
+      tech:{html, css, javascript},
+      demo: true
     },
     {
       id:"coffee",
@@ -157,7 +167,8 @@ app.controller("MainController", function($scope){
       description:"This project lets the user view a menu for Coffee Cafe Today. Used jQuery to setup a delayed animation for when user scrolls into view. \
                    Used Bootstrap and Angular for easy placement of elements.",code:"https://github.com/nickhughes34/nickhughes34.github.io/tree/main/Coffee",
       link:"https://nickhughes34.github.io/Coffee/coffee.html",
-      tech:{html, css, javascript, angular, bootstrap, mdb}
+      tech:{html, css, javascript, angular, bootstrap, mdb},
+      demo: true
     },
     {
       id:"real",
@@ -168,7 +179,8 @@ app.controller("MainController", function($scope){
       alt:"real estate screenshot",
       description:"This project lets the user view a real estate homepage for Real Estate Today. Used Bootstrap for easy placement of elements.",
       code:"https://github.com/nickhughes34/nickhughes34.github.io/tree/main/Real_Estate",link:"https://nickhughes34.github.io/Real_Estate/Real_Estate.html",
-      tech:{html, css, javascript, bootstrap, mdb}
+      tech:{html, css, javascript, bootstrap, mdb},
+      demo: true
     }
   ];
 
@@ -190,8 +202,7 @@ app.controller("MainController", function($scope){
     ["Java", "1 year", java],
     ["PHP", "1 year", php],
     ["AWS RDS", "1 year", aws],
-    ["AWS DynamoDB", "< 1 year", aws],
-    ["AWS Lambda", "< 1 year", aws]
+    ["AWS DynamoDB", "< 1 year", aws]
   ];
 
   $scope.description1 = "\
@@ -212,6 +223,11 @@ app.controller("MainController", function($scope){
                          Some of them include, the automation of deletion of old data, the automation of installation of security patches, scheduled reboot of the system, and etc. \
                          I also preformed maintenance on the server, using LVM’s to increase SWAP memory, and reparation drives, more of my experience is listed below.";
 
+  $scope.description4 = "My name is Nicholas Hughes, I am a full stack engineer based in Ontario, Canada. \
+                        I have developed many front-end and back-end applications for SAIN Labs, as well as \
+                        implementing UI/UX interfaces into their front-end applications. I am pursing new \
+                        experiences and opportunities, and I have a passion to learn.";
+
   $scope.hobbies = [
     ["Leafs Fan", "https://images.unsplash.com/photo-1653408333886-510ce003d440?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80"], 
     ["Reading", "https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"], 
@@ -226,17 +242,19 @@ app.controller("MainController", function($scope){
   ];
 
   $scope.workExperience1 = [{
-    work: "SAIN Lab / Lab Technician / May 2022 - Present",
+    work: "SAIN Lab / Lab Technician / May 2022 - April 2023",
     description: [
-    "Implemented UX and UI designs for university research lab using Bootstrap, CSS, JavaScript, Node, Express, etc.",
-    "Updated and improved old and preexisting architecture.",
-    "Tested and debugged websites regularly to improve performance.",
-    "Collaborated with team members to improve technical and creative aspects of our website.",
-    "Managed the SAIN Lab website. That includes updating pages, create new pages, and creating user profiles.",
-    "Preformed maintenance on a production level server, using LVM’s to increase SWAP memory, and reparation drives.",
-    "Implemented Python scripts to help automate the delete of old data, automate the installation of security patches, and scheduled reboot of the system.",
-    "Used DreamHost, Nginx, and Certbot to map domain names to a production level server."
-    ]
+      "Implemented UX and UI designs for SAIN lab using Bootstrap, CSS, HTML, JavaScript, Node, Express, etc.",
+      "Led in the development of some front-end and back-end web applications using Bootstrap, CSS, HTML, JavaScript, Node, Express.",
+      "Updated and improved old and pre-existing architecture.",
+      "Tested and debugged web applications regularly to improve performance and security.",
+      "Collaborated with team members to improve technical and creative aspects of our website.",
+      "Managed the SAIN Lab website. That includes updating pages, creating new pages, and creating user profiles.",
+      "Performed maintenance on a production-level server using LVM’s to increase SWAP memory and repartitioned disk space.",
+      "Implemented Python scripts to help automate the deletion of old data, automate the installation of security patches, and scheduled reboot of the system.",
+      "Used DreamHost, Nginx, and Certbot to map domain names to different ports on a production-level server."
+    ],
+    website: "https://www.sain.ca/"
   }]
 
   $scope.AnimationOn = function(index, $event){
@@ -257,16 +275,16 @@ app.controller("MainController", function($scope){
     //var value = ((index) * (100/10)) + "%";
     var value = "100%";
     var color = colors[index];
-    document.querySelector(":root").style.setProperty('--waveAnimationLength', value);
-    document.querySelector(":root").style.setProperty('--waveBackgroundColor', color);
+    //document.querySelector(":root").style.setProperty('--waveAnimationLength', value);
+    //document.querySelector(":root").style.setProperty('--waveBackgroundColor', color);
   }
 
   $scope.AnimationClick2 = function(index, $event){
     //var value = ((index) * (100/9)) + "%";
     var value = "100%";
     var color = colors[index];
-    document.querySelector(":root").style.setProperty('--waveAnimationLength', value);
-    document.querySelector(":root").style.setProperty('--waveBackgroundColor', color);
+    //document.querySelector(":root").style.setProperty('--waveAnimationLength', value);
+    //document.querySelector(":root").style.setProperty('--waveBackgroundColor', color);
   }
 
 })
