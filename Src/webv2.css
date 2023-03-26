@@ -663,6 +663,9 @@ hr{
     .itemTitle h1, #boxFive .lowerFont, #boxFive p{
         font-size: 12px;
     }
+    html, #mainBox{
+        overflow-y: scroll;
+    }
 }
 
 @media only screen and (max-width: 580px) {
