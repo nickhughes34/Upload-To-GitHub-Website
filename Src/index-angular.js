@@ -32,7 +32,7 @@ app.controller("MainController", function($scope){
       image:"Src/Bank-of-Sunshine-screenshot.png",
       alt:"bank screenshot",
       description:"This project takes user input and checks for validation with custom validation messages. Also has server side validation for usernames, \
-                   email and passwords. Used Flask framework in python and sessions to keep the user logged in while using the website.",
+                   email and passwords. Used Flask framework in python and sessions to keep the user logged in.",
       code:"https://github.com/nickhughes34/nickhughes34.github.io/tree/main/Bank",
       link:"https://nickhughes34.pythonanywhere.com/",
       tech:{python, flask, mysql, angular, bootstrap, html, css, javascript},
