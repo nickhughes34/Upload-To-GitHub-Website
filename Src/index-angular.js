@@ -242,7 +242,8 @@ app.controller("MainController", function($scope){
   ];
 
   $scope.workExperience1 = [{
-    work: "SAIN Lab / Lab Technician / May 2022 - April 2023",
+    work: "Ontario Tech University / Lab Technician / May 2022 - April 2023",
+    /*work: "SAIN Lab / Lab Technician / May 2022 - April 2023",*/
     description: [
       "Implemented UX and UI designs for SAIN lab using Bootstrap, CSS, HTML, JavaScript, Node, Express, etc.",
       "Led in the development of some front-end and back-end web applications using Bootstrap, CSS, HTML, JavaScript, Node, Express.",
