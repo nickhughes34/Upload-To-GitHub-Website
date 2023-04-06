@@ -620,7 +620,7 @@ hr{
     scrollbar-width: none; 
 }
 
-#boxFive::-webkit-scrollbar, #boxFour::-webkit-scrollbar, #boxThree::-webkit-scrollbar{
+html::-webkit-scrollbar, #boxFive::-webkit-scrollbar, #boxFour::-webkit-scrollbar, #boxThree::-webkit-scrollbar{
     display: none;
 }
 
