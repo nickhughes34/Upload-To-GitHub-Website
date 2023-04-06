@@ -39,6 +39,20 @@ app.controller("MainController", function($scope){
       demo: true
     },
     {
+      id:"capstone",
+      status:"",
+      title:"Capstone Project", 
+      name:"Capstone Student Commute 2023",
+      image:"Src/capstone-screenshot.png",
+      alt:"capstone screenshot",
+      description:"This project parses user data (cvs file), then takes user locations and queries Google Maps API to get transit route information. \
+                   then saves this information to the Postgresql database. Tranist information extracted later.",
+      code:"https://github.com/nickhughes34/Capstone-Student-Commute-2023",
+      link:"https://github.com/nickhughes34/Capstone-Student-Commute-2023",
+      tech:{python, mysql},
+      demo: false
+    },
+    {
       id:"homepage4",
       status:"",
       title:"Quick Meals", 
