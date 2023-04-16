@@ -17,6 +17,9 @@ app.controller("MainController", function($scope){
   var java = "java";
   var mysql = "mysql";
   var mongoDB = "mongoDB";
+  var vuejs = "text-success fa-brands fa-vuejs fa-3x";
+  var typescript = "typescript";
+  var django = "django";
   var php = "text-primary fa-brands fa-php fa-3x";
   var bootstrap = "text-purple fa-brands fa-bootstrap fa-3x";
   var aws = "text-warning fa-brands fa-aws fa-3x";
@@ -46,7 +49,7 @@ app.controller("MainController", function($scope){
       image:"Src/capstone-screenshot.png",
       alt:"capstone screenshot",
       description:"This project parses user data (cvs file), then takes user locations and queries Google Maps API to get transit route information. \
-                   Then saves this information to the Postgresql database. Tranist information extracted later.",
+                   then saves this information to the Postgresql database. Tranist information extracted later.",
       code:"https://github.com/nickhughes34/Capstone-Student-Commute-2023",
       link:"https://github.com/nickhughes34/Capstone-Student-Commute-2023",
       tech:{python, mysql},
@@ -207,11 +210,14 @@ app.controller("MainController", function($scope){
     ["MongoDB", "3 years", mongoDB],
     ["Bootstrap", "3 years", bootstrap],
     ["Angular","3 years", angular],
-    ["Linux", "2 year", linux], 
+    ["Linux", "3 year", linux], 
     ["C", "2 years", c], 
     ["MySQL", "2 years", mysql], 
     ["jQuery", "2 years", jQuery],
     ["Flask", "2 years", flask],
+    ["Django", "2 years", django],
+    ["TypeScript", "1 years", typescript],
+    ["VueJS", "1 years", vuejs],
     ["React", "1 year", react],
     ["Java", "1 year", java],
     ["PHP", "1 year", php],
@@ -257,7 +263,6 @@ app.controller("MainController", function($scope){
 
   $scope.workExperience1 = [{
     work: "Ontario Tech University / Lab Technician / May 2022 - April 2023",
-    /*work: "SAIN Lab / Lab Technician / May 2022 - April 2023",*/
     description: [
       "Implemented UX and UI designs for SAIN lab using Bootstrap, CSS, HTML, JavaScript, Node, Express, etc.",
       "Led in the development of some front-end and back-end web applications using Bootstrap, CSS, HTML, JavaScript, Node, Express.",
