@@ -264,7 +264,7 @@ app.controller("MainController", function($scope){
   $scope.workExperience1 = [{
     work: "Ontario Tech University / Lab Technician / May 2022 - April 2023",
     description: [
-      "Implemented/updated UX and UI designs using Bootstrap, CSS, HTML, JavaScript, Node, Express, etc. Which increased user interacting by 40%.",
+      "Implemented/updated UX and UI designs using Bootstrap, CSS, HTML, JavaScript, Node, Express, etc. Which increased user interactions by 40%.",
       "Led in the development of some front-end and back-end web applications using Bootstrap, JavaScript, Node, Express, etc.",
       "Updated and improved old and pre-existing architecture. Which increased server processing times by 10%.",
       "Tested and debugged web applications regularly to improve performance and security.",
@@ -273,7 +273,7 @@ app.controller("MainController", function($scope){
       "Managed the web servers. That includes updating software, installing new software, creating user accounts.",
       "Performed maintenance on a production-level server using LVM’s to increase SWAP memory and re-partitioned disk space.",
       "Implemented Python scripts to automate the deletion of old data, the installation of security patches, and scheduled reboot of the system.",
-      "Used DreamHost, Nginx, and Certbot to map domain names to different ports on a production-level server."
+      "Used DreamHost, Nginx, and Certbot to host web applications on a production-level server with custom domain names."
     ],
     website: "https://www.sain.ca/"
   }]
